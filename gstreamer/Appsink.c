@@ -34,8 +34,8 @@ new_sample(GstAppSink *appsink, gpointer data) {
 
   // convert gstreamer data to OpenCV Mat, you could actually
   // resolve height / width from caps...
-  int width = 640;
-  int height = 480;
+  int width = 1600;
+  int height = 1200;
   int bufLen = width * height;
  
   unsigned char* pYuvBuf = new unsigned char[width * height * 3 / 2];
@@ -84,6 +84,7 @@ my_bus_callback (GstBus *bus, GstMessage *message, gpointer data) {
       break;
     }
     case GST_MESSAGE_EOS:
+      g_print ("End Of Stream!\n");
       /* end-of-stream */
       break;
     default:
@@ -108,13 +109,9 @@ main (int argc, char *argv[])
   gchar imagename[19]= "";
 
   gchar *descr = g_strdup(
-    "filesrc location=aaa.mp4 ! "
-    //"qtdemux ! "
-    //"h264parse ! "
-    //"avdec_h264 ! "
+    "v4l2src ! "
+    "video/x-raw,format=I420,width=1600,height=1200,framerate=15/1 ! "
     "decodebin ! "
-    //"video/x-raw,format=I420 ! "
-    //"videoconvert ! "
     "appsink name=sink " // could not set to true then i remove the true set
   );
   GstElement *pipeline = gst_parse_launch (descr, &error);
@@ -150,7 +147,7 @@ main (int argc, char *argv[])
       // this lags pretty badly even when grabbing frames from webcam
       Mat frame = frameQueue.front();
       //Mat edges;
-      //cvtColor(frame, edges, CV_RGB2GRAY);			//this line is necessary?
+      //cvtColor(frame, edges, CV_RGB2GRAY);      //this line is necessary?
       //GaussianBlur(edges, edges, Size(7,7), 1.5, 1.5);
       //Canny(edges, edges, 0, 30, 3);
       //imshow("edges", edges);
