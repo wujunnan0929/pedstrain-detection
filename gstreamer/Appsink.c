@@ -151,12 +151,13 @@ main (int argc, char *argv[])
       //GaussianBlur(edges, edges, Size(7,7), 1.5, 1.5);
       //Canny(edges, edges, 0, 30, 3);
       //imshow("edges", edges);
-      imagecount++;
+      
       imshow("frame gstreamer-1.0", frame);
       sprintf(imagename,"image_%08d.png",imagecount);
       imwrite(imagename,frame);
       cv::waitKey(30);
       frameQueue.clear();
+      imagecount++;
     }
   }  
 

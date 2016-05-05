@@ -1,7 +1,6 @@
 
 #include <gst/gst.h>
 #include <stdio.h>
-#include <stdlib.h>
 #include "opencv2/opencv.hpp"
 using namespace cv;
 
@@ -39,8 +38,6 @@ cb_need_data (GstElement *appsrc, guint unused_size, gpointer user_data)
   size = image.rows * image.cols * image.elemSize();
 
   g_print("image.rows = %d, image.cols = %d, image.elemSize = %lu \n", image.rows, image.cols, image.elemSize());
-
-
   buffer = gst_buffer_new_allocate (NULL, size, NULL);
   amount = gst_buffer_fill(buffer, 0, image.data, size);
   g_print("gst_buffer_new_fill filled %lu bytes.\n",amount);
@@ -65,15 +62,11 @@ gint
 main (gint   argc,
       gchar *argv[])
 {
-  GstElement *pipeline, *appsrc, *conv, *videosink;
-
+  GstElement *pipeline, *appsrc, *filesink, *enc;
 
   /* init GStreamer */
   gst_init (&argc, &argv);
-  //gint framecount = 0;
 
-
-  //g_print("image = %x, image.rows = %d, image.cols = %d, image.elemSize = %lu \n", &image, image.rows, image.cols, image.elemSize());
 
 
   loop = g_main_loop_new (NULL, FALSE);
@@ -81,9 +74,8 @@ main (gint   argc,
   /* setup pipeline */
   pipeline = gst_pipeline_new ("pipeline");
   appsrc = gst_element_factory_make ("appsrc", "source");
-  conv = gst_element_factory_make ("videoconvert", "conv");
-  videosink = gst_element_factory_make ("xvimagesink", "videosink");
-
+  enc = gst_element_factory_make ("jpegenc", "enc");
+  filesink = gst_element_factory_make ("multifilesink", "filesink");
 
   /* setup */
   g_object_set (G_OBJECT (appsrc), "caps",
@@ -91,13 +83,15 @@ main (gint   argc,
              "format", G_TYPE_STRING, "BGR",
              "width", G_TYPE_INT, 1600,
              "height", G_TYPE_INT, 1200,
-             "framerate", GST_TYPE_FRACTION, 15, 1,
+             "framerate", GST_TYPE_FRACTION, 0, 1,
              NULL), NULL);
+  g_object_set(G_OBJECT(filesink),
+              "location","frame%08d.jpg",
+              NULL);
 
-  gst_bin_add_many (GST_BIN (pipeline), appsrc, conv, videosink, NULL);
-  gst_element_link_many (appsrc, conv, videosink, NULL);
 
-
+  gst_bin_add_many (GST_BIN (pipeline), appsrc, enc, filesink, NULL);
+  gst_element_link_many (appsrc, enc, filesink, NULL);
 
 
   /* setup appsrc */
