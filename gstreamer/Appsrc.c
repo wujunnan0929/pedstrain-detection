@@ -8,8 +8,7 @@ using namespace cv;
 static GMainLoop *loop;
 static gint framecount = 0;
 static gchar imagename[19]="";
-static void
-cb_need_data (GstElement *appsrc, guint unused_size, gpointer user_data)
+static void cb_need_data (GstElement *appsrc, guint unused_size, gpointer user_data)
 {
   //static gboolean white = FALSE;
   g_print("\nmain loop:cb_need_data Iteration:%d \n",framecount);
@@ -61,13 +60,9 @@ cb_need_data (GstElement *appsrc, guint unused_size, gpointer user_data)
   }
 }
 
-gint
-main (gint   argc,
-      gchar *argv[])
+gint main (gint argc,gchar *argv[])
 {
   GstElement *pipeline, *appsrc, *conv, *videosink;
-
-
   /* init GStreamer */
   gst_init (&argc, &argv);
   //gint framecount = 0;

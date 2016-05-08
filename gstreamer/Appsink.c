@@ -2,24 +2,21 @@
 #include <gst/app/gstappsink.h>
 #include <stdlib.h>
 #include <stdio.h>
-
+#include <zmq.h>
+#include <unistd.h>
 #include "opencv2/opencv.hpp"
 using namespace cv;
-
-//#define CAPS "video/x-raw,width=640,height=480,pixel-aspect-ratio=1/1"
 
 
 // TODO: use synchronized deque
 std::deque<Mat> frameQueue;
 
-GstFlowReturn
-new_preroll(GstAppSink *appsink, gpointer data) {
+GstFlowReturn new_preroll(GstAppSink *appsink, gpointer data) {
   g_print ("Got preroll!\n");
   return GST_FLOW_OK;
 }
 
-GstFlowReturn
-new_sample(GstAppSink *appsink, gpointer data) {
+GstFlowReturn new_sample(GstAppSink *appsink, gpointer data) {
   static int framecount = 0;
   framecount++;
 
@@ -52,13 +49,7 @@ new_sample(GstAppSink *appsink, gpointer data) {
   frameQueue.push_back(rgbFrame);
 
   gst_buffer_unmap(buffer, &map);
-  //delete pYuvBuf;
-  // ------------------------------------------------------------
 
-  // print dot every 30 frames
-  if (framecount%30 == 0) {
-    g_print (".\n");
-  }
 
   // show caps on first frame
   if (framecount == 1) {
@@ -69,8 +60,7 @@ new_sample(GstAppSink *appsink, gpointer data) {
   return GST_FLOW_OK;
 }
 
-static gboolean
-my_bus_callback (GstBus *bus, GstMessage *message, gpointer data) {
+static gboolean my_bus_callback (GstBus *bus, GstMessage *message, gpointer data) {
   g_print ("Got %s message\n", GST_MESSAGE_TYPE_NAME (message));
   switch (GST_MESSAGE_TYPE (message)) {
     case GST_MESSAGE_ERROR: {
@@ -98,15 +88,17 @@ my_bus_callback (GstBus *bus, GstMessage *message, gpointer data) {
   return TRUE;
 }
 
-int
-main (int argc, char *argv[])
+int main (int argc, char *argv[])
 {
   GError *error = NULL;
-
-  gst_init (&argc, &argv);
-
+  gsize size;
   static int imagecount = 0;
   gchar imagename[19]= "";
+  void *context = zmq_ctx_new ();
+  void *client = zmq_socket (context, ZMQ_REQ);
+  zmq_connect (client, "tcp://localhost:5555");
+
+  gst_init (&argc, &argv);
 
   gchar *descr = g_strdup(
     "v4l2src ! "
@@ -138,24 +130,25 @@ main (int argc, char *argv[])
 
   gst_element_set_state (GST_ELEMENT (pipeline), GST_STATE_PLAYING);
 
-  namedWindow("edges",1);
   while(1) {
     g_main_iteration(false);
 
       // TODO: synchronize...
     if (frameQueue.size() > 0) {
       // this lags pretty badly even when grabbing frames from webcam
-      Mat frame = frameQueue.front();
-      //Mat edges;
-      //cvtColor(frame, edges, CV_RGB2GRAY);      //this line is necessary?
-      //GaussianBlur(edges, edges, Size(7,7), 1.5, 1.5);
-      //Canny(edges, edges, 0, 30, 3);
-      //imshow("edges", edges);
-      
-      imshow("frame gstreamer-1.0", frame);
-      sprintf(imagename,"image_%08d.png",imagecount);
-      imwrite(imagename,frame);
-      cv::waitKey(30);
+      Mat frame = frameQueue.front(); 
+      size = frame.rows * frame.cols * frame.elemSize();    
+      imshow("client", frame);
+      sprintf(imagename,"client_%08d.png",imagecount);
+      //imwrite(imagename,frame);
+      //send image to server,wait for recving labeled image 
+      zmq_send(client, frame.data, size, 0);
+      g_print("client send frame!\n");
+      zmq_recv(client, frame.data, size, 0);
+      g_print("client received frame!\n\n");
+      imshow("server", frame);
+      sprintf(imagename,"server_%08d.png",imagecount);
+      //imwrite(imagename,frame);
       frameQueue.clear();
       imagecount++;
     }
