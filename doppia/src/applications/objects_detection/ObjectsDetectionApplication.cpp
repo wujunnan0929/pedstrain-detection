@@ -577,13 +577,20 @@ void ObjectsDetectionApplication::record_detections()
     DetectionsDataSequence::data_type detections_data;
 
     string image_name;
+	Mat frame;
+	AbstractVideoInput::input_image_view_t input_view;
     if(should_process_folder)
     {
         image_name = directory_input_p->get_image_name();
+		input_view = directory_input_p->get_image();
+		log_info() << "Drawing image: " << image_name << std::endl;
     }
     else
     {
         image_name = boost::str(boost::format("frame_%i") % this->get_current_frame_number());
+		input_view = video_input_p->get_left_image();
+		frame = video_input_p->cvFrame;
+		log_info() << "Drawing video image: " << image_name << std::endl;
     }
 
     detections_data.set_image_name(image_name);
@@ -603,6 +610,10 @@ void ObjectsDetectionApplication::record_detections()
         min_corner.set_x(detection.bounding_box.min_corner().x() - additional_border);
         min_corner.set_y(detection.bounding_box.min_corner().y() - additional_border);
 
+		//TODO: input_view draw min_corner max_corner according detection.score, then save and send
+		//-----------------------------------------------------------------------------------------
+		cv::rectangle(frame,(max_corner.get_x(),max_corner.get_y(),(255,0,0));
+		//-----------------------------------------------------------------------------------------
         doppia_protobuf::Detection::ObjectClasses object_class = doppia_protobuf::Detection::Unknown;
         switch(detection.object_class)
         { // Car, Pedestrian, Bike, Motorbike, Bus, Tram, StaticObject, Unknown
@@ -646,7 +657,7 @@ void ObjectsDetectionApplication::record_detections()
         detection_data_p->set_object_class(object_class);
     } // end of "for each stixel in stixels"
 
-
+	cv::imshow("Result", frame);
     detections_data_sequence_p->write(detections_data);
 
     return;
