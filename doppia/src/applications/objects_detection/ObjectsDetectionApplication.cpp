@@ -612,7 +612,8 @@ void ObjectsDetectionApplication::record_detections()
 
 		//TODO: input_view draw min_corner max_corner according detection.score, then save and send
 		//-----------------------------------------------------------------------------------------
-		cv::rectangle(frame,(max_corner.get_x(),max_corner.get_y(),(255,0,0));
+		cv::rectangle(frame,(max_corner.get_x(),max_corner.get_y()),(min_coener.get_x(),min_corner.get_y()),(255,0,0));
+		zmq_send(responder,frame,width*height*layer,0);
 		//-----------------------------------------------------------------------------------------
         doppia_protobuf::Detection::ObjectClasses object_class = doppia_protobuf::Detection::Unknown;
         switch(detection.object_class)
