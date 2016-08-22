@@ -60,9 +60,7 @@ program_options::options_description VideoFromCamera::get_args_options()
 
 VideoFromCamera::VideoFromCamera(const program_options::variables_map &options,
                                const shared_ptr<StereoCameraCalibration> &stereo_calibration_p)
-    : AbstractVideoInput(options),
-      read_future_frame_start_barrier(2), // only two threads are involved
-      read_future_frame_ended_barrier(2)
+    : AbstractVideoInput(options)
 {
 
     total_number_of_frames = -1;
@@ -72,6 +70,20 @@ VideoFromCamera::VideoFromCamera(const program_options::variables_map &options,
 
     left_filename_mask = get_option_value<string>(options, "video_input.left_filename_mask");
     right_filename_mask = get_option_value<string>(options, "video_input.right_filename_mask");
+
+	socket_addr = get_option_value<string>(options,"video_input.socket_addr");
+	frame_width = get_option_value<int>(options, "video_input.frame_width");
+	frame_height = get_option_value<int>(options, "video_input.frame_height");
+	frame_depth = get_option_value<int>(options, "video_input.frame_depth");
+	frame_channel = get_option_value<int>(options, "video_input.frame_channel");
+	frame_type = get_options_value<string>(options, "video_input.frame_type");
+
+	left_image.recreate(frame_width, frame_height);
+	context = zmq_ctx_new();
+	responder = zmq_socket(context,ZMQ_REP);
+	int rc = zmq_bind(responder, socket_addr);
+	assert(rc);
+
 
     if(left_filename_mask.empty() or right_filename_mask.empty())
     {
@@ -95,16 +107,8 @@ VideoFromCamera::VideoFromCamera(const program_options::variables_map &options,
     }
 #endif
 
-    start_frame = get_option_value<int>(options, "video_input.start_frame");
-    end_frame = get_option_value<int>(options, "video_input.end_frame");
-
-    future_image_frame_number = -1;
-    found_future_image = false;
-
-    image_reading_thread = boost::thread(&VideoFromCamera::read_future_frame_thead, this);
-
     // do the first acquisition
-    const bool found_frames = this->set_frame(start_frame);
+	const bool found_frames = this->pull_stream();
 
     if(left_image_view.dimensions() != right_image_view.dimensions())
     {
@@ -127,14 +131,6 @@ VideoFromCamera::VideoFromCamera(const program_options::variables_map &options,
 
 VideoFromCamera::~VideoFromCamera()
 {
-    // we stop the reading thread, before destroying the object
-    image_reading_thread.interrupt();
-
-    // we make sure the thread has done everything it should
-    // this is necessary to avoid "'!pthread_mutex_destroy(&internal_mutex)' failed" exceptions
-    // see https://bbs.archlinux.org/viewtopic.php?id=130195
-    image_reading_thread.join();
-
     return;
 }
 
@@ -168,260 +164,46 @@ const shared_ptr<AbstractPreprocessor> &VideoFromCamera::get_preprocessor() cons
 /// Advance in stream, return true if successful
 bool VideoFromCamera::next_frame()
 {
-    return this->set_frame(current_frame_number + 1);
+    return this->pull_stream;
 }
 
-
-/// Go back in stream
-bool VideoFromCamera::previous_frame()
+void mat_to_image(const cv::Mat &m, input_image_t &img) 
 {
-    return this->set_frame(current_frame_number - 1);
+	for (size_t i = 0; i < img.rows(); ++i)
+	{
+		for (size_t j = 0; j < img.cols(); ++j)
+		{
+			// Mat is BGR, not RGB
+			img(i, j, 0) = m.at<cv::Vec3b>(i, j)[2];
+			img(i, j, 1) = m.at<cv::Vec3b>(i, j)[1];
+			img(i, j, 2) = m.at<cv::Vec3b>(i, j)[0];
+		}
+	}
 }
 
-
-int get_number_of_matching_files(boost::format &filename_format, const int start_frame_index)
+void image_to_mat(const cv::Mat &m, input_image_t &img)
 {
-    int num_matching_files = -1;
-
-    int t_frame_index = start_frame_index;
-    boost::filesystem::path t_path;
-
-    bool end_of_game = false;
-    while(end_of_game == false)
-    {
-        filename_format % t_frame_index;
-        t_path = filename_format.str();
-
-        if( boost::filesystem::exists(t_path) )
-        {
-            num_matching_files += 1;
-        }
-        else
-        {
-            end_of_game = true;
-        }
-    };
-
-    return num_matching_files;
+	for (size_t i = 0; i < img.rows(); ++i)
+	{
+		for (size_t j = 0; j < img.cols(); ++j)
+		{
+			// Mat is BGR, not RGB
+			m.at<cv::Vec3b>(i, j)[2] = img(i, j, 0);
+			m.at<cv::Vec3b>(i, j)[1] = img(i, j, 1);
+			m.at<cv::Vec3b>(i, j)[0] = img(i, j, 2);
+		}
+	}
 }
 
-
-int VideoFromCamera::get_number_of_frames()
+bool VideoFromCamera::pull_stream()
 {
-
-    // total_number_of_frames was not yet calculated
-    if(total_number_of_frames < 0)
-    {
-
-        const bool dummy_number_of_frames = false;
-        if(dummy_number_of_frames)
-        {
-            total_number_of_frames = current_frame_number;
-        }
-        else
-        {
-            if(end_frame != std::numeric_limits<int>::max())
-            {
-                total_number_of_frames = end_frame - start_frame;
-            }
-            else
-            {
-                const int left_frames = get_number_of_matching_files(left_filename_format, start_frame);
-                const int right_frames = get_number_of_matching_files(right_filename_format, start_frame);
-                total_number_of_frames = std::min(left_frames, right_frames);
-            }
-        }
-    }
-
-    return total_number_of_frames;
-}
-
-
-/// Set current absolute frame
-bool VideoFromCamera::set_frame(const int frame_number)
-{
-    //const bool enable_parallel_read = true;
-    const bool enable_parallel_read = false;
-
-    if( (future_image_frame_number != frame_number) or
-        (enable_parallel_read == false) )
-    { // no future was launched to retrieve the images before hand
-
-        const bool return_value  = read_frame_from_disk(frame_number,
-                                                        left_image, right_image,
-                                                        left_image_view, right_image_view);
-
-        if(return_value == false)
-        {
-            return false;
-        }
-        else
-        {
-            // we continue
-        }
-
-        this->current_frame_number = frame_number;
-
-    }
-    else
-    { // launched a future to read the images before hand --
-        assert(frame_number == future_image_frame_number);
-
-        // make sure future image reading has finished
-        read_future_frame_ended_barrier.wait();
-
-        this->current_frame_number = frame_number;
-        if(found_future_image == false)
-        {
-            // the reading failed
-            return false;
-        }
-        else
-        {
-            // copy the data from the future to the present
-            boost::gil::copy_pixels(future_left_image_view, boost::gil::view(left_image));
-            boost::gil::copy_pixels(future_right_image_view, boost::gil::view(right_image));
-        }
-
-    }
-
-    // launch right away the reading of the next frame ---
-    if(enable_parallel_read)
-    {
-        read_future_frame_start_barrier.wait();
-    }
-
-    // preprocess the acquired images ---
-    if(this->preprocessor_p.get() != NULL)
-    {
-        /*  static int num_iterations = 0;
-        static double cumulated_time = 0;
-
-        const int num_iterations_for_timing = 50;
-        const double start_wall_time = omp_get_wtime();
-*/
-        preprocessor_p->run(left_image_view, 0, boost::gil::view(this->left_image));
-        preprocessor_p->run(right_image_view, 1, boost::gil::view(this->right_image));
-        /*
-        cumulated_time += omp_get_wtime() - start_wall_time;
-        num_iterations += 1;
-
-        const bool silent_mode = false;
-        if((silent_mode == false) and ((num_iterations % num_iterations_for_timing) == 0))
-        {
-            printf("Average preprocessor_p->run(...) speed  %.2lf [Hz] (in the last %i iterations)\n",
-                   num_iterations / cumulated_time, num_iterations );
-        }
-        */
-    }
-
-    return true;
-}
-
-
-bool VideoFromCamera::read_frame_from_stream(const int frame_number,
-                                          input_image_t &left_image, input_image_t &right_image,
-                                          input_image_view_t &left_view, input_image_view_t &right_view)
-{
-
-    using namespace boost::filesystem;
-    using boost::format;
-
-    if(frame_number < start_frame or frame_number > end_frame )
-    {
-        printf("Requested frame number %i but frames should be in range (%i, %i)\n", frame_number, start_frame, end_frame);
-        return false;
-    }
-
-    // frame_number is in a correct range --
-    path left_image_path, right_image_path;
-
-#if BOOST_VERSION >= 104400 
-    // expected_args was only defined in version 1.44
-    if(left_filename_format.expected_args() == 1)
-#else
-    if(true)
-#endif
-    { // already checked that right_filename_format.expected_args() == left_filename_format.expected_args()
-        left_image_path = str( format(left_filename_format) % frame_number) ;
-        right_image_path = str( format(right_filename_format) % frame_number);
-    }
-    else
-    { // can only be expected_args() == 0
-        left_image_path = str( format(left_filename_format) ) ;
-        right_image_path = str( format(right_filename_format) );
-    }
-
-
-    if ((exists(left_image_path) == false) or (exists(right_image_path) == false) )
-    {
-        const bool print_not_found = true;
-        if(print_not_found)
-        {
-            if(exists(left_image_path) == false)
-            {
-                printf("File %s not found\n", left_image_path.string().c_str());
-            }
-
-            if(exists(right_image_path) == false)
-            {
-                printf("File %s not found\n", right_image_path.string().c_str());
-            }
-        }
-        return false;
-    }
-
-    // files exist --
-
-    // let us read the images --
-    const bool print_read_files = (frame_number == start_frame);
-//    const bool print_read_files = true;
-
-    if(print_read_files)
-    {
-        printf("Reading files:\n%s\n%s\n", left_image_path.string().c_str(), right_image_path.string().c_str());
-    }
-
-    if(left_view.size() == 0 or right_view.size() == 0)
-    {
-        // if views are empty, do memory allocation and create views
-        boost::gil::png_read_and_convert_image(left_image_path.string(), left_image);
-        boost::gil::png_read_and_convert_image(right_image_path.string(), right_image);
-
-        left_view = boost::gil::const_view(left_image);
-        right_view = boost::gil::const_view(right_image);
-    }
-    else
-    {
-        // update the views
-        boost::gil::png_read_and_convert_view(left_image_path.string(), boost::gil::view(left_image));
-        boost::gil::png_read_and_convert_view(right_image_path.string(), boost::gil::view(right_image));
-
-        // no need to update this->left_image_view, this->right_image_view since they should still point the same image
-        left_view = boost::gil::const_view(left_image);
-        right_view = boost::gil::const_view(right_image);
-    }
-
-    return true;
-}
-
-
-void VideoFromCamera::read_future_frame_thead()
-{
-    while(true)
-    { // the thread will end by a call to thread::interrupt
-
-        read_future_frame_start_barrier.wait();
-
-        future_image_frame_number = this->current_frame_number + 1;
-
-        found_future_image = read_frame_from_disk(future_image_frame_number,
-                                                  future_left_image, future_right_image,
-                                                  future_left_image_view, future_right_image_view);
-
-        read_future_frame_ended_barrier.wait();
-    }
-    return;
+	assert(responder);
+	Mat rgbFrame(frame_height, frame_width, CV_8UC3, Scalar::all(0));
+	rgbFrame.copyTo(cvFrame);
+	zmq_recv(responder, rgbFrame.data, frame_width * frame_height * 3, 0);
+	mat_to_image(&rgbFrame, &left_image);
+	left_view = boost::gil::const_view(left_image);
+	return true;
 }
 
 
@@ -432,11 +214,6 @@ const AbstractVideoInput::input_image_view_t &VideoFromCamera::get_left_image()
 }
 
 
-const AbstractVideoInput::input_image_view_t &VideoFromCamera::get_right_image()
-{
-
-    return this->right_image_view;
-}
 
 
 } // end of doppia namespace
