@@ -96,8 +96,11 @@ int main (int argc, char *argv[])
   gchar imagename[19]= "";
   void *context = zmq_ctx_new ();
   void *client = zmq_socket (context, ZMQ_REQ);
-  zmq_connect (client, "tcp://localhost:5555");
-
+  zmq_connect (client, "tcp://10.113.64.54:5556");
+  
+  /*void *server = zmq_socket(context, ZMQ_SUB);
+  zmq_connect(server,"tcp://172.17.0.10:5556");
+  zmq_setsockopt(server, ZMQ_SUBSCRIBE, NULL,0);*/
   gst_init (&argc, &argv);
 
   gchar *descr = g_strdup(
@@ -136,11 +139,16 @@ int main (int argc, char *argv[])
       // TODO: synchronize...
     if (frameQueue.size() > 0) {
       // this lags pretty badly even when grabbing frames from webcam
-      Mat frame = frameQueue.front(); 
-      size = frame.rows * frame.cols * frame.elemSize();    
+      Mat frame = frameQueue.front();
+      /*Mat frame;
+      resize(frame1,frame,Size(640,480),0,0,CV_INTER_LINEAR); 
+      imwrite("1600_1200.png",frame1);
+      imwrite("640_480.png",frame);*/
+      size = frame.rows * frame.cols * frame.elemSize();
+      printf("row = %d, cols = %d \n",frame.rows, frame.cols);    
       imshow("client", frame);
       sprintf(imagename,"client_%08d.png",imagecount);
-      //imwrite(imagename,frame);
+      imwrite(imagename,frame);
       //send image to server,wait for recving labeled image 
       zmq_send(client, frame.data, size, 0);
       g_print("client send frame!\n");
