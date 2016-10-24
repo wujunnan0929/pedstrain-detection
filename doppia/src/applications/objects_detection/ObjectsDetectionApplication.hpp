@@ -1,7 +1,6 @@
 #ifndef ObjectsDetectionApplication_HPP
 #define ObjectsDetectionApplication_HPP
 
-
 #include "applications/BaseApplication.hpp"
 
 #include "video_input/AbstractVideoInput.hpp"
@@ -14,6 +13,9 @@
 
 #include <string>
 
+#include <zmq.h>
+#include <stdio.h>
+
 namespace doppia_protobuf {
 class Detections;
 }
@@ -23,11 +25,11 @@ namespace doppia
 {
 
 using namespace std;
-using namespace  boost;
-
+using namespace boost;
 //  ~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-
 
  // forward declarations
+//template<> class DataType<boost::uint32_t>;
 class ObjectsDetectionGui;
 class AbstractObjectsDetector;
 class AbstractStixelWorldEstimator;
@@ -76,9 +78,19 @@ protected:
     void record_detections();
 
     scoped_ptr<DetectionsDataSequence> detections_data_sequence_p;
-    bool should_save_detections, use_ground_plane_only, should_process_folder, silent_mode;
+    bool should_save_detections, use_ground_plane_only, should_process_folder, silent_mode, run_as_server;
 
     int additional_border, stixels_computation_period;
+	
+	/******New Add <Server Version>******/
+	boost::gil::rgb8_view_t current_view;	
+	
+	// zmq related
+	void *context, *subscriber, *publisher;
+	std::string sub_addr;
+	std::string pub_addr;
+
+	int frame_width, frame_height;
 };
 
 

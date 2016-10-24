@@ -1,5 +1,3 @@
-
-// import bug fixed version file
 #include "../libs/boost/gil/color_base_algorithm.hpp"
 #include "../libs/boost/gil/pixel.hpp"
 
@@ -36,6 +34,9 @@
 #include "helpers/data/DataSequence.hpp"
 #include "objects_detection/detections.pb.h"
 
+#include "drawing/gil/colors.hpp"
+#include "drawing/gil/line.hpp"
+
 #include <boost/gil/image_view.hpp>
 #include <boost/gil/extension/io/png_io.hpp>
 #include <boost/gil/extension/opencv/ipl_image_wrapper.hpp>
@@ -52,6 +53,9 @@
 #include <fstream>
 #include <ctime>
 #include <cstdlib>
+
+#include <stdlib.h>
+
 
 
 namespace
@@ -79,6 +83,7 @@ namespace doppia
 
 using logging::log;
 using namespace std;
+using namespace cv;
 typedef AbstractStixelWorldEstimator::ground_plane_corridor_t ground_plane_corridor_t;
 
 //  ~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-
@@ -95,6 +100,7 @@ ObjectsDetectionApplication::ObjectsDetectionApplication()
       should_save_detections(false),
       use_ground_plane_only(false),
       should_process_folder(false),
+	  run_as_server(false),
       silent_mode(false),
       additional_border(0),
       stixels_computation_period(1)
@@ -155,6 +161,19 @@ program_options::options_description ObjectsDetectionApplication::get_options_de
              program_options::value<bool>()->default_value(false),
              "if true, no status information will be printed at run time (use this for speed benchmarking)")
 
+			("zmq_server.sub_addr",
+               program_options::value <string>(),
+ 				"subscriber ip address (use this for zmq)") 
+            ("zmq_server.pub_addr",
+               program_options::value <string>(),
+               "publisher ip address (use this for zmq)")
+  
+            ("zmq_server.frame_width",
+               program_options::value <int>(),
+ 				"frame width") 
+            ("zmq_server.frame_height",
+               program_options::value <int>(),
+				"frame height")
             ;
 
     return desc;
@@ -218,6 +237,7 @@ void ObjectsDetectionApplication::setup_problem(const program_options::variables
     should_save_detections = get_option_value<bool>(options, "save_detections");
     should_process_folder = options.count("process_folder") > 0;
     silent_mode = get_option_value<bool>(options, "silent_mode");
+	run_as_server = options.count("zmq_server.sub_addr")>0;
 
     if(options.count("additional_border") > 0)
     { // this option may not be available when calling this function from a different application
@@ -228,16 +248,37 @@ void ObjectsDetectionApplication::setup_problem(const program_options::variables
         additional_border = 0;
     }
 
-    // instanciate the different processing modules --
-    if(should_process_folder)
-    {
-        const filesystem::path folder_to_process = get_option_value<string>(options, "process_folder");
-        directory_input_p.reset(new ImagesFromDirectory(folder_to_process));
-    }
-    else
-    {
-        video_input_p.reset(VideoInputFactory::new_instance(options));
-    }
+	// instanciate the different processing modules --	
+	if(run_as_server)
+	{
+		sub_addr = get_option_value <string>(options,"zmq_server.sub_addr");
+		pub_addr = get_option_value <string>(options,"zmq_server.pub_addr");
+		frame_width = get_option_value <int>(options, "zmq_server.frame_width");
+		frame_height = get_option_value <int>(options, "zmq_server.frame_height");
+		context = zmq_ctx_new();
+		int rc;
+		//subscriber = zmq_socket(context,ZMQ_SUB);
+		//rc = zmq_connect(subscriber, sub_addr.c_str());
+		//zmq_setsockopt(subscriber, ZMQ_SUBSCRIBE, NULL, 0);
+	
+		//publisher = zmq_socket(context, ZMQ_PUB);
+		publisher = subscriber = zmq_socket(context, ZMQ_REP);
+		rc = zmq_bind(publisher, pub_addr.c_str());
+		if(rc != 0)
+		{
+			printf("zmq_bind() rc=%d error!\n", rc);
+			throw std::runtime_error("zmq_bind error!");
+		}
+	}
+	else if(should_process_folder)
+	{
+		const filesystem::path folder_to_process = get_option_value<string>(options, "process_folder");
+		directory_input_p.reset(new ImagesFromDirectory(folder_to_process));
+	}
+	else
+	{
+		video_input_p.reset(VideoInputFactory::new_instance(options));
+	}
 
     objects_detector_p.reset(ObjectsDetectorFactory::new_instance(options));
 
@@ -353,14 +394,18 @@ void ObjectsDetectionApplication::main_loop()
     }
 
     int num_iterations = 0;
-    //const int num_iterations_for_timing = 10, num_iterations_for_processing_timing = 50;
-    const int num_iterations_for_timing = 500, num_iterations_for_processing_timing = 250;
+    const int num_iterations_for_timing = 10, num_iterations_for_processing_timing = 5;
+    //const int num_iterations_for_timing = 500, num_iterations_for_processing_timing = 250;
     double cumulated_processing_time = 0, cumulated_objects_detector_compute_time = 0;
     double start_wall_time = omp_get_wtime();
 
     AddBorderFunctor add_border(additional_border);
     bool video_input_is_available = false;
-    if(should_process_folder)
+	if(run_as_server)
+	{
+		video_input_is_available = true;
+	}
+    else if(should_process_folder)
     {
         video_input_is_available = directory_input_p->next_frame();
     }
@@ -403,13 +448,24 @@ void ObjectsDetectionApplication::main_loop()
 
 
     bool end_of_game = false;
-
     while(video_input_is_available and (not end_of_game))
     {
 
         // update video input --
-        AbstractVideoInput::input_image_view_t input_view;
-        if(should_process_folder)
+		AbstractVideoInput::input_image_view_t input_view;
+		AbstractVideoInput::input_image_t tmp_image;
+		if(run_as_server)
+		{
+			printf("begin recv\n");
+			//boost::gil image buffer version
+			tmp_image.recreate(frame_width, frame_height);
+			zmq_recv(publisher, boost::gil::view(tmp_image).begin().x(), frame_width * frame_height * 3, 0);
+			current_view = boost::gil::view(tmp_image);
+			input_view = boost::gil::view(tmp_image);
+			boost::gil::png_write_view("/home/Downloads/input_view.png", input_view);           
+			printf("received\n");
+		}
+        else if(should_process_folder)
         {
             input_view = directory_input_p->get_image();
             log_info() << "Processing image: " << directory_input_p->get_image_name() << std::endl;
@@ -419,9 +475,7 @@ void ObjectsDetectionApplication::main_loop()
             input_view = video_input_p->get_left_image();
             //input_right_view(video_input_p->get_right_image());
         }
-
         input_view = add_border(input_view);
-
         // we start measuring the time before uploading the data to the GPU
         const double start_processing_wall_time = omp_get_wtime();
 
@@ -486,7 +540,6 @@ void ObjectsDetectionApplication::main_loop()
         }
 
         cumulated_processing_time += omp_get_wtime() - start_processing_wall_time;
-
         if(should_save_detections)
         {
             record_detections();
@@ -519,7 +572,11 @@ void ObjectsDetectionApplication::main_loop()
         }
 
         // retrieve next rectified input stereo pair
-        if(should_process_folder)
+		if(run_as_server)
+		{
+			video_input_is_available = true;
+		}
+        else if(should_process_folder)
         {
             video_input_is_available = directory_input_p->next_frame();
         }
@@ -547,7 +604,6 @@ void ObjectsDetectionApplication::record_detections()
 {
     typedef AbstractObjectsDetector::detections_t detections_t;
     typedef AbstractObjectsDetector::detection_t detection_t;
-
     if(detections_data_sequence_p == false)
     {
         // first invocation, need to create the data_sequence file first
@@ -577,23 +633,32 @@ void ObjectsDetectionApplication::record_detections()
     DetectionsDataSequence::data_type detections_data;
 
     string image_name;
-	Mat frame;
-	AbstractVideoInput::input_image_view_t input_view;
-    if(should_process_folder)
+
+	if(run_as_server)
+    {
+    	image_name = "run_as_server";
+    }
+    else if(should_process_folder)
     {
         image_name = directory_input_p->get_image_name();
-		input_view = directory_input_p->get_image();
-		log_info() << "Drawing image: " << image_name << std::endl;
     }
     else
     {
         image_name = boost::str(boost::format("frame_%i") % this->get_current_frame_number());
-		input_view = video_input_p->get_left_image();
-		frame = video_input_p->cvFrame;
-		log_info() << "Drawing video image: " << image_name << std::endl;
     }
 
     detections_data.set_image_name(image_name);
+	
+	float max_score = 0, min_score=0;
+	BOOST_FOREACH(const detection_t &detection_t, the_detections)
+    {
+        //min_score = std::min(min_score, detection.score);
+        max_score = std::max(max_score, detection_t.score);
+    }
+
+    //max_detection_score = 100; // FIXME hardcoded based on ./plot_detections_statistics.py over TUD brussels (octave 0 model)
+    const float scaling = 255 / (max_score - min_score);
+
 
     BOOST_FOREACH(const detection_t &detection, the_detections)
     {
@@ -609,12 +674,24 @@ void ObjectsDetectionApplication::record_detections()
         doppia_protobuf::Point2d &min_corner = *(detection_data_p->mutable_bounding_box()->mutable_min_corner());
         min_corner.set_x(detection.bounding_box.min_corner().x() - additional_border);
         min_corner.set_y(detection.bounding_box.min_corner().y() - additional_border);
-
 		//TODO: input_view draw min_corner max_corner according detection.score, then save and send
 		//-----------------------------------------------------------------------------------------
-		cv::rectangle(frame,(max_corner.get_x(),max_corner.get_y()),(min_coener.get_x(),min_corner.get_y()),(255,0,0));
-		zmq_send(responder,frame,width*height*layer,0);
-		//-----------------------------------------------------------------------------------------
+		if(run_as_server)
+		{
+			printf("Draw detection rectangle on the view..\n");
+			const boost::uint8_t normalized_score = static_cast<boost::uint8_t>(
+                    std::min(std::max(0.0f, (detection.score - min_score)*scaling), 255.0f));
+			boost::gil::rgb8c_pixel_t color(normalized_score, 0, 0);
+			
+			detection_t::rectangle_t box = detection.bounding_box;
+			
+			box.min_corner().x(box.min_corner().x() - additional_border);
+			box.min_corner().y(box.min_corner().y() - additional_border);
+			box.max_corner().x(box.max_corner().x() - additional_border);
+			box.max_corner().y(box.max_corner().y() - additional_border);
+			
+			draw_rectangle(current_view, color, box, 4);
+		}  
         doppia_protobuf::Detection::ObjectClasses object_class = doppia_protobuf::Detection::Unknown;
         switch(detection.object_class)
         { // Car, Pedestrian, Bike, Motorbike, Bus, Tram, StaticObject, Unknown
@@ -658,7 +735,14 @@ void ObjectsDetectionApplication::record_detections()
         detection_data_p->set_object_class(object_class);
     } // end of "for each stixel in stixels"
 
-	cv::imshow("Result", frame);
+	
+	if(run_as_server)
+	{
+		printf("begin sending...\n");
+		zmq_send(publisher, current_view.begin().x(), frame_width * frame_height * 3, 0);
+		printf("sent\n");
+	}
+	
     detections_data_sequence_p->write(detections_data);
 
     return;
