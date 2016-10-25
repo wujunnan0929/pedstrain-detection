@@ -339,10 +339,10 @@ elseif(HOSTED_AT_D2_NO_GPU GREATER -1)
   set(liblinear_INCLUDE_DIRS "/home/rodrigob/code/references/liblinear-1.8")
   set(liblinear_LIBRARY_DIRS "/home/rodrigob/code/references/liblinear-1.8")
 
-elseif(${HOSTNAME} STREQUAL  "the_name_of_your_machine")
+elseif(${HOSTNAME} STREQUAL  "4e7c6602bd6f")
   # change the_name_of_your_machine to what /bin/hostname returns
 
-  message(STATUS "Using the_name_of_your_machine compilation options")
+  message(STATUS "Using 4e7c6602bd6f compilation options")
   # start with an empty section, and see what fails as you go through the readme.text instructions
 
 else ()

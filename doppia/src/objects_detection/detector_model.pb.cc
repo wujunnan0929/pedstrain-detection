@@ -76,32 +76,32 @@ void protobuf_AssignDesc_detector_5fmodel_2eproto() {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LinearSvmModel, w_),
   };
   LinearSvmModel_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       LinearSvmModel_descriptor_,
       LinearSvmModel::default_instance_,
       LinearSvmModel_offsets_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LinearSvmModel, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LinearSvmModel, _unknown_fields_),
       -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(LinearSvmModel));
+      -1,
+      sizeof(LinearSvmModel),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LinearSvmModel, _internal_metadata_),
+      -1);
   IntegralChannelsFeature_descriptor_ = file->message_type(1);
   static const int IntegralChannelsFeature_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(IntegralChannelsFeature, channel_index_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(IntegralChannelsFeature, box_),
   };
   IntegralChannelsFeature_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       IntegralChannelsFeature_descriptor_,
       IntegralChannelsFeature::default_instance_,
       IntegralChannelsFeature_offsets_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(IntegralChannelsFeature, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(IntegralChannelsFeature, _unknown_fields_),
       -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(IntegralChannelsFeature));
+      -1,
+      sizeof(IntegralChannelsFeature),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(IntegralChannelsFeature, _internal_metadata_),
+      -1);
   IntegralChannelDecisionStump_descriptor_ = file->message_type(2);
   static const int IntegralChannelDecisionStump_offsets_[5] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(IntegralChannelDecisionStump, feature_),
@@ -111,16 +111,16 @@ void protobuf_AssignDesc_detector_5fmodel_2eproto() {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(IntegralChannelDecisionStump, false_leaf_weight_),
   };
   IntegralChannelDecisionStump_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       IntegralChannelDecisionStump_descriptor_,
       IntegralChannelDecisionStump::default_instance_,
       IntegralChannelDecisionStump_offsets_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(IntegralChannelDecisionStump, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(IntegralChannelDecisionStump, _unknown_fields_),
       -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(IntegralChannelDecisionStump));
+      -1,
+      sizeof(IntegralChannelDecisionStump),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(IntegralChannelDecisionStump, _internal_metadata_),
+      -1);
   IntegralChannelBinaryDecisionTreeNode_descriptor_ = file->message_type(3);
   static const int IntegralChannelBinaryDecisionTreeNode_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(IntegralChannelBinaryDecisionTreeNode, id_),
@@ -129,47 +129,47 @@ void protobuf_AssignDesc_detector_5fmodel_2eproto() {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(IntegralChannelBinaryDecisionTreeNode, decision_stump_),
   };
   IntegralChannelBinaryDecisionTreeNode_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       IntegralChannelBinaryDecisionTreeNode_descriptor_,
       IntegralChannelBinaryDecisionTreeNode::default_instance_,
       IntegralChannelBinaryDecisionTreeNode_offsets_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(IntegralChannelBinaryDecisionTreeNode, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(IntegralChannelBinaryDecisionTreeNode, _unknown_fields_),
       -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(IntegralChannelBinaryDecisionTreeNode));
+      -1,
+      sizeof(IntegralChannelBinaryDecisionTreeNode),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(IntegralChannelBinaryDecisionTreeNode, _internal_metadata_),
+      -1);
   IntegralChannelBinaryDecisionTree_descriptor_ = file->message_type(4);
   static const int IntegralChannelBinaryDecisionTree_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(IntegralChannelBinaryDecisionTree, nodes_),
   };
   IntegralChannelBinaryDecisionTree_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       IntegralChannelBinaryDecisionTree_descriptor_,
       IntegralChannelBinaryDecisionTree::default_instance_,
       IntegralChannelBinaryDecisionTree_offsets_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(IntegralChannelBinaryDecisionTree, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(IntegralChannelBinaryDecisionTree, _unknown_fields_),
       -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(IntegralChannelBinaryDecisionTree));
+      -1,
+      sizeof(IntegralChannelBinaryDecisionTree),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(IntegralChannelBinaryDecisionTree, _internal_metadata_),
+      -1);
   IntegralChannelStumpSet_descriptor_ = file->message_type(5);
   static const int IntegralChannelStumpSet_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(IntegralChannelStumpSet, nodes_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(IntegralChannelStumpSet, weights_),
   };
   IntegralChannelStumpSet_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       IntegralChannelStumpSet_descriptor_,
       IntegralChannelStumpSet::default_instance_,
       IntegralChannelStumpSet_offsets_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(IntegralChannelStumpSet, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(IntegralChannelStumpSet, _unknown_fields_),
       -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(IntegralChannelStumpSet));
+      -1,
+      sizeof(IntegralChannelStumpSet),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(IntegralChannelStumpSet, _internal_metadata_),
+      -1);
   SoftCascadeOverIntegralChannelsStage_descriptor_ = file->message_type(6);
   static const int SoftCascadeOverIntegralChannelsStage_offsets_[7] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SoftCascadeOverIntegralChannelsStage, feature_type_),
@@ -181,16 +181,16 @@ void protobuf_AssignDesc_detector_5fmodel_2eproto() {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SoftCascadeOverIntegralChannelsStage, cascade_threshold_),
   };
   SoftCascadeOverIntegralChannelsStage_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       SoftCascadeOverIntegralChannelsStage_descriptor_,
       SoftCascadeOverIntegralChannelsStage::default_instance_,
       SoftCascadeOverIntegralChannelsStage_offsets_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SoftCascadeOverIntegralChannelsStage, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SoftCascadeOverIntegralChannelsStage, _unknown_fields_),
       -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(SoftCascadeOverIntegralChannelsStage));
+      -1,
+      sizeof(SoftCascadeOverIntegralChannelsStage),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SoftCascadeOverIntegralChannelsStage, _internal_metadata_),
+      -1);
   SoftCascadeOverIntegralChannelsStage_FeatureTypes_descriptor_ = SoftCascadeOverIntegralChannelsStage_descriptor_->enum_type(0);
   SoftCascadeOverIntegralChannelsModel_descriptor_ = file->message_type(7);
   static const int SoftCascadeOverIntegralChannelsModel_offsets_[3] = {
@@ -199,16 +199,16 @@ void protobuf_AssignDesc_detector_5fmodel_2eproto() {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SoftCascadeOverIntegralChannelsModel, shrinking_factor_),
   };
   SoftCascadeOverIntegralChannelsModel_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       SoftCascadeOverIntegralChannelsModel_descriptor_,
       SoftCascadeOverIntegralChannelsModel::default_instance_,
       SoftCascadeOverIntegralChannelsModel_offsets_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SoftCascadeOverIntegralChannelsModel, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SoftCascadeOverIntegralChannelsModel, _unknown_fields_),
       -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(SoftCascadeOverIntegralChannelsModel));
+      -1,
+      sizeof(SoftCascadeOverIntegralChannelsModel),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SoftCascadeOverIntegralChannelsModel, _internal_metadata_),
+      -1);
   DetectorModel_descriptor_ = file->message_type(8);
   static const int DetectorModel_offsets_[11] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DetectorModel, detector_name_),
@@ -224,16 +224,16 @@ void protobuf_AssignDesc_detector_5fmodel_2eproto() {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DetectorModel, occlusion_type_),
   };
   DetectorModel_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       DetectorModel_descriptor_,
       DetectorModel::default_instance_,
       DetectorModel_offsets_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DetectorModel, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DetectorModel, _unknown_fields_),
       -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(DetectorModel));
+      -1,
+      sizeof(DetectorModel),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DetectorModel, _internal_metadata_),
+      -1);
   DetectorModel_DetectorTypes_descriptor_ = DetectorModel_descriptor_->enum_type(0);
   DetectorModel_OcclusionTypes_descriptor_ = DetectorModel_descriptor_->enum_type(1);
   MultiScalesDetectorModel_descriptor_ = file->message_type(9);
@@ -243,16 +243,16 @@ void protobuf_AssignDesc_detector_5fmodel_2eproto() {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MultiScalesDetectorModel, detectors_),
   };
   MultiScalesDetectorModel_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       MultiScalesDetectorModel_descriptor_,
       MultiScalesDetectorModel::default_instance_,
       MultiScalesDetectorModel_offsets_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MultiScalesDetectorModel, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MultiScalesDetectorModel, _unknown_fields_),
       -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(MultiScalesDetectorModel));
+      -1,
+      sizeof(MultiScalesDetectorModel),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MultiScalesDetectorModel, _internal_metadata_),
+      -1);
   DetectorModelsBundle_descriptor_ = file->message_type(10);
   static const int DetectorModelsBundle_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DetectorModelsBundle, bundle_name_),
@@ -260,16 +260,16 @@ void protobuf_AssignDesc_detector_5fmodel_2eproto() {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DetectorModelsBundle, detectors_),
   };
   DetectorModelsBundle_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       DetectorModelsBundle_descriptor_,
       DetectorModelsBundle::default_instance_,
       DetectorModelsBundle_offsets_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DetectorModelsBundle, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DetectorModelsBundle, _unknown_fields_),
       -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(DetectorModelsBundle));
+      -1,
+      sizeof(DetectorModelsBundle),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DetectorModelsBundle, _internal_metadata_),
+      -1);
 }
 
 namespace {
@@ -283,27 +283,27 @@ inline void protobuf_AssignDescriptorsOnce() {
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    LinearSvmModel_descriptor_, &LinearSvmModel::default_instance());
+      LinearSvmModel_descriptor_, &LinearSvmModel::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    IntegralChannelsFeature_descriptor_, &IntegralChannelsFeature::default_instance());
+      IntegralChannelsFeature_descriptor_, &IntegralChannelsFeature::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    IntegralChannelDecisionStump_descriptor_, &IntegralChannelDecisionStump::default_instance());
+      IntegralChannelDecisionStump_descriptor_, &IntegralChannelDecisionStump::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    IntegralChannelBinaryDecisionTreeNode_descriptor_, &IntegralChannelBinaryDecisionTreeNode::default_instance());
+      IntegralChannelBinaryDecisionTreeNode_descriptor_, &IntegralChannelBinaryDecisionTreeNode::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    IntegralChannelBinaryDecisionTree_descriptor_, &IntegralChannelBinaryDecisionTree::default_instance());
+      IntegralChannelBinaryDecisionTree_descriptor_, &IntegralChannelBinaryDecisionTree::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    IntegralChannelStumpSet_descriptor_, &IntegralChannelStumpSet::default_instance());
+      IntegralChannelStumpSet_descriptor_, &IntegralChannelStumpSet::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    SoftCascadeOverIntegralChannelsStage_descriptor_, &SoftCascadeOverIntegralChannelsStage::default_instance());
+      SoftCascadeOverIntegralChannelsStage_descriptor_, &SoftCascadeOverIntegralChannelsStage::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    SoftCascadeOverIntegralChannelsModel_descriptor_, &SoftCascadeOverIntegralChannelsModel::default_instance());
+      SoftCascadeOverIntegralChannelsModel_descriptor_, &SoftCascadeOverIntegralChannelsModel::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    DetectorModel_descriptor_, &DetectorModel::default_instance());
+      DetectorModel_descriptor_, &DetectorModel::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    MultiScalesDetectorModel_descriptor_, &MultiScalesDetectorModel::default_instance());
+      MultiScalesDetectorModel_descriptor_, &MultiScalesDetectorModel::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    DetectorModelsBundle_descriptor_, &DetectorModelsBundle::default_instance());
+      DetectorModelsBundle_descriptor_, &DetectorModelsBundle::default_instance());
 }
 
 }  // namespace
@@ -447,34 +447,48 @@ struct StaticDescriptorInitializer_detector_5fmodel_2eproto {
   }
 } static_descriptor_initializer_detector_5fmodel_2eproto_;
 
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD;
+static void MergeFromFail(int line) {
+  GOOGLE_CHECK(false) << __FILE__ << ":" << line;
+}
+
+}  // namespace
+
+
 // ===================================================================
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int LinearSvmModel::kSolvedTypeFieldNumber;
 const int LinearSvmModel::kNumberOfClassesFieldNumber;
 const int LinearSvmModel::kLabelsFieldNumber;
 const int LinearSvmModel::kNumberOfFeaturesFieldNumber;
 const int LinearSvmModel::kBiasFieldNumber;
 const int LinearSvmModel::kWFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 LinearSvmModel::LinearSvmModel()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
   SharedCtor();
+  // @@protoc_insertion_point(constructor:doppia_protobuf.LinearSvmModel)
 }
 
 void LinearSvmModel::InitAsDefaultInstance() {
 }
 
 LinearSvmModel::LinearSvmModel(const LinearSvmModel& from)
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(),
+    _internal_metadata_(NULL) {
   SharedCtor();
   MergeFrom(from);
+  // @@protoc_insertion_point(copy_constructor:doppia_protobuf.LinearSvmModel)
 }
 
 void LinearSvmModel::SharedCtor() {
+  ::google::protobuf::internal::GetEmptyString();
   _cached_size_ = 0;
-  solved_type_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  solved_type_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   number_of_classes_ = 0u;
   number_of_features_ = 0u;
   bias_ = 0;
@@ -482,13 +496,12 @@ void LinearSvmModel::SharedCtor() {
 }
 
 LinearSvmModel::~LinearSvmModel() {
+  // @@protoc_insertion_point(destructor:doppia_protobuf.LinearSvmModel)
   SharedDtor();
 }
 
 void LinearSvmModel::SharedDtor() {
-  if (solved_type_ != &::google::protobuf::internal::kEmptyString) {
-    delete solved_type_;
-  }
+  solved_type_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (this != default_instance_) {
   }
 }
@@ -510,44 +523,63 @@ const LinearSvmModel& LinearSvmModel::default_instance() {
 
 LinearSvmModel* LinearSvmModel::default_instance_ = NULL;
 
-LinearSvmModel* LinearSvmModel::New() const {
-  return new LinearSvmModel;
+LinearSvmModel* LinearSvmModel::New(::google::protobuf::Arena* arena) const {
+  LinearSvmModel* n = new LinearSvmModel;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void LinearSvmModel::Clear() {
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<LinearSvmModel*>(16)->f)
+
+#define ZR_(first, last) do {\
+  ::memset(&first, 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  if (_has_bits_[0 / 32] & 27u) {
+    ZR_(number_of_classes_, number_of_features_);
     if (has_solved_type()) {
-      if (solved_type_ != &::google::protobuf::internal::kEmptyString) {
-        solved_type_->clear();
-      }
+      solved_type_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
     }
-    number_of_classes_ = 0u;
-    number_of_features_ = 0u;
     bias_ = 0;
   }
+
+#undef ZR_HELPER_
+#undef ZR_
+
   labels_.Clear();
   w_.Clear();
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  if (_internal_metadata_.have_unknown_fields()) {
+    mutable_unknown_fields()->Clear();
+  }
 }
 
 bool LinearSvmModel::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:doppia_protobuf.LinearSvmModel)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string solved_type = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_solved_type()));
-          ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
             this->solved_type().data(), this->solved_type().length(),
-            ::google::protobuf::internal::WireFormat::PARSE);
+            ::google::protobuf::internal::WireFormat::PARSE,
+            "doppia_protobuf.LinearSvmModel.solved_type");
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(16)) goto parse_number_of_classes;
         break;
@@ -555,15 +587,14 @@ bool LinearSvmModel::MergePartialFromCodedStream(
 
       // optional uint32 number_of_classes = 2;
       case 2: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+        if (tag == 16) {
          parse_number_of_classes:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &number_of_classes_)));
           set_has_number_of_classes();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(24)) goto parse_labels;
         break;
@@ -571,20 +602,17 @@ bool LinearSvmModel::MergePartialFromCodedStream(
 
       // repeated int32 labels = 3;
       case 3: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+        if (tag == 24) {
          parse_labels:
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  1, 24, input, this->mutable_labels())));
-        } else if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag)
-                   == ::google::protobuf::internal::WireFormatLite::
-                      WIRETYPE_LENGTH_DELIMITED) {
+        } else if (tag == 26) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, this->mutable_labels())));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(24)) goto parse_labels;
         if (input->ExpectTag(32)) goto parse_number_of_features;
@@ -593,15 +621,14 @@ bool LinearSvmModel::MergePartialFromCodedStream(
 
       // optional uint32 number_of_features = 4;
       case 4: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+        if (tag == 32) {
          parse_number_of_features:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &number_of_features_)));
           set_has_number_of_features();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(45)) goto parse_bias;
         break;
@@ -609,15 +636,14 @@ bool LinearSvmModel::MergePartialFromCodedStream(
 
       // required float bias = 5;
       case 5: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED32) {
+        if (tag == 45) {
          parse_bias:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &bias_)));
           set_has_bias();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(53)) goto parse_w;
         break;
@@ -625,31 +651,29 @@ bool LinearSvmModel::MergePartialFromCodedStream(
 
       // repeated float w = 6;
       case 6: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED32) {
+        if (tag == 53) {
          parse_w:
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  1, 53, input, this->mutable_w())));
-        } else if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag)
-                   == ::google::protobuf::internal::WireFormatLite::
-                      WIRETYPE_LENGTH_DELIMITED) {
+        } else if (tag == 50) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, this->mutable_w())));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(53)) goto parse_w;
-        if (input->ExpectAtEnd()) return true;
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -657,18 +681,25 @@ bool LinearSvmModel::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:doppia_protobuf.LinearSvmModel)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:doppia_protobuf.LinearSvmModel)
+  return false;
 #undef DO_
 }
 
 void LinearSvmModel::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:doppia_protobuf.LinearSvmModel)
   // optional string solved_type = 1;
   if (has_solved_type()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
       this->solved_type().data(), this->solved_type().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE);
-    ::google::protobuf::internal::WireFormatLite::WriteString(
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "doppia_protobuf.LinearSvmModel.solved_type");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       1, this->solved_type(), output);
   }
 
@@ -699,19 +730,22 @@ void LinearSvmModel::SerializeWithCachedSizes(
       6, this->w(i), output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:doppia_protobuf.LinearSvmModel)
 }
 
 ::google::protobuf::uint8* LinearSvmModel::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:doppia_protobuf.LinearSvmModel)
   // optional string solved_type = 1;
   if (has_solved_type()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
       this->solved_type().data(), this->solved_type().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE);
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "doppia_protobuf.LinearSvmModel.solved_type");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         1, this->solved_type(), target);
@@ -744,17 +778,22 @@ void LinearSvmModel::SerializeWithCachedSizes(
       WriteFloatToArray(6, this->w(i), target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:doppia_protobuf.LinearSvmModel)
   return target;
 }
 
 int LinearSvmModel::ByteSize() const {
   int total_size = 0;
 
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+  // required float bias = 5;
+  if (has_bias()) {
+    total_size += 1 + 4;
+  }
+  if (_has_bits_[0 / 32] & 11u) {
     // optional string solved_type = 1;
     if (has_solved_type()) {
       total_size += 1 +
@@ -776,11 +815,6 @@ int LinearSvmModel::ByteSize() const {
           this->number_of_features());
     }
 
-    // required float bias = 5;
-    if (has_bias()) {
-      total_size += 1 + 4;
-    }
-
   }
   // repeated int32 labels = 3;
   {
@@ -799,7 +833,7 @@ int LinearSvmModel::ByteSize() const {
     total_size += 1 * this->w_size() + data_size;
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         unknown_fields());
@@ -811,10 +845,10 @@ int LinearSvmModel::ByteSize() const {
 }
 
 void LinearSvmModel::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  const LinearSvmModel* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const LinearSvmModel*>(
-      &from);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const LinearSvmModel* source = 
+      ::google::protobuf::internal::DynamicCastToGenerated<const LinearSvmModel>(
+          &from);
   if (source == NULL) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -823,12 +857,13 @@ void LinearSvmModel::MergeFrom(const ::google::protobuf::Message& from) {
 }
 
 void LinearSvmModel::MergeFrom(const LinearSvmModel& from) {
-  GOOGLE_CHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   labels_.MergeFrom(from.labels_);
   w_.MergeFrom(from.w_);
   if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     if (from.has_solved_type()) {
-      set_solved_type(from.solved_type());
+      set_has_solved_type();
+      solved_type_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.solved_type_);
     }
     if (from.has_number_of_classes()) {
       set_number_of_classes(from.number_of_classes());
@@ -840,7 +875,9 @@ void LinearSvmModel::MergeFrom(const LinearSvmModel& from) {
       set_bias(from.bias());
     }
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+  if (from._internal_metadata_.have_unknown_fields()) {
+    mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+  }
 }
 
 void LinearSvmModel::CopyFrom(const ::google::protobuf::Message& from) {
@@ -862,17 +899,19 @@ bool LinearSvmModel::IsInitialized() const {
 }
 
 void LinearSvmModel::Swap(LinearSvmModel* other) {
-  if (other != this) {
-    std::swap(solved_type_, other->solved_type_);
-    std::swap(number_of_classes_, other->number_of_classes_);
-    labels_.Swap(&other->labels_);
-    std::swap(number_of_features_, other->number_of_features_);
-    std::swap(bias_, other->bias_);
-    w_.Swap(&other->w_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void LinearSvmModel::InternalSwap(LinearSvmModel* other) {
+  solved_type_.Swap(&other->solved_type_);
+  std::swap(number_of_classes_, other->number_of_classes_);
+  labels_.UnsafeArenaSwap(&other->labels_);
+  std::swap(number_of_features_, other->number_of_features_);
+  std::swap(bias_, other->bias_);
+  w_.UnsafeArenaSwap(&other->w_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata LinearSvmModel::GetMetadata() const {
@@ -883,17 +922,207 @@ void LinearSvmModel::Swap(LinearSvmModel* other) {
   return metadata;
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// LinearSvmModel
+
+// optional string solved_type = 1;
+bool LinearSvmModel::has_solved_type() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+void LinearSvmModel::set_has_solved_type() {
+  _has_bits_[0] |= 0x00000001u;
+}
+void LinearSvmModel::clear_has_solved_type() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+void LinearSvmModel::clear_solved_type() {
+  solved_type_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  clear_has_solved_type();
+}
+ const ::std::string& LinearSvmModel::solved_type() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.LinearSvmModel.solved_type)
+  return solved_type_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ void LinearSvmModel::set_solved_type(const ::std::string& value) {
+  set_has_solved_type();
+  solved_type_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:doppia_protobuf.LinearSvmModel.solved_type)
+}
+ void LinearSvmModel::set_solved_type(const char* value) {
+  set_has_solved_type();
+  solved_type_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:doppia_protobuf.LinearSvmModel.solved_type)
+}
+ void LinearSvmModel::set_solved_type(const char* value, size_t size) {
+  set_has_solved_type();
+  solved_type_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:doppia_protobuf.LinearSvmModel.solved_type)
+}
+ ::std::string* LinearSvmModel::mutable_solved_type() {
+  set_has_solved_type();
+  // @@protoc_insertion_point(field_mutable:doppia_protobuf.LinearSvmModel.solved_type)
+  return solved_type_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ ::std::string* LinearSvmModel::release_solved_type() {
+  clear_has_solved_type();
+  return solved_type_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ void LinearSvmModel::set_allocated_solved_type(::std::string* solved_type) {
+  if (solved_type != NULL) {
+    set_has_solved_type();
+  } else {
+    clear_has_solved_type();
+  }
+  solved_type_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), solved_type);
+  // @@protoc_insertion_point(field_set_allocated:doppia_protobuf.LinearSvmModel.solved_type)
+}
+
+// optional uint32 number_of_classes = 2;
+bool LinearSvmModel::has_number_of_classes() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+void LinearSvmModel::set_has_number_of_classes() {
+  _has_bits_[0] |= 0x00000002u;
+}
+void LinearSvmModel::clear_has_number_of_classes() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+void LinearSvmModel::clear_number_of_classes() {
+  number_of_classes_ = 0u;
+  clear_has_number_of_classes();
+}
+ ::google::protobuf::uint32 LinearSvmModel::number_of_classes() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.LinearSvmModel.number_of_classes)
+  return number_of_classes_;
+}
+ void LinearSvmModel::set_number_of_classes(::google::protobuf::uint32 value) {
+  set_has_number_of_classes();
+  number_of_classes_ = value;
+  // @@protoc_insertion_point(field_set:doppia_protobuf.LinearSvmModel.number_of_classes)
+}
+
+// repeated int32 labels = 3;
+int LinearSvmModel::labels_size() const {
+  return labels_.size();
+}
+void LinearSvmModel::clear_labels() {
+  labels_.Clear();
+}
+ ::google::protobuf::int32 LinearSvmModel::labels(int index) const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.LinearSvmModel.labels)
+  return labels_.Get(index);
+}
+ void LinearSvmModel::set_labels(int index, ::google::protobuf::int32 value) {
+  labels_.Set(index, value);
+  // @@protoc_insertion_point(field_set:doppia_protobuf.LinearSvmModel.labels)
+}
+ void LinearSvmModel::add_labels(::google::protobuf::int32 value) {
+  labels_.Add(value);
+  // @@protoc_insertion_point(field_add:doppia_protobuf.LinearSvmModel.labels)
+}
+ const ::google::protobuf::RepeatedField< ::google::protobuf::int32 >&
+LinearSvmModel::labels() const {
+  // @@protoc_insertion_point(field_list:doppia_protobuf.LinearSvmModel.labels)
+  return labels_;
+}
+ ::google::protobuf::RepeatedField< ::google::protobuf::int32 >*
+LinearSvmModel::mutable_labels() {
+  // @@protoc_insertion_point(field_mutable_list:doppia_protobuf.LinearSvmModel.labels)
+  return &labels_;
+}
+
+// optional uint32 number_of_features = 4;
+bool LinearSvmModel::has_number_of_features() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+void LinearSvmModel::set_has_number_of_features() {
+  _has_bits_[0] |= 0x00000008u;
+}
+void LinearSvmModel::clear_has_number_of_features() {
+  _has_bits_[0] &= ~0x00000008u;
+}
+void LinearSvmModel::clear_number_of_features() {
+  number_of_features_ = 0u;
+  clear_has_number_of_features();
+}
+ ::google::protobuf::uint32 LinearSvmModel::number_of_features() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.LinearSvmModel.number_of_features)
+  return number_of_features_;
+}
+ void LinearSvmModel::set_number_of_features(::google::protobuf::uint32 value) {
+  set_has_number_of_features();
+  number_of_features_ = value;
+  // @@protoc_insertion_point(field_set:doppia_protobuf.LinearSvmModel.number_of_features)
+}
+
+// required float bias = 5;
+bool LinearSvmModel::has_bias() const {
+  return (_has_bits_[0] & 0x00000010u) != 0;
+}
+void LinearSvmModel::set_has_bias() {
+  _has_bits_[0] |= 0x00000010u;
+}
+void LinearSvmModel::clear_has_bias() {
+  _has_bits_[0] &= ~0x00000010u;
+}
+void LinearSvmModel::clear_bias() {
+  bias_ = 0;
+  clear_has_bias();
+}
+ float LinearSvmModel::bias() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.LinearSvmModel.bias)
+  return bias_;
+}
+ void LinearSvmModel::set_bias(float value) {
+  set_has_bias();
+  bias_ = value;
+  // @@protoc_insertion_point(field_set:doppia_protobuf.LinearSvmModel.bias)
+}
+
+// repeated float w = 6;
+int LinearSvmModel::w_size() const {
+  return w_.size();
+}
+void LinearSvmModel::clear_w() {
+  w_.Clear();
+}
+ float LinearSvmModel::w(int index) const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.LinearSvmModel.w)
+  return w_.Get(index);
+}
+ void LinearSvmModel::set_w(int index, float value) {
+  w_.Set(index, value);
+  // @@protoc_insertion_point(field_set:doppia_protobuf.LinearSvmModel.w)
+}
+ void LinearSvmModel::add_w(float value) {
+  w_.Add(value);
+  // @@protoc_insertion_point(field_add:doppia_protobuf.LinearSvmModel.w)
+}
+ const ::google::protobuf::RepeatedField< float >&
+LinearSvmModel::w() const {
+  // @@protoc_insertion_point(field_list:doppia_protobuf.LinearSvmModel.w)
+  return w_;
+}
+ ::google::protobuf::RepeatedField< float >*
+LinearSvmModel::mutable_w() {
+  // @@protoc_insertion_point(field_mutable_list:doppia_protobuf.LinearSvmModel.w)
+  return &w_;
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int IntegralChannelsFeature::kChannelIndexFieldNumber;
 const int IntegralChannelsFeature::kBoxFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 IntegralChannelsFeature::IntegralChannelsFeature()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
   SharedCtor();
+  // @@protoc_insertion_point(constructor:doppia_protobuf.IntegralChannelsFeature)
 }
 
 void IntegralChannelsFeature::InitAsDefaultInstance() {
@@ -901,9 +1130,11 @@ void IntegralChannelsFeature::InitAsDefaultInstance() {
 }
 
 IntegralChannelsFeature::IntegralChannelsFeature(const IntegralChannelsFeature& from)
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(),
+    _internal_metadata_(NULL) {
   SharedCtor();
   MergeFrom(from);
+  // @@protoc_insertion_point(copy_constructor:doppia_protobuf.IntegralChannelsFeature)
 }
 
 void IntegralChannelsFeature::SharedCtor() {
@@ -914,6 +1145,7 @@ void IntegralChannelsFeature::SharedCtor() {
 }
 
 IntegralChannelsFeature::~IntegralChannelsFeature() {
+  // @@protoc_insertion_point(destructor:doppia_protobuf.IntegralChannelsFeature)
   SharedDtor();
 }
 
@@ -940,37 +1172,46 @@ const IntegralChannelsFeature& IntegralChannelsFeature::default_instance() {
 
 IntegralChannelsFeature* IntegralChannelsFeature::default_instance_ = NULL;
 
-IntegralChannelsFeature* IntegralChannelsFeature::New() const {
-  return new IntegralChannelsFeature;
+IntegralChannelsFeature* IntegralChannelsFeature::New(::google::protobuf::Arena* arena) const {
+  IntegralChannelsFeature* n = new IntegralChannelsFeature;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void IntegralChannelsFeature::Clear() {
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+  if (_has_bits_[0 / 32] & 3u) {
     channel_index_ = 0;
     if (has_box()) {
       if (box_ != NULL) box_->::doppia_protobuf::Box::Clear();
     }
   }
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  if (_internal_metadata_.have_unknown_fields()) {
+    mutable_unknown_fields()->Clear();
+  }
 }
 
 bool IntegralChannelsFeature::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:doppia_protobuf.IntegralChannelsFeature)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // required int32 channel_index = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+        if (tag == 8) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &channel_index_)));
           set_has_channel_index();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(18)) goto parse_box;
         break;
@@ -978,23 +1219,23 @@ bool IntegralChannelsFeature::MergePartialFromCodedStream(
 
       // required .doppia_protobuf.Box box = 2;
       case 2: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+        if (tag == 18) {
          parse_box:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_box()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectAtEnd()) return true;
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -1002,12 +1243,18 @@ bool IntegralChannelsFeature::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:doppia_protobuf.IntegralChannelsFeature)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:doppia_protobuf.IntegralChannelsFeature)
+  return false;
 #undef DO_
 }
 
 void IntegralChannelsFeature::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:doppia_protobuf.IntegralChannelsFeature)
   // required int32 channel_index = 1;
   if (has_channel_index()) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->channel_index(), output);
@@ -1016,17 +1263,19 @@ void IntegralChannelsFeature::SerializeWithCachedSizes(
   // required .doppia_protobuf.Box box = 2;
   if (has_box()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->box(), output);
+      2, *this->box_, output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:doppia_protobuf.IntegralChannelsFeature)
 }
 
 ::google::protobuf::uint8* IntegralChannelsFeature::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:doppia_protobuf.IntegralChannelsFeature)
   // required int32 channel_index = 1;
   if (has_channel_index()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(1, this->channel_index(), target);
@@ -1036,36 +1285,54 @@ void IntegralChannelsFeature::SerializeWithCachedSizes(
   if (has_box()) {
     target = ::google::protobuf::internal::WireFormatLite::
       WriteMessageNoVirtualToArray(
-        2, this->box(), target);
+        2, *this->box_, target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:doppia_protobuf.IntegralChannelsFeature)
   return target;
 }
 
+int IntegralChannelsFeature::RequiredFieldsByteSizeFallback() const {
+  int total_size = 0;
+
+  if (has_channel_index()) {
+    // required int32 channel_index = 1;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->channel_index());
+  }
+
+  if (has_box()) {
+    // required .doppia_protobuf.Box box = 2;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->box_);
+  }
+
+  return total_size;
+}
 int IntegralChannelsFeature::ByteSize() const {
   int total_size = 0;
 
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+  if (((_has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
     // required int32 channel_index = 1;
-    if (has_channel_index()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(
-          this->channel_index());
-    }
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->channel_index());
 
     // required .doppia_protobuf.Box box = 2;
-    if (has_box()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->box());
-    }
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->box_);
 
+  } else {
+    total_size += RequiredFieldsByteSizeFallback();
   }
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         unknown_fields());
@@ -1077,10 +1344,10 @@ int IntegralChannelsFeature::ByteSize() const {
 }
 
 void IntegralChannelsFeature::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  const IntegralChannelsFeature* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const IntegralChannelsFeature*>(
-      &from);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const IntegralChannelsFeature* source = 
+      ::google::protobuf::internal::DynamicCastToGenerated<const IntegralChannelsFeature>(
+          &from);
   if (source == NULL) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1089,7 +1356,7 @@ void IntegralChannelsFeature::MergeFrom(const ::google::protobuf::Message& from)
 }
 
 void IntegralChannelsFeature::MergeFrom(const IntegralChannelsFeature& from) {
-  GOOGLE_CHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     if (from.has_channel_index()) {
       set_channel_index(from.channel_index());
@@ -1098,7 +1365,9 @@ void IntegralChannelsFeature::MergeFrom(const IntegralChannelsFeature& from) {
       mutable_box()->::doppia_protobuf::Box::MergeFrom(from.box());
     }
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+  if (from._internal_metadata_.have_unknown_fields()) {
+    mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+  }
 }
 
 void IntegralChannelsFeature::CopyFrom(const ::google::protobuf::Message& from) {
@@ -1117,19 +1386,21 @@ bool IntegralChannelsFeature::IsInitialized() const {
   if ((_has_bits_[0] & 0x00000003) != 0x00000003) return false;
 
   if (has_box()) {
-    if (!this->box().IsInitialized()) return false;
+    if (!this->box_->IsInitialized()) return false;
   }
   return true;
 }
 
 void IntegralChannelsFeature::Swap(IntegralChannelsFeature* other) {
-  if (other != this) {
-    std::swap(channel_index_, other->channel_index_);
-    std::swap(box_, other->box_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void IntegralChannelsFeature::InternalSwap(IntegralChannelsFeature* other) {
+  std::swap(channel_index_, other->channel_index_);
+  std::swap(box_, other->box_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata IntegralChannelsFeature::GetMetadata() const {
@@ -1140,20 +1411,92 @@ void IntegralChannelsFeature::Swap(IntegralChannelsFeature* other) {
   return metadata;
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// IntegralChannelsFeature
+
+// required int32 channel_index = 1;
+bool IntegralChannelsFeature::has_channel_index() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+void IntegralChannelsFeature::set_has_channel_index() {
+  _has_bits_[0] |= 0x00000001u;
+}
+void IntegralChannelsFeature::clear_has_channel_index() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+void IntegralChannelsFeature::clear_channel_index() {
+  channel_index_ = 0;
+  clear_has_channel_index();
+}
+ ::google::protobuf::int32 IntegralChannelsFeature::channel_index() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.IntegralChannelsFeature.channel_index)
+  return channel_index_;
+}
+ void IntegralChannelsFeature::set_channel_index(::google::protobuf::int32 value) {
+  set_has_channel_index();
+  channel_index_ = value;
+  // @@protoc_insertion_point(field_set:doppia_protobuf.IntegralChannelsFeature.channel_index)
+}
+
+// required .doppia_protobuf.Box box = 2;
+bool IntegralChannelsFeature::has_box() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+void IntegralChannelsFeature::set_has_box() {
+  _has_bits_[0] |= 0x00000002u;
+}
+void IntegralChannelsFeature::clear_has_box() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+void IntegralChannelsFeature::clear_box() {
+  if (box_ != NULL) box_->::doppia_protobuf::Box::Clear();
+  clear_has_box();
+}
+const ::doppia_protobuf::Box& IntegralChannelsFeature::box() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.IntegralChannelsFeature.box)
+  return box_ != NULL ? *box_ : *default_instance_->box_;
+}
+::doppia_protobuf::Box* IntegralChannelsFeature::mutable_box() {
+  set_has_box();
+  if (box_ == NULL) {
+    box_ = new ::doppia_protobuf::Box;
+  }
+  // @@protoc_insertion_point(field_mutable:doppia_protobuf.IntegralChannelsFeature.box)
+  return box_;
+}
+::doppia_protobuf::Box* IntegralChannelsFeature::release_box() {
+  clear_has_box();
+  ::doppia_protobuf::Box* temp = box_;
+  box_ = NULL;
+  return temp;
+}
+void IntegralChannelsFeature::set_allocated_box(::doppia_protobuf::Box* box) {
+  delete box_;
+  box_ = box;
+  if (box) {
+    set_has_box();
+  } else {
+    clear_has_box();
+  }
+  // @@protoc_insertion_point(field_set_allocated:doppia_protobuf.IntegralChannelsFeature.box)
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int IntegralChannelDecisionStump::kFeatureFieldNumber;
 const int IntegralChannelDecisionStump::kFeatureThresholdFieldNumber;
 const int IntegralChannelDecisionStump::kLargerThanThresholdFieldNumber;
 const int IntegralChannelDecisionStump::kTrueLeafWeightFieldNumber;
 const int IntegralChannelDecisionStump::kFalseLeafWeightFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 IntegralChannelDecisionStump::IntegralChannelDecisionStump()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
   SharedCtor();
+  // @@protoc_insertion_point(constructor:doppia_protobuf.IntegralChannelDecisionStump)
 }
 
 void IntegralChannelDecisionStump::InitAsDefaultInstance() {
@@ -1161,9 +1504,11 @@ void IntegralChannelDecisionStump::InitAsDefaultInstance() {
 }
 
 IntegralChannelDecisionStump::IntegralChannelDecisionStump(const IntegralChannelDecisionStump& from)
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(),
+    _internal_metadata_(NULL) {
   SharedCtor();
   MergeFrom(from);
+  // @@protoc_insertion_point(copy_constructor:doppia_protobuf.IntegralChannelDecisionStump)
 }
 
 void IntegralChannelDecisionStump::SharedCtor() {
@@ -1177,6 +1522,7 @@ void IntegralChannelDecisionStump::SharedCtor() {
 }
 
 IntegralChannelDecisionStump::~IntegralChannelDecisionStump() {
+  // @@protoc_insertion_point(destructor:doppia_protobuf.IntegralChannelDecisionStump)
   SharedDtor();
 }
 
@@ -1203,38 +1549,56 @@ const IntegralChannelDecisionStump& IntegralChannelDecisionStump::default_instan
 
 IntegralChannelDecisionStump* IntegralChannelDecisionStump::default_instance_ = NULL;
 
-IntegralChannelDecisionStump* IntegralChannelDecisionStump::New() const {
-  return new IntegralChannelDecisionStump;
+IntegralChannelDecisionStump* IntegralChannelDecisionStump::New(::google::protobuf::Arena* arena) const {
+  IntegralChannelDecisionStump* n = new IntegralChannelDecisionStump;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void IntegralChannelDecisionStump::Clear() {
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<IntegralChannelDecisionStump*>(16)->f)
+
+#define ZR_(first, last) do {\
+  ::memset(&first, 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  if (_has_bits_[0 / 32] & 31u) {
+    ZR_(feature_threshold_, false_leaf_weight_);
     if (has_feature()) {
       if (feature_ != NULL) feature_->::doppia_protobuf::IntegralChannelsFeature::Clear();
     }
-    feature_threshold_ = 0;
-    larger_than_threshold_ = false;
-    true_leaf_weight_ = 0;
-    false_leaf_weight_ = 0;
   }
+
+#undef ZR_HELPER_
+#undef ZR_
+
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  if (_internal_metadata_.have_unknown_fields()) {
+    mutable_unknown_fields()->Clear();
+  }
 }
 
 bool IntegralChannelDecisionStump::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:doppia_protobuf.IntegralChannelDecisionStump)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // required .doppia_protobuf.IntegralChannelsFeature feature = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_feature()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(21)) goto parse_feature_threshold;
         break;
@@ -1242,15 +1606,14 @@ bool IntegralChannelDecisionStump::MergePartialFromCodedStream(
 
       // required float feature_threshold = 2;
       case 2: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED32) {
+        if (tag == 21) {
          parse_feature_threshold:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &feature_threshold_)));
           set_has_feature_threshold();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(24)) goto parse_larger_than_threshold;
         break;
@@ -1258,15 +1621,14 @@ bool IntegralChannelDecisionStump::MergePartialFromCodedStream(
 
       // optional bool larger_than_threshold = 3 [default = false];
       case 3: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+        if (tag == 24) {
          parse_larger_than_threshold:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &larger_than_threshold_)));
           set_has_larger_than_threshold();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(85)) goto parse_true_leaf_weight;
         break;
@@ -1274,15 +1636,14 @@ bool IntegralChannelDecisionStump::MergePartialFromCodedStream(
 
       // optional float true_leaf_weight = 10;
       case 10: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED32) {
+        if (tag == 85) {
          parse_true_leaf_weight:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &true_leaf_weight_)));
           set_has_true_leaf_weight();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(93)) goto parse_false_leaf_weight;
         break;
@@ -1290,25 +1651,25 @@ bool IntegralChannelDecisionStump::MergePartialFromCodedStream(
 
       // optional float false_leaf_weight = 11;
       case 11: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED32) {
+        if (tag == 93) {
          parse_false_leaf_weight:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &false_leaf_weight_)));
           set_has_false_leaf_weight();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectAtEnd()) return true;
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -1316,16 +1677,22 @@ bool IntegralChannelDecisionStump::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:doppia_protobuf.IntegralChannelDecisionStump)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:doppia_protobuf.IntegralChannelDecisionStump)
+  return false;
 #undef DO_
 }
 
 void IntegralChannelDecisionStump::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:doppia_protobuf.IntegralChannelDecisionStump)
   // required .doppia_protobuf.IntegralChannelsFeature feature = 1;
   if (has_feature()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->feature(), output);
+      1, *this->feature_, output);
   }
 
   // required float feature_threshold = 2;
@@ -1348,19 +1715,21 @@ void IntegralChannelDecisionStump::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteFloat(11, this->false_leaf_weight(), output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:doppia_protobuf.IntegralChannelDecisionStump)
 }
 
 ::google::protobuf::uint8* IntegralChannelDecisionStump::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:doppia_protobuf.IntegralChannelDecisionStump)
   // required .doppia_protobuf.IntegralChannelsFeature feature = 1;
   if (has_feature()) {
     target = ::google::protobuf::internal::WireFormatLite::
       WriteMessageNoVirtualToArray(
-        1, this->feature(), target);
+        1, *this->feature_, target);
   }
 
   // required float feature_threshold = 2;
@@ -1383,29 +1752,47 @@ void IntegralChannelDecisionStump::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(11, this->false_leaf_weight(), target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:doppia_protobuf.IntegralChannelDecisionStump)
   return target;
 }
 
+int IntegralChannelDecisionStump::RequiredFieldsByteSizeFallback() const {
+  int total_size = 0;
+
+  if (has_feature()) {
+    // required .doppia_protobuf.IntegralChannelsFeature feature = 1;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->feature_);
+  }
+
+  if (has_feature_threshold()) {
+    // required float feature_threshold = 2;
+    total_size += 1 + 4;
+  }
+
+  return total_size;
+}
 int IntegralChannelDecisionStump::ByteSize() const {
   int total_size = 0;
 
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+  if (((_has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
     // required .doppia_protobuf.IntegralChannelsFeature feature = 1;
-    if (has_feature()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->feature());
-    }
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->feature_);
 
     // required float feature_threshold = 2;
-    if (has_feature_threshold()) {
-      total_size += 1 + 4;
-    }
+    total_size += 1 + 4;
 
+  } else {
+    total_size += RequiredFieldsByteSizeFallback();
+  }
+  if (_has_bits_[2 / 32] & 28u) {
     // optional bool larger_than_threshold = 3 [default = false];
     if (has_larger_than_threshold()) {
       total_size += 1 + 1;
@@ -1422,7 +1809,7 @@ int IntegralChannelDecisionStump::ByteSize() const {
     }
 
   }
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         unknown_fields());
@@ -1434,10 +1821,10 @@ int IntegralChannelDecisionStump::ByteSize() const {
 }
 
 void IntegralChannelDecisionStump::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  const IntegralChannelDecisionStump* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const IntegralChannelDecisionStump*>(
-      &from);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const IntegralChannelDecisionStump* source = 
+      ::google::protobuf::internal::DynamicCastToGenerated<const IntegralChannelDecisionStump>(
+          &from);
   if (source == NULL) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1446,7 +1833,7 @@ void IntegralChannelDecisionStump::MergeFrom(const ::google::protobuf::Message& 
 }
 
 void IntegralChannelDecisionStump::MergeFrom(const IntegralChannelDecisionStump& from) {
-  GOOGLE_CHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     if (from.has_feature()) {
       mutable_feature()->::doppia_protobuf::IntegralChannelsFeature::MergeFrom(from.feature());
@@ -1464,7 +1851,9 @@ void IntegralChannelDecisionStump::MergeFrom(const IntegralChannelDecisionStump&
       set_false_leaf_weight(from.false_leaf_weight());
     }
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+  if (from._internal_metadata_.have_unknown_fields()) {
+    mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+  }
 }
 
 void IntegralChannelDecisionStump::CopyFrom(const ::google::protobuf::Message& from) {
@@ -1483,22 +1872,24 @@ bool IntegralChannelDecisionStump::IsInitialized() const {
   if ((_has_bits_[0] & 0x00000003) != 0x00000003) return false;
 
   if (has_feature()) {
-    if (!this->feature().IsInitialized()) return false;
+    if (!this->feature_->IsInitialized()) return false;
   }
   return true;
 }
 
 void IntegralChannelDecisionStump::Swap(IntegralChannelDecisionStump* other) {
-  if (other != this) {
-    std::swap(feature_, other->feature_);
-    std::swap(feature_threshold_, other->feature_threshold_);
-    std::swap(larger_than_threshold_, other->larger_than_threshold_);
-    std::swap(true_leaf_weight_, other->true_leaf_weight_);
-    std::swap(false_leaf_weight_, other->false_leaf_weight_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void IntegralChannelDecisionStump::InternalSwap(IntegralChannelDecisionStump* other) {
+  std::swap(feature_, other->feature_);
+  std::swap(feature_threshold_, other->feature_threshold_);
+  std::swap(larger_than_threshold_, other->larger_than_threshold_);
+  std::swap(true_leaf_weight_, other->true_leaf_weight_);
+  std::swap(false_leaf_weight_, other->false_leaf_weight_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata IntegralChannelDecisionStump::GetMetadata() const {
@@ -1509,19 +1900,163 @@ void IntegralChannelDecisionStump::Swap(IntegralChannelDecisionStump* other) {
   return metadata;
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// IntegralChannelDecisionStump
+
+// required .doppia_protobuf.IntegralChannelsFeature feature = 1;
+bool IntegralChannelDecisionStump::has_feature() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+void IntegralChannelDecisionStump::set_has_feature() {
+  _has_bits_[0] |= 0x00000001u;
+}
+void IntegralChannelDecisionStump::clear_has_feature() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+void IntegralChannelDecisionStump::clear_feature() {
+  if (feature_ != NULL) feature_->::doppia_protobuf::IntegralChannelsFeature::Clear();
+  clear_has_feature();
+}
+const ::doppia_protobuf::IntegralChannelsFeature& IntegralChannelDecisionStump::feature() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.IntegralChannelDecisionStump.feature)
+  return feature_ != NULL ? *feature_ : *default_instance_->feature_;
+}
+::doppia_protobuf::IntegralChannelsFeature* IntegralChannelDecisionStump::mutable_feature() {
+  set_has_feature();
+  if (feature_ == NULL) {
+    feature_ = new ::doppia_protobuf::IntegralChannelsFeature;
+  }
+  // @@protoc_insertion_point(field_mutable:doppia_protobuf.IntegralChannelDecisionStump.feature)
+  return feature_;
+}
+::doppia_protobuf::IntegralChannelsFeature* IntegralChannelDecisionStump::release_feature() {
+  clear_has_feature();
+  ::doppia_protobuf::IntegralChannelsFeature* temp = feature_;
+  feature_ = NULL;
+  return temp;
+}
+void IntegralChannelDecisionStump::set_allocated_feature(::doppia_protobuf::IntegralChannelsFeature* feature) {
+  delete feature_;
+  feature_ = feature;
+  if (feature) {
+    set_has_feature();
+  } else {
+    clear_has_feature();
+  }
+  // @@protoc_insertion_point(field_set_allocated:doppia_protobuf.IntegralChannelDecisionStump.feature)
+}
+
+// required float feature_threshold = 2;
+bool IntegralChannelDecisionStump::has_feature_threshold() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+void IntegralChannelDecisionStump::set_has_feature_threshold() {
+  _has_bits_[0] |= 0x00000002u;
+}
+void IntegralChannelDecisionStump::clear_has_feature_threshold() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+void IntegralChannelDecisionStump::clear_feature_threshold() {
+  feature_threshold_ = 0;
+  clear_has_feature_threshold();
+}
+ float IntegralChannelDecisionStump::feature_threshold() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.IntegralChannelDecisionStump.feature_threshold)
+  return feature_threshold_;
+}
+ void IntegralChannelDecisionStump::set_feature_threshold(float value) {
+  set_has_feature_threshold();
+  feature_threshold_ = value;
+  // @@protoc_insertion_point(field_set:doppia_protobuf.IntegralChannelDecisionStump.feature_threshold)
+}
+
+// optional bool larger_than_threshold = 3 [default = false];
+bool IntegralChannelDecisionStump::has_larger_than_threshold() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+void IntegralChannelDecisionStump::set_has_larger_than_threshold() {
+  _has_bits_[0] |= 0x00000004u;
+}
+void IntegralChannelDecisionStump::clear_has_larger_than_threshold() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+void IntegralChannelDecisionStump::clear_larger_than_threshold() {
+  larger_than_threshold_ = false;
+  clear_has_larger_than_threshold();
+}
+ bool IntegralChannelDecisionStump::larger_than_threshold() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.IntegralChannelDecisionStump.larger_than_threshold)
+  return larger_than_threshold_;
+}
+ void IntegralChannelDecisionStump::set_larger_than_threshold(bool value) {
+  set_has_larger_than_threshold();
+  larger_than_threshold_ = value;
+  // @@protoc_insertion_point(field_set:doppia_protobuf.IntegralChannelDecisionStump.larger_than_threshold)
+}
+
+// optional float true_leaf_weight = 10;
+bool IntegralChannelDecisionStump::has_true_leaf_weight() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+void IntegralChannelDecisionStump::set_has_true_leaf_weight() {
+  _has_bits_[0] |= 0x00000008u;
+}
+void IntegralChannelDecisionStump::clear_has_true_leaf_weight() {
+  _has_bits_[0] &= ~0x00000008u;
+}
+void IntegralChannelDecisionStump::clear_true_leaf_weight() {
+  true_leaf_weight_ = 0;
+  clear_has_true_leaf_weight();
+}
+ float IntegralChannelDecisionStump::true_leaf_weight() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.IntegralChannelDecisionStump.true_leaf_weight)
+  return true_leaf_weight_;
+}
+ void IntegralChannelDecisionStump::set_true_leaf_weight(float value) {
+  set_has_true_leaf_weight();
+  true_leaf_weight_ = value;
+  // @@protoc_insertion_point(field_set:doppia_protobuf.IntegralChannelDecisionStump.true_leaf_weight)
+}
+
+// optional float false_leaf_weight = 11;
+bool IntegralChannelDecisionStump::has_false_leaf_weight() const {
+  return (_has_bits_[0] & 0x00000010u) != 0;
+}
+void IntegralChannelDecisionStump::set_has_false_leaf_weight() {
+  _has_bits_[0] |= 0x00000010u;
+}
+void IntegralChannelDecisionStump::clear_has_false_leaf_weight() {
+  _has_bits_[0] &= ~0x00000010u;
+}
+void IntegralChannelDecisionStump::clear_false_leaf_weight() {
+  false_leaf_weight_ = 0;
+  clear_has_false_leaf_weight();
+}
+ float IntegralChannelDecisionStump::false_leaf_weight() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.IntegralChannelDecisionStump.false_leaf_weight)
+  return false_leaf_weight_;
+}
+ void IntegralChannelDecisionStump::set_false_leaf_weight(float value) {
+  set_has_false_leaf_weight();
+  false_leaf_weight_ = value;
+  // @@protoc_insertion_point(field_set:doppia_protobuf.IntegralChannelDecisionStump.false_leaf_weight)
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int IntegralChannelBinaryDecisionTreeNode::kIdFieldNumber;
 const int IntegralChannelBinaryDecisionTreeNode::kParentIdFieldNumber;
 const int IntegralChannelBinaryDecisionTreeNode::kParentValueFieldNumber;
 const int IntegralChannelBinaryDecisionTreeNode::kDecisionStumpFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 IntegralChannelBinaryDecisionTreeNode::IntegralChannelBinaryDecisionTreeNode()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
   SharedCtor();
+  // @@protoc_insertion_point(constructor:doppia_protobuf.IntegralChannelBinaryDecisionTreeNode)
 }
 
 void IntegralChannelBinaryDecisionTreeNode::InitAsDefaultInstance() {
@@ -1529,9 +2064,11 @@ void IntegralChannelBinaryDecisionTreeNode::InitAsDefaultInstance() {
 }
 
 IntegralChannelBinaryDecisionTreeNode::IntegralChannelBinaryDecisionTreeNode(const IntegralChannelBinaryDecisionTreeNode& from)
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(),
+    _internal_metadata_(NULL) {
   SharedCtor();
   MergeFrom(from);
+  // @@protoc_insertion_point(copy_constructor:doppia_protobuf.IntegralChannelBinaryDecisionTreeNode)
 }
 
 void IntegralChannelBinaryDecisionTreeNode::SharedCtor() {
@@ -1544,6 +2081,7 @@ void IntegralChannelBinaryDecisionTreeNode::SharedCtor() {
 }
 
 IntegralChannelBinaryDecisionTreeNode::~IntegralChannelBinaryDecisionTreeNode() {
+  // @@protoc_insertion_point(destructor:doppia_protobuf.IntegralChannelBinaryDecisionTreeNode)
   SharedDtor();
 }
 
@@ -1570,39 +2108,59 @@ const IntegralChannelBinaryDecisionTreeNode& IntegralChannelBinaryDecisionTreeNo
 
 IntegralChannelBinaryDecisionTreeNode* IntegralChannelBinaryDecisionTreeNode::default_instance_ = NULL;
 
-IntegralChannelBinaryDecisionTreeNode* IntegralChannelBinaryDecisionTreeNode::New() const {
-  return new IntegralChannelBinaryDecisionTreeNode;
+IntegralChannelBinaryDecisionTreeNode* IntegralChannelBinaryDecisionTreeNode::New(::google::protobuf::Arena* arena) const {
+  IntegralChannelBinaryDecisionTreeNode* n = new IntegralChannelBinaryDecisionTreeNode;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void IntegralChannelBinaryDecisionTreeNode::Clear() {
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    id_ = 0u;
-    parent_id_ = 0u;
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<IntegralChannelBinaryDecisionTreeNode*>(16)->f)
+
+#define ZR_(first, last) do {\
+  ::memset(&first, 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  if (_has_bits_[0 / 32] & 15u) {
+    ZR_(id_, parent_id_);
     parent_value_ = false;
     if (has_decision_stump()) {
       if (decision_stump_ != NULL) decision_stump_->::doppia_protobuf::IntegralChannelDecisionStump::Clear();
     }
   }
+
+#undef ZR_HELPER_
+#undef ZR_
+
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  if (_internal_metadata_.have_unknown_fields()) {
+    mutable_unknown_fields()->Clear();
+  }
 }
 
 bool IntegralChannelBinaryDecisionTreeNode::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:doppia_protobuf.IntegralChannelBinaryDecisionTreeNode)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // required uint32 id = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+        if (tag == 8) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &id_)));
           set_has_id();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(16)) goto parse_parent_id;
         break;
@@ -1610,15 +2168,14 @@ bool IntegralChannelBinaryDecisionTreeNode::MergePartialFromCodedStream(
 
       // required uint32 parent_id = 2;
       case 2: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+        if (tag == 16) {
          parse_parent_id:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &parent_id_)));
           set_has_parent_id();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(24)) goto parse_parent_value;
         break;
@@ -1626,15 +2183,14 @@ bool IntegralChannelBinaryDecisionTreeNode::MergePartialFromCodedStream(
 
       // optional bool parent_value = 3;
       case 3: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+        if (tag == 24) {
          parse_parent_value:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &parent_value_)));
           set_has_parent_value();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(34)) goto parse_decision_stump;
         break;
@@ -1642,23 +2198,23 @@ bool IntegralChannelBinaryDecisionTreeNode::MergePartialFromCodedStream(
 
       // optional .doppia_protobuf.IntegralChannelDecisionStump decision_stump = 4;
       case 4: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+        if (tag == 34) {
          parse_decision_stump:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_decision_stump()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectAtEnd()) return true;
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -1666,12 +2222,18 @@ bool IntegralChannelBinaryDecisionTreeNode::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:doppia_protobuf.IntegralChannelBinaryDecisionTreeNode)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:doppia_protobuf.IntegralChannelBinaryDecisionTreeNode)
+  return false;
 #undef DO_
 }
 
 void IntegralChannelBinaryDecisionTreeNode::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:doppia_protobuf.IntegralChannelBinaryDecisionTreeNode)
   // required uint32 id = 1;
   if (has_id()) {
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->id(), output);
@@ -1690,17 +2252,19 @@ void IntegralChannelBinaryDecisionTreeNode::SerializeWithCachedSizes(
   // optional .doppia_protobuf.IntegralChannelDecisionStump decision_stump = 4;
   if (has_decision_stump()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      4, this->decision_stump(), output);
+      4, *this->decision_stump_, output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:doppia_protobuf.IntegralChannelBinaryDecisionTreeNode)
 }
 
 ::google::protobuf::uint8* IntegralChannelBinaryDecisionTreeNode::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:doppia_protobuf.IntegralChannelBinaryDecisionTreeNode)
   // required uint32 id = 1;
   if (has_id()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->id(), target);
@@ -1720,34 +2284,54 @@ void IntegralChannelBinaryDecisionTreeNode::SerializeWithCachedSizes(
   if (has_decision_stump()) {
     target = ::google::protobuf::internal::WireFormatLite::
       WriteMessageNoVirtualToArray(
-        4, this->decision_stump(), target);
+        4, *this->decision_stump_, target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:doppia_protobuf.IntegralChannelBinaryDecisionTreeNode)
   return target;
 }
 
+int IntegralChannelBinaryDecisionTreeNode::RequiredFieldsByteSizeFallback() const {
+  int total_size = 0;
+
+  if (has_id()) {
+    // required uint32 id = 1;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::UInt32Size(
+        this->id());
+  }
+
+  if (has_parent_id()) {
+    // required uint32 parent_id = 2;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::UInt32Size(
+        this->parent_id());
+  }
+
+  return total_size;
+}
 int IntegralChannelBinaryDecisionTreeNode::ByteSize() const {
   int total_size = 0;
 
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+  if (((_has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
     // required uint32 id = 1;
-    if (has_id()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::UInt32Size(
-          this->id());
-    }
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::UInt32Size(
+        this->id());
 
     // required uint32 parent_id = 2;
-    if (has_parent_id()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::UInt32Size(
-          this->parent_id());
-    }
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::UInt32Size(
+        this->parent_id());
 
+  } else {
+    total_size += RequiredFieldsByteSizeFallback();
+  }
+  if (_has_bits_[2 / 32] & 12u) {
     // optional bool parent_value = 3;
     if (has_parent_value()) {
       total_size += 1 + 1;
@@ -1757,11 +2341,11 @@ int IntegralChannelBinaryDecisionTreeNode::ByteSize() const {
     if (has_decision_stump()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->decision_stump());
+          *this->decision_stump_);
     }
 
   }
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         unknown_fields());
@@ -1773,10 +2357,10 @@ int IntegralChannelBinaryDecisionTreeNode::ByteSize() const {
 }
 
 void IntegralChannelBinaryDecisionTreeNode::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  const IntegralChannelBinaryDecisionTreeNode* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const IntegralChannelBinaryDecisionTreeNode*>(
-      &from);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const IntegralChannelBinaryDecisionTreeNode* source = 
+      ::google::protobuf::internal::DynamicCastToGenerated<const IntegralChannelBinaryDecisionTreeNode>(
+          &from);
   if (source == NULL) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1785,7 +2369,7 @@ void IntegralChannelBinaryDecisionTreeNode::MergeFrom(const ::google::protobuf::
 }
 
 void IntegralChannelBinaryDecisionTreeNode::MergeFrom(const IntegralChannelBinaryDecisionTreeNode& from) {
-  GOOGLE_CHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     if (from.has_id()) {
       set_id(from.id());
@@ -1800,7 +2384,9 @@ void IntegralChannelBinaryDecisionTreeNode::MergeFrom(const IntegralChannelBinar
       mutable_decision_stump()->::doppia_protobuf::IntegralChannelDecisionStump::MergeFrom(from.decision_stump());
     }
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+  if (from._internal_metadata_.have_unknown_fields()) {
+    mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+  }
 }
 
 void IntegralChannelBinaryDecisionTreeNode::CopyFrom(const ::google::protobuf::Message& from) {
@@ -1819,21 +2405,23 @@ bool IntegralChannelBinaryDecisionTreeNode::IsInitialized() const {
   if ((_has_bits_[0] & 0x00000003) != 0x00000003) return false;
 
   if (has_decision_stump()) {
-    if (!this->decision_stump().IsInitialized()) return false;
+    if (!this->decision_stump_->IsInitialized()) return false;
   }
   return true;
 }
 
 void IntegralChannelBinaryDecisionTreeNode::Swap(IntegralChannelBinaryDecisionTreeNode* other) {
-  if (other != this) {
-    std::swap(id_, other->id_);
-    std::swap(parent_id_, other->parent_id_);
-    std::swap(parent_value_, other->parent_value_);
-    std::swap(decision_stump_, other->decision_stump_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void IntegralChannelBinaryDecisionTreeNode::InternalSwap(IntegralChannelBinaryDecisionTreeNode* other) {
+  std::swap(id_, other->id_);
+  std::swap(parent_id_, other->parent_id_);
+  std::swap(parent_value_, other->parent_value_);
+  std::swap(decision_stump_, other->decision_stump_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata IntegralChannelBinaryDecisionTreeNode::GetMetadata() const {
@@ -1844,25 +2432,147 @@ void IntegralChannelBinaryDecisionTreeNode::Swap(IntegralChannelBinaryDecisionTr
   return metadata;
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// IntegralChannelBinaryDecisionTreeNode
+
+// required uint32 id = 1;
+bool IntegralChannelBinaryDecisionTreeNode::has_id() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+void IntegralChannelBinaryDecisionTreeNode::set_has_id() {
+  _has_bits_[0] |= 0x00000001u;
+}
+void IntegralChannelBinaryDecisionTreeNode::clear_has_id() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+void IntegralChannelBinaryDecisionTreeNode::clear_id() {
+  id_ = 0u;
+  clear_has_id();
+}
+ ::google::protobuf::uint32 IntegralChannelBinaryDecisionTreeNode::id() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.IntegralChannelBinaryDecisionTreeNode.id)
+  return id_;
+}
+ void IntegralChannelBinaryDecisionTreeNode::set_id(::google::protobuf::uint32 value) {
+  set_has_id();
+  id_ = value;
+  // @@protoc_insertion_point(field_set:doppia_protobuf.IntegralChannelBinaryDecisionTreeNode.id)
+}
+
+// required uint32 parent_id = 2;
+bool IntegralChannelBinaryDecisionTreeNode::has_parent_id() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+void IntegralChannelBinaryDecisionTreeNode::set_has_parent_id() {
+  _has_bits_[0] |= 0x00000002u;
+}
+void IntegralChannelBinaryDecisionTreeNode::clear_has_parent_id() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+void IntegralChannelBinaryDecisionTreeNode::clear_parent_id() {
+  parent_id_ = 0u;
+  clear_has_parent_id();
+}
+ ::google::protobuf::uint32 IntegralChannelBinaryDecisionTreeNode::parent_id() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.IntegralChannelBinaryDecisionTreeNode.parent_id)
+  return parent_id_;
+}
+ void IntegralChannelBinaryDecisionTreeNode::set_parent_id(::google::protobuf::uint32 value) {
+  set_has_parent_id();
+  parent_id_ = value;
+  // @@protoc_insertion_point(field_set:doppia_protobuf.IntegralChannelBinaryDecisionTreeNode.parent_id)
+}
+
+// optional bool parent_value = 3;
+bool IntegralChannelBinaryDecisionTreeNode::has_parent_value() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+void IntegralChannelBinaryDecisionTreeNode::set_has_parent_value() {
+  _has_bits_[0] |= 0x00000004u;
+}
+void IntegralChannelBinaryDecisionTreeNode::clear_has_parent_value() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+void IntegralChannelBinaryDecisionTreeNode::clear_parent_value() {
+  parent_value_ = false;
+  clear_has_parent_value();
+}
+ bool IntegralChannelBinaryDecisionTreeNode::parent_value() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.IntegralChannelBinaryDecisionTreeNode.parent_value)
+  return parent_value_;
+}
+ void IntegralChannelBinaryDecisionTreeNode::set_parent_value(bool value) {
+  set_has_parent_value();
+  parent_value_ = value;
+  // @@protoc_insertion_point(field_set:doppia_protobuf.IntegralChannelBinaryDecisionTreeNode.parent_value)
+}
+
+// optional .doppia_protobuf.IntegralChannelDecisionStump decision_stump = 4;
+bool IntegralChannelBinaryDecisionTreeNode::has_decision_stump() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+void IntegralChannelBinaryDecisionTreeNode::set_has_decision_stump() {
+  _has_bits_[0] |= 0x00000008u;
+}
+void IntegralChannelBinaryDecisionTreeNode::clear_has_decision_stump() {
+  _has_bits_[0] &= ~0x00000008u;
+}
+void IntegralChannelBinaryDecisionTreeNode::clear_decision_stump() {
+  if (decision_stump_ != NULL) decision_stump_->::doppia_protobuf::IntegralChannelDecisionStump::Clear();
+  clear_has_decision_stump();
+}
+const ::doppia_protobuf::IntegralChannelDecisionStump& IntegralChannelBinaryDecisionTreeNode::decision_stump() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.IntegralChannelBinaryDecisionTreeNode.decision_stump)
+  return decision_stump_ != NULL ? *decision_stump_ : *default_instance_->decision_stump_;
+}
+::doppia_protobuf::IntegralChannelDecisionStump* IntegralChannelBinaryDecisionTreeNode::mutable_decision_stump() {
+  set_has_decision_stump();
+  if (decision_stump_ == NULL) {
+    decision_stump_ = new ::doppia_protobuf::IntegralChannelDecisionStump;
+  }
+  // @@protoc_insertion_point(field_mutable:doppia_protobuf.IntegralChannelBinaryDecisionTreeNode.decision_stump)
+  return decision_stump_;
+}
+::doppia_protobuf::IntegralChannelDecisionStump* IntegralChannelBinaryDecisionTreeNode::release_decision_stump() {
+  clear_has_decision_stump();
+  ::doppia_protobuf::IntegralChannelDecisionStump* temp = decision_stump_;
+  decision_stump_ = NULL;
+  return temp;
+}
+void IntegralChannelBinaryDecisionTreeNode::set_allocated_decision_stump(::doppia_protobuf::IntegralChannelDecisionStump* decision_stump) {
+  delete decision_stump_;
+  decision_stump_ = decision_stump;
+  if (decision_stump) {
+    set_has_decision_stump();
+  } else {
+    clear_has_decision_stump();
+  }
+  // @@protoc_insertion_point(field_set_allocated:doppia_protobuf.IntegralChannelBinaryDecisionTreeNode.decision_stump)
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int IntegralChannelBinaryDecisionTree::kNodesFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 IntegralChannelBinaryDecisionTree::IntegralChannelBinaryDecisionTree()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
   SharedCtor();
+  // @@protoc_insertion_point(constructor:doppia_protobuf.IntegralChannelBinaryDecisionTree)
 }
 
 void IntegralChannelBinaryDecisionTree::InitAsDefaultInstance() {
 }
 
 IntegralChannelBinaryDecisionTree::IntegralChannelBinaryDecisionTree(const IntegralChannelBinaryDecisionTree& from)
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(),
+    _internal_metadata_(NULL) {
   SharedCtor();
   MergeFrom(from);
+  // @@protoc_insertion_point(copy_constructor:doppia_protobuf.IntegralChannelBinaryDecisionTree)
 }
 
 void IntegralChannelBinaryDecisionTree::SharedCtor() {
@@ -1871,6 +2581,7 @@ void IntegralChannelBinaryDecisionTree::SharedCtor() {
 }
 
 IntegralChannelBinaryDecisionTree::~IntegralChannelBinaryDecisionTree() {
+  // @@protoc_insertion_point(destructor:doppia_protobuf.IntegralChannelBinaryDecisionTree)
   SharedDtor();
 }
 
@@ -1896,42 +2607,54 @@ const IntegralChannelBinaryDecisionTree& IntegralChannelBinaryDecisionTree::defa
 
 IntegralChannelBinaryDecisionTree* IntegralChannelBinaryDecisionTree::default_instance_ = NULL;
 
-IntegralChannelBinaryDecisionTree* IntegralChannelBinaryDecisionTree::New() const {
-  return new IntegralChannelBinaryDecisionTree;
+IntegralChannelBinaryDecisionTree* IntegralChannelBinaryDecisionTree::New(::google::protobuf::Arena* arena) const {
+  IntegralChannelBinaryDecisionTree* n = new IntegralChannelBinaryDecisionTree;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void IntegralChannelBinaryDecisionTree::Clear() {
   nodes_.Clear();
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  if (_internal_metadata_.have_unknown_fields()) {
+    mutable_unknown_fields()->Clear();
+  }
 }
 
 bool IntegralChannelBinaryDecisionTree::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:doppia_protobuf.IntegralChannelBinaryDecisionTree)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .doppia_protobuf.IntegralChannelBinaryDecisionTreeNode nodes = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
-         parse_nodes:
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
+        if (tag == 10) {
+          DO_(input->IncrementRecursionDepth());
+         parse_loop_nodes:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_nodes()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(10)) goto parse_nodes;
-        if (input->ExpectAtEnd()) return true;
+        if (input->ExpectTag(10)) goto parse_loop_nodes;
+        input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -1939,37 +2662,46 @@ bool IntegralChannelBinaryDecisionTree::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:doppia_protobuf.IntegralChannelBinaryDecisionTree)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:doppia_protobuf.IntegralChannelBinaryDecisionTree)
+  return false;
 #undef DO_
 }
 
 void IntegralChannelBinaryDecisionTree::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:doppia_protobuf.IntegralChannelBinaryDecisionTree)
   // repeated .doppia_protobuf.IntegralChannelBinaryDecisionTreeNode nodes = 1;
-  for (int i = 0; i < this->nodes_size(); i++) {
+  for (unsigned int i = 0, n = this->nodes_size(); i < n; i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, this->nodes(i), output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:doppia_protobuf.IntegralChannelBinaryDecisionTree)
 }
 
 ::google::protobuf::uint8* IntegralChannelBinaryDecisionTree::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:doppia_protobuf.IntegralChannelBinaryDecisionTree)
   // repeated .doppia_protobuf.IntegralChannelBinaryDecisionTreeNode nodes = 1;
-  for (int i = 0; i < this->nodes_size(); i++) {
+  for (unsigned int i = 0, n = this->nodes_size(); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       WriteMessageNoVirtualToArray(
         1, this->nodes(i), target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:doppia_protobuf.IntegralChannelBinaryDecisionTree)
   return target;
 }
 
@@ -1984,7 +2716,7 @@ int IntegralChannelBinaryDecisionTree::ByteSize() const {
         this->nodes(i));
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         unknown_fields());
@@ -1996,10 +2728,10 @@ int IntegralChannelBinaryDecisionTree::ByteSize() const {
 }
 
 void IntegralChannelBinaryDecisionTree::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  const IntegralChannelBinaryDecisionTree* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const IntegralChannelBinaryDecisionTree*>(
-      &from);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const IntegralChannelBinaryDecisionTree* source = 
+      ::google::protobuf::internal::DynamicCastToGenerated<const IntegralChannelBinaryDecisionTree>(
+          &from);
   if (source == NULL) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2008,9 +2740,11 @@ void IntegralChannelBinaryDecisionTree::MergeFrom(const ::google::protobuf::Mess
 }
 
 void IntegralChannelBinaryDecisionTree::MergeFrom(const IntegralChannelBinaryDecisionTree& from) {
-  GOOGLE_CHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   nodes_.MergeFrom(from.nodes_);
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+  if (from._internal_metadata_.have_unknown_fields()) {
+    mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+  }
 }
 
 void IntegralChannelBinaryDecisionTree::CopyFrom(const ::google::protobuf::Message& from) {
@@ -2027,19 +2761,19 @@ void IntegralChannelBinaryDecisionTree::CopyFrom(const IntegralChannelBinaryDeci
 
 bool IntegralChannelBinaryDecisionTree::IsInitialized() const {
 
-  for (int i = 0; i < nodes_size(); i++) {
-    if (!this->nodes(i).IsInitialized()) return false;
-  }
+  if (!::google::protobuf::internal::AllAreInitialized(this->nodes())) return false;
   return true;
 }
 
 void IntegralChannelBinaryDecisionTree::Swap(IntegralChannelBinaryDecisionTree* other) {
-  if (other != this) {
-    nodes_.Swap(&other->nodes_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void IntegralChannelBinaryDecisionTree::InternalSwap(IntegralChannelBinaryDecisionTree* other) {
+  nodes_.UnsafeArenaSwap(&other->nodes_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata IntegralChannelBinaryDecisionTree::GetMetadata() const {
@@ -2050,26 +2784,63 @@ void IntegralChannelBinaryDecisionTree::Swap(IntegralChannelBinaryDecisionTree* 
   return metadata;
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// IntegralChannelBinaryDecisionTree
+
+// repeated .doppia_protobuf.IntegralChannelBinaryDecisionTreeNode nodes = 1;
+int IntegralChannelBinaryDecisionTree::nodes_size() const {
+  return nodes_.size();
+}
+void IntegralChannelBinaryDecisionTree::clear_nodes() {
+  nodes_.Clear();
+}
+const ::doppia_protobuf::IntegralChannelBinaryDecisionTreeNode& IntegralChannelBinaryDecisionTree::nodes(int index) const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.IntegralChannelBinaryDecisionTree.nodes)
+  return nodes_.Get(index);
+}
+::doppia_protobuf::IntegralChannelBinaryDecisionTreeNode* IntegralChannelBinaryDecisionTree::mutable_nodes(int index) {
+  // @@protoc_insertion_point(field_mutable:doppia_protobuf.IntegralChannelBinaryDecisionTree.nodes)
+  return nodes_.Mutable(index);
+}
+::doppia_protobuf::IntegralChannelBinaryDecisionTreeNode* IntegralChannelBinaryDecisionTree::add_nodes() {
+  // @@protoc_insertion_point(field_add:doppia_protobuf.IntegralChannelBinaryDecisionTree.nodes)
+  return nodes_.Add();
+}
+::google::protobuf::RepeatedPtrField< ::doppia_protobuf::IntegralChannelBinaryDecisionTreeNode >*
+IntegralChannelBinaryDecisionTree::mutable_nodes() {
+  // @@protoc_insertion_point(field_mutable_list:doppia_protobuf.IntegralChannelBinaryDecisionTree.nodes)
+  return &nodes_;
+}
+const ::google::protobuf::RepeatedPtrField< ::doppia_protobuf::IntegralChannelBinaryDecisionTreeNode >&
+IntegralChannelBinaryDecisionTree::nodes() const {
+  // @@protoc_insertion_point(field_list:doppia_protobuf.IntegralChannelBinaryDecisionTree.nodes)
+  return nodes_;
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int IntegralChannelStumpSet::kNodesFieldNumber;
 const int IntegralChannelStumpSet::kWeightsFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 IntegralChannelStumpSet::IntegralChannelStumpSet()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
   SharedCtor();
+  // @@protoc_insertion_point(constructor:doppia_protobuf.IntegralChannelStumpSet)
 }
 
 void IntegralChannelStumpSet::InitAsDefaultInstance() {
 }
 
 IntegralChannelStumpSet::IntegralChannelStumpSet(const IntegralChannelStumpSet& from)
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(),
+    _internal_metadata_(NULL) {
   SharedCtor();
   MergeFrom(from);
+  // @@protoc_insertion_point(copy_constructor:doppia_protobuf.IntegralChannelStumpSet)
 }
 
 void IntegralChannelStumpSet::SharedCtor() {
@@ -2078,6 +2849,7 @@ void IntegralChannelStumpSet::SharedCtor() {
 }
 
 IntegralChannelStumpSet::~IntegralChannelStumpSet() {
+  // @@protoc_insertion_point(destructor:doppia_protobuf.IntegralChannelStumpSet)
   SharedDtor();
 }
 
@@ -2103,65 +2875,74 @@ const IntegralChannelStumpSet& IntegralChannelStumpSet::default_instance() {
 
 IntegralChannelStumpSet* IntegralChannelStumpSet::default_instance_ = NULL;
 
-IntegralChannelStumpSet* IntegralChannelStumpSet::New() const {
-  return new IntegralChannelStumpSet;
+IntegralChannelStumpSet* IntegralChannelStumpSet::New(::google::protobuf::Arena* arena) const {
+  IntegralChannelStumpSet* n = new IntegralChannelStumpSet;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void IntegralChannelStumpSet::Clear() {
   nodes_.Clear();
   weights_.Clear();
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  if (_internal_metadata_.have_unknown_fields()) {
+    mutable_unknown_fields()->Clear();
+  }
 }
 
 bool IntegralChannelStumpSet::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:doppia_protobuf.IntegralChannelStumpSet)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .doppia_protobuf.IntegralChannelDecisionStump nodes = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
-         parse_nodes:
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
+        if (tag == 10) {
+          DO_(input->IncrementRecursionDepth());
+         parse_loop_nodes:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_nodes()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(10)) goto parse_nodes;
+        if (input->ExpectTag(10)) goto parse_loop_nodes;
+        input->UnsafeDecrementRecursionDepth();
         if (input->ExpectTag(21)) goto parse_weights;
         break;
       }
 
       // repeated float weights = 2;
       case 2: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED32) {
+        if (tag == 21) {
          parse_weights:
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  1, 21, input, this->mutable_weights())));
-        } else if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag)
-                   == ::google::protobuf::internal::WireFormatLite::
-                      WIRETYPE_LENGTH_DELIMITED) {
+        } else if (tag == 18) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, this->mutable_weights())));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(21)) goto parse_weights;
-        if (input->ExpectAtEnd()) return true;
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -2169,14 +2950,20 @@ bool IntegralChannelStumpSet::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:doppia_protobuf.IntegralChannelStumpSet)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:doppia_protobuf.IntegralChannelStumpSet)
+  return false;
 #undef DO_
 }
 
 void IntegralChannelStumpSet::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:doppia_protobuf.IntegralChannelStumpSet)
   // repeated .doppia_protobuf.IntegralChannelDecisionStump nodes = 1;
-  for (int i = 0; i < this->nodes_size(); i++) {
+  for (unsigned int i = 0, n = this->nodes_size(); i < n; i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, this->nodes(i), output);
   }
@@ -2187,16 +2974,18 @@ void IntegralChannelStumpSet::SerializeWithCachedSizes(
       2, this->weights(i), output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:doppia_protobuf.IntegralChannelStumpSet)
 }
 
 ::google::protobuf::uint8* IntegralChannelStumpSet::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:doppia_protobuf.IntegralChannelStumpSet)
   // repeated .doppia_protobuf.IntegralChannelDecisionStump nodes = 1;
-  for (int i = 0; i < this->nodes_size(); i++) {
+  for (unsigned int i = 0, n = this->nodes_size(); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       WriteMessageNoVirtualToArray(
         1, this->nodes(i), target);
@@ -2208,10 +2997,11 @@ void IntegralChannelStumpSet::SerializeWithCachedSizes(
       WriteFloatToArray(2, this->weights(i), target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:doppia_protobuf.IntegralChannelStumpSet)
   return target;
 }
 
@@ -2233,7 +3023,7 @@ int IntegralChannelStumpSet::ByteSize() const {
     total_size += 1 * this->weights_size() + data_size;
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         unknown_fields());
@@ -2245,10 +3035,10 @@ int IntegralChannelStumpSet::ByteSize() const {
 }
 
 void IntegralChannelStumpSet::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  const IntegralChannelStumpSet* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const IntegralChannelStumpSet*>(
-      &from);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const IntegralChannelStumpSet* source = 
+      ::google::protobuf::internal::DynamicCastToGenerated<const IntegralChannelStumpSet>(
+          &from);
   if (source == NULL) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2257,10 +3047,12 @@ void IntegralChannelStumpSet::MergeFrom(const ::google::protobuf::Message& from)
 }
 
 void IntegralChannelStumpSet::MergeFrom(const IntegralChannelStumpSet& from) {
-  GOOGLE_CHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   nodes_.MergeFrom(from.nodes_);
   weights_.MergeFrom(from.weights_);
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+  if (from._internal_metadata_.have_unknown_fields()) {
+    mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+  }
 }
 
 void IntegralChannelStumpSet::CopyFrom(const ::google::protobuf::Message& from) {
@@ -2277,20 +3069,20 @@ void IntegralChannelStumpSet::CopyFrom(const IntegralChannelStumpSet& from) {
 
 bool IntegralChannelStumpSet::IsInitialized() const {
 
-  for (int i = 0; i < nodes_size(); i++) {
-    if (!this->nodes(i).IsInitialized()) return false;
-  }
+  if (!::google::protobuf::internal::AllAreInitialized(this->nodes())) return false;
   return true;
 }
 
 void IntegralChannelStumpSet::Swap(IntegralChannelStumpSet* other) {
-  if (other != this) {
-    nodes_.Swap(&other->nodes_);
-    weights_.Swap(&other->weights_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void IntegralChannelStumpSet::InternalSwap(IntegralChannelStumpSet* other) {
+  nodes_.UnsafeArenaSwap(&other->nodes_);
+  weights_.UnsafeArenaSwap(&other->weights_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata IntegralChannelStumpSet::GetMetadata() const {
@@ -2301,6 +3093,70 @@ void IntegralChannelStumpSet::Swap(IntegralChannelStumpSet* other) {
   return metadata;
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// IntegralChannelStumpSet
+
+// repeated .doppia_protobuf.IntegralChannelDecisionStump nodes = 1;
+int IntegralChannelStumpSet::nodes_size() const {
+  return nodes_.size();
+}
+void IntegralChannelStumpSet::clear_nodes() {
+  nodes_.Clear();
+}
+const ::doppia_protobuf::IntegralChannelDecisionStump& IntegralChannelStumpSet::nodes(int index) const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.IntegralChannelStumpSet.nodes)
+  return nodes_.Get(index);
+}
+::doppia_protobuf::IntegralChannelDecisionStump* IntegralChannelStumpSet::mutable_nodes(int index) {
+  // @@protoc_insertion_point(field_mutable:doppia_protobuf.IntegralChannelStumpSet.nodes)
+  return nodes_.Mutable(index);
+}
+::doppia_protobuf::IntegralChannelDecisionStump* IntegralChannelStumpSet::add_nodes() {
+  // @@protoc_insertion_point(field_add:doppia_protobuf.IntegralChannelStumpSet.nodes)
+  return nodes_.Add();
+}
+::google::protobuf::RepeatedPtrField< ::doppia_protobuf::IntegralChannelDecisionStump >*
+IntegralChannelStumpSet::mutable_nodes() {
+  // @@protoc_insertion_point(field_mutable_list:doppia_protobuf.IntegralChannelStumpSet.nodes)
+  return &nodes_;
+}
+const ::google::protobuf::RepeatedPtrField< ::doppia_protobuf::IntegralChannelDecisionStump >&
+IntegralChannelStumpSet::nodes() const {
+  // @@protoc_insertion_point(field_list:doppia_protobuf.IntegralChannelStumpSet.nodes)
+  return nodes_;
+}
+
+// repeated float weights = 2;
+int IntegralChannelStumpSet::weights_size() const {
+  return weights_.size();
+}
+void IntegralChannelStumpSet::clear_weights() {
+  weights_.Clear();
+}
+ float IntegralChannelStumpSet::weights(int index) const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.IntegralChannelStumpSet.weights)
+  return weights_.Get(index);
+}
+ void IntegralChannelStumpSet::set_weights(int index, float value) {
+  weights_.Set(index, value);
+  // @@protoc_insertion_point(field_set:doppia_protobuf.IntegralChannelStumpSet.weights)
+}
+ void IntegralChannelStumpSet::add_weights(float value) {
+  weights_.Add(value);
+  // @@protoc_insertion_point(field_add:doppia_protobuf.IntegralChannelStumpSet.weights)
+}
+ const ::google::protobuf::RepeatedField< float >&
+IntegralChannelStumpSet::weights() const {
+  // @@protoc_insertion_point(field_list:doppia_protobuf.IntegralChannelStumpSet.weights)
+  return weights_;
+}
+ ::google::protobuf::RepeatedField< float >*
+IntegralChannelStumpSet::mutable_weights() {
+  // @@protoc_insertion_point(field_mutable_list:doppia_protobuf.IntegralChannelStumpSet.weights)
+  return &weights_;
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
@@ -2320,7 +3176,7 @@ bool SoftCascadeOverIntegralChannelsStage_FeatureTypes_IsValid(int value) {
   }
 }
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const SoftCascadeOverIntegralChannelsStage_FeatureTypes SoftCascadeOverIntegralChannelsStage::Stumps;
 const SoftCascadeOverIntegralChannelsStage_FeatureTypes SoftCascadeOverIntegralChannelsStage::Level2DecisionTree;
 const SoftCascadeOverIntegralChannelsStage_FeatureTypes SoftCascadeOverIntegralChannelsStage::LevelNDecisionTree;
@@ -2328,8 +3184,8 @@ const SoftCascadeOverIntegralChannelsStage_FeatureTypes SoftCascadeOverIntegralC
 const SoftCascadeOverIntegralChannelsStage_FeatureTypes SoftCascadeOverIntegralChannelsStage::FeatureTypes_MIN;
 const SoftCascadeOverIntegralChannelsStage_FeatureTypes SoftCascadeOverIntegralChannelsStage::FeatureTypes_MAX;
 const int SoftCascadeOverIntegralChannelsStage::FeatureTypes_ARRAYSIZE;
-#endif  // _MSC_VER
-#ifndef _MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int SoftCascadeOverIntegralChannelsStage::kFeatureTypeFieldNumber;
 const int SoftCascadeOverIntegralChannelsStage::kDecisionStumpFieldNumber;
 const int SoftCascadeOverIntegralChannelsStage::kLevel2DecisionTreeFieldNumber;
@@ -2337,11 +3193,12 @@ const int SoftCascadeOverIntegralChannelsStage::kLevelNDecisionTreeFieldNumber;
 const int SoftCascadeOverIntegralChannelsStage::kStumpSetFieldNumber;
 const int SoftCascadeOverIntegralChannelsStage::kWeightFieldNumber;
 const int SoftCascadeOverIntegralChannelsStage::kCascadeThresholdFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 SoftCascadeOverIntegralChannelsStage::SoftCascadeOverIntegralChannelsStage()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
   SharedCtor();
+  // @@protoc_insertion_point(constructor:doppia_protobuf.SoftCascadeOverIntegralChannelsStage)
 }
 
 void SoftCascadeOverIntegralChannelsStage::InitAsDefaultInstance() {
@@ -2352,9 +3209,11 @@ void SoftCascadeOverIntegralChannelsStage::InitAsDefaultInstance() {
 }
 
 SoftCascadeOverIntegralChannelsStage::SoftCascadeOverIntegralChannelsStage(const SoftCascadeOverIntegralChannelsStage& from)
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(),
+    _internal_metadata_(NULL) {
   SharedCtor();
   MergeFrom(from);
+  // @@protoc_insertion_point(copy_constructor:doppia_protobuf.SoftCascadeOverIntegralChannelsStage)
 }
 
 void SoftCascadeOverIntegralChannelsStage::SharedCtor() {
@@ -2370,6 +3229,7 @@ void SoftCascadeOverIntegralChannelsStage::SharedCtor() {
 }
 
 SoftCascadeOverIntegralChannelsStage::~SoftCascadeOverIntegralChannelsStage() {
+  // @@protoc_insertion_point(destructor:doppia_protobuf.SoftCascadeOverIntegralChannelsStage)
   SharedDtor();
 }
 
@@ -2399,13 +3259,25 @@ const SoftCascadeOverIntegralChannelsStage& SoftCascadeOverIntegralChannelsStage
 
 SoftCascadeOverIntegralChannelsStage* SoftCascadeOverIntegralChannelsStage::default_instance_ = NULL;
 
-SoftCascadeOverIntegralChannelsStage* SoftCascadeOverIntegralChannelsStage::New() const {
-  return new SoftCascadeOverIntegralChannelsStage;
+SoftCascadeOverIntegralChannelsStage* SoftCascadeOverIntegralChannelsStage::New(::google::protobuf::Arena* arena) const {
+  SoftCascadeOverIntegralChannelsStage* n = new SoftCascadeOverIntegralChannelsStage;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void SoftCascadeOverIntegralChannelsStage::Clear() {
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    feature_type_ = 0;
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<SoftCascadeOverIntegralChannelsStage*>(16)->f)
+
+#define ZR_(first, last) do {\
+  ::memset(&first, 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  if (_has_bits_[0 / 32] & 127u) {
+    ZR_(feature_type_, weight_);
     if (has_decision_stump()) {
       if (decision_stump_ != NULL) decision_stump_->::doppia_protobuf::IntegralChannelDecisionStump::Clear();
     }
@@ -2418,23 +3290,31 @@ void SoftCascadeOverIntegralChannelsStage::Clear() {
     if (has_stump_set()) {
       if (stump_set_ != NULL) stump_set_->::doppia_protobuf::IntegralChannelStumpSet::Clear();
     }
-    weight_ = 0;
     cascade_threshold_ = 0;
   }
+
+#undef ZR_HELPER_
+#undef ZR_
+
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  if (_internal_metadata_.have_unknown_fields()) {
+    mutable_unknown_fields()->Clear();
+  }
 }
 
 bool SoftCascadeOverIntegralChannelsStage::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:doppia_protobuf.SoftCascadeOverIntegralChannelsStage)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // required .doppia_protobuf.SoftCascadeOverIntegralChannelsStage.FeatureTypes feature_type = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+        if (tag == 8) {
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -2445,7 +3325,7 @@ bool SoftCascadeOverIntegralChannelsStage::MergePartialFromCodedStream(
             mutable_unknown_fields()->AddVarint(1, value);
           }
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(21)) goto parse_weight;
         break;
@@ -2453,15 +3333,14 @@ bool SoftCascadeOverIntegralChannelsStage::MergePartialFromCodedStream(
 
       // required float weight = 2;
       case 2: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED32) {
+        if (tag == 21) {
          parse_weight:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &weight_)));
           set_has_weight();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(29)) goto parse_cascade_threshold;
         break;
@@ -2469,15 +3348,14 @@ bool SoftCascadeOverIntegralChannelsStage::MergePartialFromCodedStream(
 
       // required float cascade_threshold = 3;
       case 3: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED32) {
+        if (tag == 29) {
          parse_cascade_threshold:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &cascade_threshold_)));
           set_has_cascade_threshold();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(82)) goto parse_decision_stump;
         break;
@@ -2485,13 +3363,12 @@ bool SoftCascadeOverIntegralChannelsStage::MergePartialFromCodedStream(
 
       // optional .doppia_protobuf.IntegralChannelDecisionStump decision_stump = 10;
       case 10: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+        if (tag == 82) {
          parse_decision_stump:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_decision_stump()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(90)) goto parse_level2_decision_tree;
         break;
@@ -2499,13 +3376,12 @@ bool SoftCascadeOverIntegralChannelsStage::MergePartialFromCodedStream(
 
       // optional .doppia_protobuf.IntegralChannelBinaryDecisionTree level2_decision_tree = 11;
       case 11: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+        if (tag == 90) {
          parse_level2_decision_tree:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_level2_decision_tree()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(98)) goto parse_levelN_decision_tree;
         break;
@@ -2513,13 +3389,12 @@ bool SoftCascadeOverIntegralChannelsStage::MergePartialFromCodedStream(
 
       // optional .doppia_protobuf.IntegralChannelBinaryDecisionTree levelN_decision_tree = 12;
       case 12: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+        if (tag == 98) {
          parse_levelN_decision_tree:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_leveln_decision_tree()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(106)) goto parse_stump_set;
         break;
@@ -2527,23 +3402,23 @@ bool SoftCascadeOverIntegralChannelsStage::MergePartialFromCodedStream(
 
       // optional .doppia_protobuf.IntegralChannelStumpSet stump_set = 13;
       case 13: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+        if (tag == 106) {
          parse_stump_set:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_stump_set()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectAtEnd()) return true;
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -2551,12 +3426,18 @@ bool SoftCascadeOverIntegralChannelsStage::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:doppia_protobuf.SoftCascadeOverIntegralChannelsStage)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:doppia_protobuf.SoftCascadeOverIntegralChannelsStage)
+  return false;
 #undef DO_
 }
 
 void SoftCascadeOverIntegralChannelsStage::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:doppia_protobuf.SoftCascadeOverIntegralChannelsStage)
   // required .doppia_protobuf.SoftCascadeOverIntegralChannelsStage.FeatureTypes feature_type = 1;
   if (has_feature_type()) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
@@ -2576,35 +3457,37 @@ void SoftCascadeOverIntegralChannelsStage::SerializeWithCachedSizes(
   // optional .doppia_protobuf.IntegralChannelDecisionStump decision_stump = 10;
   if (has_decision_stump()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      10, this->decision_stump(), output);
+      10, *this->decision_stump_, output);
   }
 
   // optional .doppia_protobuf.IntegralChannelBinaryDecisionTree level2_decision_tree = 11;
   if (has_level2_decision_tree()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      11, this->level2_decision_tree(), output);
+      11, *this->level2_decision_tree_, output);
   }
 
   // optional .doppia_protobuf.IntegralChannelBinaryDecisionTree levelN_decision_tree = 12;
   if (has_leveln_decision_tree()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      12, this->leveln_decision_tree(), output);
+      12, *this->leveln_decision_tree_, output);
   }
 
   // optional .doppia_protobuf.IntegralChannelStumpSet stump_set = 13;
   if (has_stump_set()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      13, this->stump_set(), output);
+      13, *this->stump_set_, output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:doppia_protobuf.SoftCascadeOverIntegralChannelsStage)
 }
 
 ::google::protobuf::uint8* SoftCascadeOverIntegralChannelsStage::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:doppia_protobuf.SoftCascadeOverIntegralChannelsStage)
   // required .doppia_protobuf.SoftCascadeOverIntegralChannelsStage.FeatureTypes feature_type = 1;
   if (has_feature_type()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
@@ -2625,87 +3508,107 @@ void SoftCascadeOverIntegralChannelsStage::SerializeWithCachedSizes(
   if (has_decision_stump()) {
     target = ::google::protobuf::internal::WireFormatLite::
       WriteMessageNoVirtualToArray(
-        10, this->decision_stump(), target);
+        10, *this->decision_stump_, target);
   }
 
   // optional .doppia_protobuf.IntegralChannelBinaryDecisionTree level2_decision_tree = 11;
   if (has_level2_decision_tree()) {
     target = ::google::protobuf::internal::WireFormatLite::
       WriteMessageNoVirtualToArray(
-        11, this->level2_decision_tree(), target);
+        11, *this->level2_decision_tree_, target);
   }
 
   // optional .doppia_protobuf.IntegralChannelBinaryDecisionTree levelN_decision_tree = 12;
   if (has_leveln_decision_tree()) {
     target = ::google::protobuf::internal::WireFormatLite::
       WriteMessageNoVirtualToArray(
-        12, this->leveln_decision_tree(), target);
+        12, *this->leveln_decision_tree_, target);
   }
 
   // optional .doppia_protobuf.IntegralChannelStumpSet stump_set = 13;
   if (has_stump_set()) {
     target = ::google::protobuf::internal::WireFormatLite::
       WriteMessageNoVirtualToArray(
-        13, this->stump_set(), target);
+        13, *this->stump_set_, target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:doppia_protobuf.SoftCascadeOverIntegralChannelsStage)
   return target;
 }
 
+int SoftCascadeOverIntegralChannelsStage::RequiredFieldsByteSizeFallback() const {
+  int total_size = 0;
+
+  if (has_feature_type()) {
+    // required .doppia_protobuf.SoftCascadeOverIntegralChannelsStage.FeatureTypes feature_type = 1;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->feature_type());
+  }
+
+  if (has_weight()) {
+    // required float weight = 2;
+    total_size += 1 + 4;
+  }
+
+  if (has_cascade_threshold()) {
+    // required float cascade_threshold = 3;
+    total_size += 1 + 4;
+  }
+
+  return total_size;
+}
 int SoftCascadeOverIntegralChannelsStage::ByteSize() const {
   int total_size = 0;
 
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+  if (((_has_bits_[0] & 0x00000061) ^ 0x00000061) == 0) {  // All required fields are present.
     // required .doppia_protobuf.SoftCascadeOverIntegralChannelsStage.FeatureTypes feature_type = 1;
-    if (has_feature_type()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->feature_type());
-    }
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->feature_type());
 
+    // required float weight = 2;
+    total_size += 1 + 4;
+
+    // required float cascade_threshold = 3;
+    total_size += 1 + 4;
+
+  } else {
+    total_size += RequiredFieldsByteSizeFallback();
+  }
+  if (_has_bits_[1 / 32] & 30u) {
     // optional .doppia_protobuf.IntegralChannelDecisionStump decision_stump = 10;
     if (has_decision_stump()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->decision_stump());
+          *this->decision_stump_);
     }
 
     // optional .doppia_protobuf.IntegralChannelBinaryDecisionTree level2_decision_tree = 11;
     if (has_level2_decision_tree()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->level2_decision_tree());
+          *this->level2_decision_tree_);
     }
 
     // optional .doppia_protobuf.IntegralChannelBinaryDecisionTree levelN_decision_tree = 12;
     if (has_leveln_decision_tree()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->leveln_decision_tree());
+          *this->leveln_decision_tree_);
     }
 
     // optional .doppia_protobuf.IntegralChannelStumpSet stump_set = 13;
     if (has_stump_set()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->stump_set());
-    }
-
-    // required float weight = 2;
-    if (has_weight()) {
-      total_size += 1 + 4;
-    }
-
-    // required float cascade_threshold = 3;
-    if (has_cascade_threshold()) {
-      total_size += 1 + 4;
+          *this->stump_set_);
     }
 
   }
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         unknown_fields());
@@ -2717,10 +3620,10 @@ int SoftCascadeOverIntegralChannelsStage::ByteSize() const {
 }
 
 void SoftCascadeOverIntegralChannelsStage::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  const SoftCascadeOverIntegralChannelsStage* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const SoftCascadeOverIntegralChannelsStage*>(
-      &from);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const SoftCascadeOverIntegralChannelsStage* source = 
+      ::google::protobuf::internal::DynamicCastToGenerated<const SoftCascadeOverIntegralChannelsStage>(
+          &from);
   if (source == NULL) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2729,7 +3632,7 @@ void SoftCascadeOverIntegralChannelsStage::MergeFrom(const ::google::protobuf::M
 }
 
 void SoftCascadeOverIntegralChannelsStage::MergeFrom(const SoftCascadeOverIntegralChannelsStage& from) {
-  GOOGLE_CHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     if (from.has_feature_type()) {
       set_feature_type(from.feature_type());
@@ -2753,7 +3656,9 @@ void SoftCascadeOverIntegralChannelsStage::MergeFrom(const SoftCascadeOverIntegr
       set_cascade_threshold(from.cascade_threshold());
     }
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+  if (from._internal_metadata_.have_unknown_fields()) {
+    mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+  }
 }
 
 void SoftCascadeOverIntegralChannelsStage::CopyFrom(const ::google::protobuf::Message& from) {
@@ -2772,33 +3677,35 @@ bool SoftCascadeOverIntegralChannelsStage::IsInitialized() const {
   if ((_has_bits_[0] & 0x00000061) != 0x00000061) return false;
 
   if (has_decision_stump()) {
-    if (!this->decision_stump().IsInitialized()) return false;
+    if (!this->decision_stump_->IsInitialized()) return false;
   }
   if (has_level2_decision_tree()) {
-    if (!this->level2_decision_tree().IsInitialized()) return false;
+    if (!this->level2_decision_tree_->IsInitialized()) return false;
   }
   if (has_leveln_decision_tree()) {
-    if (!this->leveln_decision_tree().IsInitialized()) return false;
+    if (!this->leveln_decision_tree_->IsInitialized()) return false;
   }
   if (has_stump_set()) {
-    if (!this->stump_set().IsInitialized()) return false;
+    if (!this->stump_set_->IsInitialized()) return false;
   }
   return true;
 }
 
 void SoftCascadeOverIntegralChannelsStage::Swap(SoftCascadeOverIntegralChannelsStage* other) {
-  if (other != this) {
-    std::swap(feature_type_, other->feature_type_);
-    std::swap(decision_stump_, other->decision_stump_);
-    std::swap(level2_decision_tree_, other->level2_decision_tree_);
-    std::swap(leveln_decision_tree_, other->leveln_decision_tree_);
-    std::swap(stump_set_, other->stump_set_);
-    std::swap(weight_, other->weight_);
-    std::swap(cascade_threshold_, other->cascade_threshold_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void SoftCascadeOverIntegralChannelsStage::InternalSwap(SoftCascadeOverIntegralChannelsStage* other) {
+  std::swap(feature_type_, other->feature_type_);
+  std::swap(decision_stump_, other->decision_stump_);
+  std::swap(level2_decision_tree_, other->level2_decision_tree_);
+  std::swap(leveln_decision_tree_, other->leveln_decision_tree_);
+  std::swap(stump_set_, other->stump_set_);
+  std::swap(weight_, other->weight_);
+  std::swap(cascade_threshold_, other->cascade_threshold_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata SoftCascadeOverIntegralChannelsStage::GetMetadata() const {
@@ -2809,45 +3716,297 @@ void SoftCascadeOverIntegralChannelsStage::Swap(SoftCascadeOverIntegralChannelsS
   return metadata;
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// SoftCascadeOverIntegralChannelsStage
+
+// required .doppia_protobuf.SoftCascadeOverIntegralChannelsStage.FeatureTypes feature_type = 1;
+bool SoftCascadeOverIntegralChannelsStage::has_feature_type() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+void SoftCascadeOverIntegralChannelsStage::set_has_feature_type() {
+  _has_bits_[0] |= 0x00000001u;
+}
+void SoftCascadeOverIntegralChannelsStage::clear_has_feature_type() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+void SoftCascadeOverIntegralChannelsStage::clear_feature_type() {
+  feature_type_ = 0;
+  clear_has_feature_type();
+}
+ ::doppia_protobuf::SoftCascadeOverIntegralChannelsStage_FeatureTypes SoftCascadeOverIntegralChannelsStage::feature_type() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.SoftCascadeOverIntegralChannelsStage.feature_type)
+  return static_cast< ::doppia_protobuf::SoftCascadeOverIntegralChannelsStage_FeatureTypes >(feature_type_);
+}
+ void SoftCascadeOverIntegralChannelsStage::set_feature_type(::doppia_protobuf::SoftCascadeOverIntegralChannelsStage_FeatureTypes value) {
+  assert(::doppia_protobuf::SoftCascadeOverIntegralChannelsStage_FeatureTypes_IsValid(value));
+  set_has_feature_type();
+  feature_type_ = value;
+  // @@protoc_insertion_point(field_set:doppia_protobuf.SoftCascadeOverIntegralChannelsStage.feature_type)
+}
+
+// optional .doppia_protobuf.IntegralChannelDecisionStump decision_stump = 10;
+bool SoftCascadeOverIntegralChannelsStage::has_decision_stump() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+void SoftCascadeOverIntegralChannelsStage::set_has_decision_stump() {
+  _has_bits_[0] |= 0x00000002u;
+}
+void SoftCascadeOverIntegralChannelsStage::clear_has_decision_stump() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+void SoftCascadeOverIntegralChannelsStage::clear_decision_stump() {
+  if (decision_stump_ != NULL) decision_stump_->::doppia_protobuf::IntegralChannelDecisionStump::Clear();
+  clear_has_decision_stump();
+}
+const ::doppia_protobuf::IntegralChannelDecisionStump& SoftCascadeOverIntegralChannelsStage::decision_stump() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.SoftCascadeOverIntegralChannelsStage.decision_stump)
+  return decision_stump_ != NULL ? *decision_stump_ : *default_instance_->decision_stump_;
+}
+::doppia_protobuf::IntegralChannelDecisionStump* SoftCascadeOverIntegralChannelsStage::mutable_decision_stump() {
+  set_has_decision_stump();
+  if (decision_stump_ == NULL) {
+    decision_stump_ = new ::doppia_protobuf::IntegralChannelDecisionStump;
+  }
+  // @@protoc_insertion_point(field_mutable:doppia_protobuf.SoftCascadeOverIntegralChannelsStage.decision_stump)
+  return decision_stump_;
+}
+::doppia_protobuf::IntegralChannelDecisionStump* SoftCascadeOverIntegralChannelsStage::release_decision_stump() {
+  clear_has_decision_stump();
+  ::doppia_protobuf::IntegralChannelDecisionStump* temp = decision_stump_;
+  decision_stump_ = NULL;
+  return temp;
+}
+void SoftCascadeOverIntegralChannelsStage::set_allocated_decision_stump(::doppia_protobuf::IntegralChannelDecisionStump* decision_stump) {
+  delete decision_stump_;
+  decision_stump_ = decision_stump;
+  if (decision_stump) {
+    set_has_decision_stump();
+  } else {
+    clear_has_decision_stump();
+  }
+  // @@protoc_insertion_point(field_set_allocated:doppia_protobuf.SoftCascadeOverIntegralChannelsStage.decision_stump)
+}
+
+// optional .doppia_protobuf.IntegralChannelBinaryDecisionTree level2_decision_tree = 11;
+bool SoftCascadeOverIntegralChannelsStage::has_level2_decision_tree() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+void SoftCascadeOverIntegralChannelsStage::set_has_level2_decision_tree() {
+  _has_bits_[0] |= 0x00000004u;
+}
+void SoftCascadeOverIntegralChannelsStage::clear_has_level2_decision_tree() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+void SoftCascadeOverIntegralChannelsStage::clear_level2_decision_tree() {
+  if (level2_decision_tree_ != NULL) level2_decision_tree_->::doppia_protobuf::IntegralChannelBinaryDecisionTree::Clear();
+  clear_has_level2_decision_tree();
+}
+const ::doppia_protobuf::IntegralChannelBinaryDecisionTree& SoftCascadeOverIntegralChannelsStage::level2_decision_tree() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.SoftCascadeOverIntegralChannelsStage.level2_decision_tree)
+  return level2_decision_tree_ != NULL ? *level2_decision_tree_ : *default_instance_->level2_decision_tree_;
+}
+::doppia_protobuf::IntegralChannelBinaryDecisionTree* SoftCascadeOverIntegralChannelsStage::mutable_level2_decision_tree() {
+  set_has_level2_decision_tree();
+  if (level2_decision_tree_ == NULL) {
+    level2_decision_tree_ = new ::doppia_protobuf::IntegralChannelBinaryDecisionTree;
+  }
+  // @@protoc_insertion_point(field_mutable:doppia_protobuf.SoftCascadeOverIntegralChannelsStage.level2_decision_tree)
+  return level2_decision_tree_;
+}
+::doppia_protobuf::IntegralChannelBinaryDecisionTree* SoftCascadeOverIntegralChannelsStage::release_level2_decision_tree() {
+  clear_has_level2_decision_tree();
+  ::doppia_protobuf::IntegralChannelBinaryDecisionTree* temp = level2_decision_tree_;
+  level2_decision_tree_ = NULL;
+  return temp;
+}
+void SoftCascadeOverIntegralChannelsStage::set_allocated_level2_decision_tree(::doppia_protobuf::IntegralChannelBinaryDecisionTree* level2_decision_tree) {
+  delete level2_decision_tree_;
+  level2_decision_tree_ = level2_decision_tree;
+  if (level2_decision_tree) {
+    set_has_level2_decision_tree();
+  } else {
+    clear_has_level2_decision_tree();
+  }
+  // @@protoc_insertion_point(field_set_allocated:doppia_protobuf.SoftCascadeOverIntegralChannelsStage.level2_decision_tree)
+}
+
+// optional .doppia_protobuf.IntegralChannelBinaryDecisionTree levelN_decision_tree = 12;
+bool SoftCascadeOverIntegralChannelsStage::has_leveln_decision_tree() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+void SoftCascadeOverIntegralChannelsStage::set_has_leveln_decision_tree() {
+  _has_bits_[0] |= 0x00000008u;
+}
+void SoftCascadeOverIntegralChannelsStage::clear_has_leveln_decision_tree() {
+  _has_bits_[0] &= ~0x00000008u;
+}
+void SoftCascadeOverIntegralChannelsStage::clear_leveln_decision_tree() {
+  if (leveln_decision_tree_ != NULL) leveln_decision_tree_->::doppia_protobuf::IntegralChannelBinaryDecisionTree::Clear();
+  clear_has_leveln_decision_tree();
+}
+const ::doppia_protobuf::IntegralChannelBinaryDecisionTree& SoftCascadeOverIntegralChannelsStage::leveln_decision_tree() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.SoftCascadeOverIntegralChannelsStage.levelN_decision_tree)
+  return leveln_decision_tree_ != NULL ? *leveln_decision_tree_ : *default_instance_->leveln_decision_tree_;
+}
+::doppia_protobuf::IntegralChannelBinaryDecisionTree* SoftCascadeOverIntegralChannelsStage::mutable_leveln_decision_tree() {
+  set_has_leveln_decision_tree();
+  if (leveln_decision_tree_ == NULL) {
+    leveln_decision_tree_ = new ::doppia_protobuf::IntegralChannelBinaryDecisionTree;
+  }
+  // @@protoc_insertion_point(field_mutable:doppia_protobuf.SoftCascadeOverIntegralChannelsStage.levelN_decision_tree)
+  return leveln_decision_tree_;
+}
+::doppia_protobuf::IntegralChannelBinaryDecisionTree* SoftCascadeOverIntegralChannelsStage::release_leveln_decision_tree() {
+  clear_has_leveln_decision_tree();
+  ::doppia_protobuf::IntegralChannelBinaryDecisionTree* temp = leveln_decision_tree_;
+  leveln_decision_tree_ = NULL;
+  return temp;
+}
+void SoftCascadeOverIntegralChannelsStage::set_allocated_leveln_decision_tree(::doppia_protobuf::IntegralChannelBinaryDecisionTree* leveln_decision_tree) {
+  delete leveln_decision_tree_;
+  leveln_decision_tree_ = leveln_decision_tree;
+  if (leveln_decision_tree) {
+    set_has_leveln_decision_tree();
+  } else {
+    clear_has_leveln_decision_tree();
+  }
+  // @@protoc_insertion_point(field_set_allocated:doppia_protobuf.SoftCascadeOverIntegralChannelsStage.levelN_decision_tree)
+}
+
+// optional .doppia_protobuf.IntegralChannelStumpSet stump_set = 13;
+bool SoftCascadeOverIntegralChannelsStage::has_stump_set() const {
+  return (_has_bits_[0] & 0x00000010u) != 0;
+}
+void SoftCascadeOverIntegralChannelsStage::set_has_stump_set() {
+  _has_bits_[0] |= 0x00000010u;
+}
+void SoftCascadeOverIntegralChannelsStage::clear_has_stump_set() {
+  _has_bits_[0] &= ~0x00000010u;
+}
+void SoftCascadeOverIntegralChannelsStage::clear_stump_set() {
+  if (stump_set_ != NULL) stump_set_->::doppia_protobuf::IntegralChannelStumpSet::Clear();
+  clear_has_stump_set();
+}
+const ::doppia_protobuf::IntegralChannelStumpSet& SoftCascadeOverIntegralChannelsStage::stump_set() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.SoftCascadeOverIntegralChannelsStage.stump_set)
+  return stump_set_ != NULL ? *stump_set_ : *default_instance_->stump_set_;
+}
+::doppia_protobuf::IntegralChannelStumpSet* SoftCascadeOverIntegralChannelsStage::mutable_stump_set() {
+  set_has_stump_set();
+  if (stump_set_ == NULL) {
+    stump_set_ = new ::doppia_protobuf::IntegralChannelStumpSet;
+  }
+  // @@protoc_insertion_point(field_mutable:doppia_protobuf.SoftCascadeOverIntegralChannelsStage.stump_set)
+  return stump_set_;
+}
+::doppia_protobuf::IntegralChannelStumpSet* SoftCascadeOverIntegralChannelsStage::release_stump_set() {
+  clear_has_stump_set();
+  ::doppia_protobuf::IntegralChannelStumpSet* temp = stump_set_;
+  stump_set_ = NULL;
+  return temp;
+}
+void SoftCascadeOverIntegralChannelsStage::set_allocated_stump_set(::doppia_protobuf::IntegralChannelStumpSet* stump_set) {
+  delete stump_set_;
+  stump_set_ = stump_set;
+  if (stump_set) {
+    set_has_stump_set();
+  } else {
+    clear_has_stump_set();
+  }
+  // @@protoc_insertion_point(field_set_allocated:doppia_protobuf.SoftCascadeOverIntegralChannelsStage.stump_set)
+}
+
+// required float weight = 2;
+bool SoftCascadeOverIntegralChannelsStage::has_weight() const {
+  return (_has_bits_[0] & 0x00000020u) != 0;
+}
+void SoftCascadeOverIntegralChannelsStage::set_has_weight() {
+  _has_bits_[0] |= 0x00000020u;
+}
+void SoftCascadeOverIntegralChannelsStage::clear_has_weight() {
+  _has_bits_[0] &= ~0x00000020u;
+}
+void SoftCascadeOverIntegralChannelsStage::clear_weight() {
+  weight_ = 0;
+  clear_has_weight();
+}
+ float SoftCascadeOverIntegralChannelsStage::weight() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.SoftCascadeOverIntegralChannelsStage.weight)
+  return weight_;
+}
+ void SoftCascadeOverIntegralChannelsStage::set_weight(float value) {
+  set_has_weight();
+  weight_ = value;
+  // @@protoc_insertion_point(field_set:doppia_protobuf.SoftCascadeOverIntegralChannelsStage.weight)
+}
+
+// required float cascade_threshold = 3;
+bool SoftCascadeOverIntegralChannelsStage::has_cascade_threshold() const {
+  return (_has_bits_[0] & 0x00000040u) != 0;
+}
+void SoftCascadeOverIntegralChannelsStage::set_has_cascade_threshold() {
+  _has_bits_[0] |= 0x00000040u;
+}
+void SoftCascadeOverIntegralChannelsStage::clear_has_cascade_threshold() {
+  _has_bits_[0] &= ~0x00000040u;
+}
+void SoftCascadeOverIntegralChannelsStage::clear_cascade_threshold() {
+  cascade_threshold_ = 0;
+  clear_has_cascade_threshold();
+}
+ float SoftCascadeOverIntegralChannelsStage::cascade_threshold() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.SoftCascadeOverIntegralChannelsStage.cascade_threshold)
+  return cascade_threshold_;
+}
+ void SoftCascadeOverIntegralChannelsStage::set_cascade_threshold(float value) {
+  set_has_cascade_threshold();
+  cascade_threshold_ = value;
+  // @@protoc_insertion_point(field_set:doppia_protobuf.SoftCascadeOverIntegralChannelsStage.cascade_threshold)
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
 ::std::string* SoftCascadeOverIntegralChannelsModel::_default_channels_description_ = NULL;
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int SoftCascadeOverIntegralChannelsModel::kStagesFieldNumber;
 const int SoftCascadeOverIntegralChannelsModel::kChannelsDescriptionFieldNumber;
 const int SoftCascadeOverIntegralChannelsModel::kShrinkingFactorFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 SoftCascadeOverIntegralChannelsModel::SoftCascadeOverIntegralChannelsModel()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
   SharedCtor();
+  // @@protoc_insertion_point(constructor:doppia_protobuf.SoftCascadeOverIntegralChannelsModel)
 }
 
 void SoftCascadeOverIntegralChannelsModel::InitAsDefaultInstance() {
 }
 
 SoftCascadeOverIntegralChannelsModel::SoftCascadeOverIntegralChannelsModel(const SoftCascadeOverIntegralChannelsModel& from)
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(),
+    _internal_metadata_(NULL) {
   SharedCtor();
   MergeFrom(from);
+  // @@protoc_insertion_point(copy_constructor:doppia_protobuf.SoftCascadeOverIntegralChannelsModel)
 }
 
 void SoftCascadeOverIntegralChannelsModel::SharedCtor() {
+  ::google::protobuf::internal::GetEmptyString();
   _cached_size_ = 0;
-  channels_description_ = const_cast< ::std::string*>(_default_channels_description_);
+  channels_description_.UnsafeSetDefault(_default_channels_description_);
   shrinking_factor_ = 4u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
 SoftCascadeOverIntegralChannelsModel::~SoftCascadeOverIntegralChannelsModel() {
+  // @@protoc_insertion_point(destructor:doppia_protobuf.SoftCascadeOverIntegralChannelsModel)
   SharedDtor();
 }
 
 void SoftCascadeOverIntegralChannelsModel::SharedDtor() {
-  if (channels_description_ != _default_channels_description_) {
-    delete channels_description_;
-  }
+  channels_description_.DestroyNoArena(_default_channels_description_);
   if (this != default_instance_) {
   }
 }
@@ -2869,57 +4028,66 @@ const SoftCascadeOverIntegralChannelsModel& SoftCascadeOverIntegralChannelsModel
 
 SoftCascadeOverIntegralChannelsModel* SoftCascadeOverIntegralChannelsModel::default_instance_ = NULL;
 
-SoftCascadeOverIntegralChannelsModel* SoftCascadeOverIntegralChannelsModel::New() const {
-  return new SoftCascadeOverIntegralChannelsModel;
+SoftCascadeOverIntegralChannelsModel* SoftCascadeOverIntegralChannelsModel::New(::google::protobuf::Arena* arena) const {
+  SoftCascadeOverIntegralChannelsModel* n = new SoftCascadeOverIntegralChannelsModel;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void SoftCascadeOverIntegralChannelsModel::Clear() {
-  if (_has_bits_[1 / 32] & (0xffu << (1 % 32))) {
+  if (_has_bits_[0 / 32] & 6u) {
     if (has_channels_description()) {
-      if (channels_description_ != _default_channels_description_) {
-        channels_description_->assign(*_default_channels_description_);
-      }
+      channels_description_.ClearToDefaultNoArena(_default_channels_description_);
     }
     shrinking_factor_ = 4u;
   }
   stages_.Clear();
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  if (_internal_metadata_.have_unknown_fields()) {
+    mutable_unknown_fields()->Clear();
+  }
 }
 
 bool SoftCascadeOverIntegralChannelsModel::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:doppia_protobuf.SoftCascadeOverIntegralChannelsModel)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .doppia_protobuf.SoftCascadeOverIntegralChannelsStage stages = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
-         parse_stages:
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
+        if (tag == 10) {
+          DO_(input->IncrementRecursionDepth());
+         parse_loop_stages:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_stages()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(10)) goto parse_stages;
+        if (input->ExpectTag(10)) goto parse_loop_stages;
+        input->UnsafeDecrementRecursionDepth();
         if (input->ExpectTag(18)) goto parse_channels_description;
         break;
       }
 
       // optional string channels_description = 2 [default = "hog6_luv"];
       case 2: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+        if (tag == 18) {
          parse_channels_description:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_channels_description()));
-          ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
             this->channels_description().data(), this->channels_description().length(),
-            ::google::protobuf::internal::WireFormat::PARSE);
+            ::google::protobuf::internal::WireFormat::PARSE,
+            "doppia_protobuf.SoftCascadeOverIntegralChannelsModel.channels_description");
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(24)) goto parse_shrinking_factor;
         break;
@@ -2927,25 +4095,25 @@ bool SoftCascadeOverIntegralChannelsModel::MergePartialFromCodedStream(
 
       // optional uint32 shrinking_factor = 3 [default = 4];
       case 3: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+        if (tag == 24) {
          parse_shrinking_factor:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &shrinking_factor_)));
           set_has_shrinking_factor();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectAtEnd()) return true;
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -2953,24 +4121,31 @@ bool SoftCascadeOverIntegralChannelsModel::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:doppia_protobuf.SoftCascadeOverIntegralChannelsModel)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:doppia_protobuf.SoftCascadeOverIntegralChannelsModel)
+  return false;
 #undef DO_
 }
 
 void SoftCascadeOverIntegralChannelsModel::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:doppia_protobuf.SoftCascadeOverIntegralChannelsModel)
   // repeated .doppia_protobuf.SoftCascadeOverIntegralChannelsStage stages = 1;
-  for (int i = 0; i < this->stages_size(); i++) {
+  for (unsigned int i = 0, n = this->stages_size(); i < n; i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, this->stages(i), output);
   }
 
   // optional string channels_description = 2 [default = "hog6_luv"];
   if (has_channels_description()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
       this->channels_description().data(), this->channels_description().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE);
-    ::google::protobuf::internal::WireFormatLite::WriteString(
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "doppia_protobuf.SoftCascadeOverIntegralChannelsModel.channels_description");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       2, this->channels_description(), output);
   }
 
@@ -2979,16 +4154,18 @@ void SoftCascadeOverIntegralChannelsModel::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(3, this->shrinking_factor(), output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:doppia_protobuf.SoftCascadeOverIntegralChannelsModel)
 }
 
 ::google::protobuf::uint8* SoftCascadeOverIntegralChannelsModel::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:doppia_protobuf.SoftCascadeOverIntegralChannelsModel)
   // repeated .doppia_protobuf.SoftCascadeOverIntegralChannelsStage stages = 1;
-  for (int i = 0; i < this->stages_size(); i++) {
+  for (unsigned int i = 0, n = this->stages_size(); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       WriteMessageNoVirtualToArray(
         1, this->stages(i), target);
@@ -2996,9 +4173,10 @@ void SoftCascadeOverIntegralChannelsModel::SerializeWithCachedSizes(
 
   // optional string channels_description = 2 [default = "hog6_luv"];
   if (has_channels_description()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
       this->channels_description().data(), this->channels_description().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE);
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "doppia_protobuf.SoftCascadeOverIntegralChannelsModel.channels_description");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         2, this->channels_description(), target);
@@ -3009,17 +4187,18 @@ void SoftCascadeOverIntegralChannelsModel::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(3, this->shrinking_factor(), target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:doppia_protobuf.SoftCascadeOverIntegralChannelsModel)
   return target;
 }
 
 int SoftCascadeOverIntegralChannelsModel::ByteSize() const {
   int total_size = 0;
 
-  if (_has_bits_[1 / 32] & (0xffu << (1 % 32))) {
+  if (_has_bits_[1 / 32] & 6u) {
     // optional string channels_description = 2 [default = "hog6_luv"];
     if (has_channels_description()) {
       total_size += 1 +
@@ -3043,7 +4222,7 @@ int SoftCascadeOverIntegralChannelsModel::ByteSize() const {
         this->stages(i));
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         unknown_fields());
@@ -3055,10 +4234,10 @@ int SoftCascadeOverIntegralChannelsModel::ByteSize() const {
 }
 
 void SoftCascadeOverIntegralChannelsModel::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  const SoftCascadeOverIntegralChannelsModel* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const SoftCascadeOverIntegralChannelsModel*>(
-      &from);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const SoftCascadeOverIntegralChannelsModel* source = 
+      ::google::protobuf::internal::DynamicCastToGenerated<const SoftCascadeOverIntegralChannelsModel>(
+          &from);
   if (source == NULL) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3067,17 +4246,20 @@ void SoftCascadeOverIntegralChannelsModel::MergeFrom(const ::google::protobuf::M
 }
 
 void SoftCascadeOverIntegralChannelsModel::MergeFrom(const SoftCascadeOverIntegralChannelsModel& from) {
-  GOOGLE_CHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   stages_.MergeFrom(from.stages_);
   if (from._has_bits_[1 / 32] & (0xffu << (1 % 32))) {
     if (from.has_channels_description()) {
-      set_channels_description(from.channels_description());
+      set_has_channels_description();
+      channels_description_.AssignWithDefault(_default_channels_description_, from.channels_description_);
     }
     if (from.has_shrinking_factor()) {
       set_shrinking_factor(from.shrinking_factor());
     }
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+  if (from._internal_metadata_.have_unknown_fields()) {
+    mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+  }
 }
 
 void SoftCascadeOverIntegralChannelsModel::CopyFrom(const ::google::protobuf::Message& from) {
@@ -3094,21 +4276,21 @@ void SoftCascadeOverIntegralChannelsModel::CopyFrom(const SoftCascadeOverIntegra
 
 bool SoftCascadeOverIntegralChannelsModel::IsInitialized() const {
 
-  for (int i = 0; i < stages_size(); i++) {
-    if (!this->stages(i).IsInitialized()) return false;
-  }
+  if (!::google::protobuf::internal::AllAreInitialized(this->stages())) return false;
   return true;
 }
 
 void SoftCascadeOverIntegralChannelsModel::Swap(SoftCascadeOverIntegralChannelsModel* other) {
-  if (other != this) {
-    stages_.Swap(&other->stages_);
-    std::swap(channels_description_, other->channels_description_);
-    std::swap(shrinking_factor_, other->shrinking_factor_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void SoftCascadeOverIntegralChannelsModel::InternalSwap(SoftCascadeOverIntegralChannelsModel* other) {
+  stages_.UnsafeArenaSwap(&other->stages_);
+  channels_description_.Swap(&other->channels_description_);
+  std::swap(shrinking_factor_, other->shrinking_factor_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata SoftCascadeOverIntegralChannelsModel::GetMetadata() const {
@@ -3119,6 +4301,117 @@ void SoftCascadeOverIntegralChannelsModel::Swap(SoftCascadeOverIntegralChannelsM
   return metadata;
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// SoftCascadeOverIntegralChannelsModel
+
+// repeated .doppia_protobuf.SoftCascadeOverIntegralChannelsStage stages = 1;
+int SoftCascadeOverIntegralChannelsModel::stages_size() const {
+  return stages_.size();
+}
+void SoftCascadeOverIntegralChannelsModel::clear_stages() {
+  stages_.Clear();
+}
+const ::doppia_protobuf::SoftCascadeOverIntegralChannelsStage& SoftCascadeOverIntegralChannelsModel::stages(int index) const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.SoftCascadeOverIntegralChannelsModel.stages)
+  return stages_.Get(index);
+}
+::doppia_protobuf::SoftCascadeOverIntegralChannelsStage* SoftCascadeOverIntegralChannelsModel::mutable_stages(int index) {
+  // @@protoc_insertion_point(field_mutable:doppia_protobuf.SoftCascadeOverIntegralChannelsModel.stages)
+  return stages_.Mutable(index);
+}
+::doppia_protobuf::SoftCascadeOverIntegralChannelsStage* SoftCascadeOverIntegralChannelsModel::add_stages() {
+  // @@protoc_insertion_point(field_add:doppia_protobuf.SoftCascadeOverIntegralChannelsModel.stages)
+  return stages_.Add();
+}
+::google::protobuf::RepeatedPtrField< ::doppia_protobuf::SoftCascadeOverIntegralChannelsStage >*
+SoftCascadeOverIntegralChannelsModel::mutable_stages() {
+  // @@protoc_insertion_point(field_mutable_list:doppia_protobuf.SoftCascadeOverIntegralChannelsModel.stages)
+  return &stages_;
+}
+const ::google::protobuf::RepeatedPtrField< ::doppia_protobuf::SoftCascadeOverIntegralChannelsStage >&
+SoftCascadeOverIntegralChannelsModel::stages() const {
+  // @@protoc_insertion_point(field_list:doppia_protobuf.SoftCascadeOverIntegralChannelsModel.stages)
+  return stages_;
+}
+
+// optional string channels_description = 2 [default = "hog6_luv"];
+bool SoftCascadeOverIntegralChannelsModel::has_channels_description() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+void SoftCascadeOverIntegralChannelsModel::set_has_channels_description() {
+  _has_bits_[0] |= 0x00000002u;
+}
+void SoftCascadeOverIntegralChannelsModel::clear_has_channels_description() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+void SoftCascadeOverIntegralChannelsModel::clear_channels_description() {
+  channels_description_.ClearToDefaultNoArena(_default_channels_description_);
+  clear_has_channels_description();
+}
+ const ::std::string& SoftCascadeOverIntegralChannelsModel::channels_description() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.SoftCascadeOverIntegralChannelsModel.channels_description)
+  return channels_description_.GetNoArena(_default_channels_description_);
+}
+ void SoftCascadeOverIntegralChannelsModel::set_channels_description(const ::std::string& value) {
+  set_has_channels_description();
+  channels_description_.SetNoArena(_default_channels_description_, value);
+  // @@protoc_insertion_point(field_set:doppia_protobuf.SoftCascadeOverIntegralChannelsModel.channels_description)
+}
+ void SoftCascadeOverIntegralChannelsModel::set_channels_description(const char* value) {
+  set_has_channels_description();
+  channels_description_.SetNoArena(_default_channels_description_, ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:doppia_protobuf.SoftCascadeOverIntegralChannelsModel.channels_description)
+}
+ void SoftCascadeOverIntegralChannelsModel::set_channels_description(const char* value, size_t size) {
+  set_has_channels_description();
+  channels_description_.SetNoArena(_default_channels_description_,
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:doppia_protobuf.SoftCascadeOverIntegralChannelsModel.channels_description)
+}
+ ::std::string* SoftCascadeOverIntegralChannelsModel::mutable_channels_description() {
+  set_has_channels_description();
+  // @@protoc_insertion_point(field_mutable:doppia_protobuf.SoftCascadeOverIntegralChannelsModel.channels_description)
+  return channels_description_.MutableNoArena(_default_channels_description_);
+}
+ ::std::string* SoftCascadeOverIntegralChannelsModel::release_channels_description() {
+  clear_has_channels_description();
+  return channels_description_.ReleaseNoArena(_default_channels_description_);
+}
+ void SoftCascadeOverIntegralChannelsModel::set_allocated_channels_description(::std::string* channels_description) {
+  if (channels_description != NULL) {
+    set_has_channels_description();
+  } else {
+    clear_has_channels_description();
+  }
+  channels_description_.SetAllocatedNoArena(_default_channels_description_, channels_description);
+  // @@protoc_insertion_point(field_set_allocated:doppia_protobuf.SoftCascadeOverIntegralChannelsModel.channels_description)
+}
+
+// optional uint32 shrinking_factor = 3 [default = 4];
+bool SoftCascadeOverIntegralChannelsModel::has_shrinking_factor() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+void SoftCascadeOverIntegralChannelsModel::set_has_shrinking_factor() {
+  _has_bits_[0] |= 0x00000004u;
+}
+void SoftCascadeOverIntegralChannelsModel::clear_has_shrinking_factor() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+void SoftCascadeOverIntegralChannelsModel::clear_shrinking_factor() {
+  shrinking_factor_ = 4u;
+  clear_has_shrinking_factor();
+}
+ ::google::protobuf::uint32 SoftCascadeOverIntegralChannelsModel::shrinking_factor() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.SoftCascadeOverIntegralChannelsModel.shrinking_factor)
+  return shrinking_factor_;
+}
+ void SoftCascadeOverIntegralChannelsModel::set_shrinking_factor(::google::protobuf::uint32 value) {
+  set_has_shrinking_factor();
+  shrinking_factor_ = value;
+  // @@protoc_insertion_point(field_set:doppia_protobuf.SoftCascadeOverIntegralChannelsModel.shrinking_factor)
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
@@ -3137,14 +4430,14 @@ bool DetectorModel_DetectorTypes_IsValid(int value) {
   }
 }
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const DetectorModel_DetectorTypes DetectorModel::LinearSvm;
 const DetectorModel_DetectorTypes DetectorModel::SoftCascadeOverIntegralChannels;
 const DetectorModel_DetectorTypes DetectorModel::HoughForest;
 const DetectorModel_DetectorTypes DetectorModel::DetectorTypes_MIN;
 const DetectorModel_DetectorTypes DetectorModel::DetectorTypes_MAX;
 const int DetectorModel::DetectorTypes_ARRAYSIZE;
-#endif  // _MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 const ::google::protobuf::EnumDescriptor* DetectorModel_OcclusionTypes_descriptor() {
   protobuf_AssignDescriptorsOnce();
   return DetectorModel_OcclusionTypes_descriptor_;
@@ -3161,7 +4454,7 @@ bool DetectorModel_OcclusionTypes_IsValid(int value) {
   }
 }
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const DetectorModel_OcclusionTypes DetectorModel::LeftOcclusion;
 const DetectorModel_OcclusionTypes DetectorModel::RightOcclusion;
 const DetectorModel_OcclusionTypes DetectorModel::BottomOcclusion;
@@ -3169,9 +4462,9 @@ const DetectorModel_OcclusionTypes DetectorModel::TopOcclusion;
 const DetectorModel_OcclusionTypes DetectorModel::OcclusionTypes_MIN;
 const DetectorModel_OcclusionTypes DetectorModel::OcclusionTypes_MAX;
 const int DetectorModel::OcclusionTypes_ARRAYSIZE;
-#endif  // _MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 ::std::string* DetectorModel::_default_semantic_category_ = NULL;
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int DetectorModel::kDetectorNameFieldNumber;
 const int DetectorModel::kTrainingDatasetNameFieldNumber;
 const int DetectorModel::kSemanticCategoryFieldNumber;
@@ -3183,11 +4476,12 @@ const int DetectorModel::kSoftCascadeModelFieldNumber;
 const int DetectorModel::kScaleFieldNumber;
 const int DetectorModel::kOcclusionLevelFieldNumber;
 const int DetectorModel::kOcclusionTypeFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 DetectorModel::DetectorModel()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
   SharedCtor();
+  // @@protoc_insertion_point(constructor:doppia_protobuf.DetectorModel)
 }
 
 void DetectorModel::InitAsDefaultInstance() {
@@ -3198,16 +4492,19 @@ void DetectorModel::InitAsDefaultInstance() {
 }
 
 DetectorModel::DetectorModel(const DetectorModel& from)
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(),
+    _internal_metadata_(NULL) {
   SharedCtor();
   MergeFrom(from);
+  // @@protoc_insertion_point(copy_constructor:doppia_protobuf.DetectorModel)
 }
 
 void DetectorModel::SharedCtor() {
+  ::google::protobuf::internal::GetEmptyString();
   _cached_size_ = 0;
-  detector_name_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
-  training_dataset_name_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
-  semantic_category_ = const_cast< ::std::string*>(_default_semantic_category_);
+  detector_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  training_dataset_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  semantic_category_.UnsafeSetDefault(_default_semantic_category_);
   model_window_size_ = NULL;
   object_window_ = NULL;
   detector_type_ = 0;
@@ -3220,19 +4517,14 @@ void DetectorModel::SharedCtor() {
 }
 
 DetectorModel::~DetectorModel() {
+  // @@protoc_insertion_point(destructor:doppia_protobuf.DetectorModel)
   SharedDtor();
 }
 
 void DetectorModel::SharedDtor() {
-  if (detector_name_ != &::google::protobuf::internal::kEmptyString) {
-    delete detector_name_;
-  }
-  if (training_dataset_name_ != &::google::protobuf::internal::kEmptyString) {
-    delete training_dataset_name_;
-  }
-  if (semantic_category_ != _default_semantic_category_) {
-    delete semantic_category_;
-  }
+  detector_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  training_dataset_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  semantic_category_.DestroyNoArena(_default_semantic_category_);
   if (this != default_instance_) {
     delete model_window_size_;
     delete object_window_;
@@ -3258,26 +4550,24 @@ const DetectorModel& DetectorModel::default_instance() {
 
 DetectorModel* DetectorModel::default_instance_ = NULL;
 
-DetectorModel* DetectorModel::New() const {
-  return new DetectorModel;
+DetectorModel* DetectorModel::New(::google::protobuf::Arena* arena) const {
+  DetectorModel* n = new DetectorModel;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void DetectorModel::Clear() {
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+  if (_has_bits_[0 / 32] & 255u) {
     if (has_detector_name()) {
-      if (detector_name_ != &::google::protobuf::internal::kEmptyString) {
-        detector_name_->clear();
-      }
+      detector_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
     }
     if (has_training_dataset_name()) {
-      if (training_dataset_name_ != &::google::protobuf::internal::kEmptyString) {
-        training_dataset_name_->clear();
-      }
+      training_dataset_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
     }
     if (has_semantic_category()) {
-      if (semantic_category_ != _default_semantic_category_) {
-        semantic_category_->assign(*_default_semantic_category_);
-      }
+      semantic_category_.ClearToDefaultNoArena(_default_semantic_category_);
     }
     if (has_model_window_size()) {
       if (model_window_size_ != NULL) model_window_size_->::doppia_protobuf::Point2d::Clear();
@@ -3293,32 +4583,38 @@ void DetectorModel::Clear() {
       if (soft_cascade_model_ != NULL) soft_cascade_model_->::doppia_protobuf::SoftCascadeOverIntegralChannelsModel::Clear();
     }
   }
-  if (_has_bits_[8 / 32] & (0xffu << (8 % 32))) {
+  if (_has_bits_[8 / 32] & 1792u) {
     scale_ = 1;
     occlusion_level_ = 0;
     occlusion_type_ = 20;
   }
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  if (_internal_metadata_.have_unknown_fields()) {
+    mutable_unknown_fields()->Clear();
+  }
 }
 
 bool DetectorModel::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:doppia_protobuf.DetectorModel)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(16383);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string detector_name = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_detector_name()));
-          ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
             this->detector_name().data(), this->detector_name().length(),
-            ::google::protobuf::internal::WireFormat::PARSE);
+            ::google::protobuf::internal::WireFormat::PARSE,
+            "doppia_protobuf.DetectorModel.detector_name");
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(18)) goto parse_training_dataset_name;
         break;
@@ -3326,16 +4622,16 @@ bool DetectorModel::MergePartialFromCodedStream(
 
       // required string training_dataset_name = 2;
       case 2: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+        if (tag == 18) {
          parse_training_dataset_name:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_training_dataset_name()));
-          ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
             this->training_dataset_name().data(), this->training_dataset_name().length(),
-            ::google::protobuf::internal::WireFormat::PARSE);
+            ::google::protobuf::internal::WireFormat::PARSE,
+            "doppia_protobuf.DetectorModel.training_dataset_name");
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(24)) goto parse_detector_type;
         break;
@@ -3343,8 +4639,7 @@ bool DetectorModel::MergePartialFromCodedStream(
 
       // required .doppia_protobuf.DetectorModel.DetectorTypes detector_type = 3;
       case 3: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+        if (tag == 24) {
          parse_detector_type:
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
@@ -3356,7 +4651,7 @@ bool DetectorModel::MergePartialFromCodedStream(
             mutable_unknown_fields()->AddVarint(3, value);
           }
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(82)) goto parse_model_window_size;
         break;
@@ -3364,13 +4659,12 @@ bool DetectorModel::MergePartialFromCodedStream(
 
       // optional .doppia_protobuf.Point2d model_window_size = 10;
       case 10: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+        if (tag == 82) {
          parse_model_window_size:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_model_window_size()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(90)) goto parse_object_window;
         break;
@@ -3378,13 +4672,12 @@ bool DetectorModel::MergePartialFromCodedStream(
 
       // optional .doppia_protobuf.Box object_window = 11;
       case 11: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+        if (tag == 90) {
          parse_object_window:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_object_window()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(802)) goto parse_linear_svm_model;
         break;
@@ -3392,13 +4685,12 @@ bool DetectorModel::MergePartialFromCodedStream(
 
       // optional .doppia_protobuf.LinearSvmModel linear_svm_model = 100;
       case 100: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+        if (tag == 802) {
          parse_linear_svm_model:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_linear_svm_model()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(818)) goto parse_soft_cascade_model;
         break;
@@ -3406,13 +4698,12 @@ bool DetectorModel::MergePartialFromCodedStream(
 
       // optional .doppia_protobuf.SoftCascadeOverIntegralChannelsModel soft_cascade_model = 102;
       case 102: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+        if (tag == 818) {
          parse_soft_cascade_model:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_soft_cascade_model()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(1605)) goto parse_scale;
         break;
@@ -3420,15 +4711,14 @@ bool DetectorModel::MergePartialFromCodedStream(
 
       // optional float scale = 200 [default = 1];
       case 200: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED32) {
+        if (tag == 1605) {
          parse_scale:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &scale_)));
           set_has_scale();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(1685)) goto parse_occlusion_level;
         break;
@@ -3436,15 +4726,14 @@ bool DetectorModel::MergePartialFromCodedStream(
 
       // optional float occlusion_level = 210 [default = 0];
       case 210: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED32) {
+        if (tag == 1685) {
          parse_occlusion_level:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &occlusion_level_)));
           set_has_occlusion_level();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(1688)) goto parse_occlusion_type;
         break;
@@ -3452,8 +4741,7 @@ bool DetectorModel::MergePartialFromCodedStream(
 
       // optional .doppia_protobuf.DetectorModel.OcclusionTypes occlusion_type = 211 [default = BottomOcclusion];
       case 211: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+        if (tag == 1688) {
          parse_occlusion_type:
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
@@ -3465,7 +4753,7 @@ bool DetectorModel::MergePartialFromCodedStream(
             mutable_unknown_fields()->AddVarint(211, value);
           }
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(2402)) goto parse_semantic_category;
         break;
@@ -3473,26 +4761,27 @@ bool DetectorModel::MergePartialFromCodedStream(
 
       // optional string semantic_category = 300 [default = "/m/017r8p"];
       case 300: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+        if (tag == 2402) {
          parse_semantic_category:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_semantic_category()));
-          ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
             this->semantic_category().data(), this->semantic_category().length(),
-            ::google::protobuf::internal::WireFormat::PARSE);
+            ::google::protobuf::internal::WireFormat::PARSE,
+            "doppia_protobuf.DetectorModel.semantic_category");
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectAtEnd()) return true;
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -3500,27 +4789,35 @@ bool DetectorModel::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:doppia_protobuf.DetectorModel)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:doppia_protobuf.DetectorModel)
+  return false;
 #undef DO_
 }
 
 void DetectorModel::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:doppia_protobuf.DetectorModel)
   // optional string detector_name = 1;
   if (has_detector_name()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
       this->detector_name().data(), this->detector_name().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE);
-    ::google::protobuf::internal::WireFormatLite::WriteString(
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "doppia_protobuf.DetectorModel.detector_name");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       1, this->detector_name(), output);
   }
 
   // required string training_dataset_name = 2;
   if (has_training_dataset_name()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
       this->training_dataset_name().data(), this->training_dataset_name().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE);
-    ::google::protobuf::internal::WireFormatLite::WriteString(
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "doppia_protobuf.DetectorModel.training_dataset_name");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       2, this->training_dataset_name(), output);
   }
 
@@ -3533,25 +4830,25 @@ void DetectorModel::SerializeWithCachedSizes(
   // optional .doppia_protobuf.Point2d model_window_size = 10;
   if (has_model_window_size()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      10, this->model_window_size(), output);
+      10, *this->model_window_size_, output);
   }
 
   // optional .doppia_protobuf.Box object_window = 11;
   if (has_object_window()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      11, this->object_window(), output);
+      11, *this->object_window_, output);
   }
 
   // optional .doppia_protobuf.LinearSvmModel linear_svm_model = 100;
   if (has_linear_svm_model()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      100, this->linear_svm_model(), output);
+      100, *this->linear_svm_model_, output);
   }
 
   // optional .doppia_protobuf.SoftCascadeOverIntegralChannelsModel soft_cascade_model = 102;
   if (has_soft_cascade_model()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      102, this->soft_cascade_model(), output);
+      102, *this->soft_cascade_model_, output);
   }
 
   // optional float scale = 200 [default = 1];
@@ -3572,26 +4869,30 @@ void DetectorModel::SerializeWithCachedSizes(
 
   // optional string semantic_category = 300 [default = "/m/017r8p"];
   if (has_semantic_category()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
       this->semantic_category().data(), this->semantic_category().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE);
-    ::google::protobuf::internal::WireFormatLite::WriteString(
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "doppia_protobuf.DetectorModel.semantic_category");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       300, this->semantic_category(), output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:doppia_protobuf.DetectorModel)
 }
 
 ::google::protobuf::uint8* DetectorModel::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:doppia_protobuf.DetectorModel)
   // optional string detector_name = 1;
   if (has_detector_name()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
       this->detector_name().data(), this->detector_name().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE);
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "doppia_protobuf.DetectorModel.detector_name");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         1, this->detector_name(), target);
@@ -3599,9 +4900,10 @@ void DetectorModel::SerializeWithCachedSizes(
 
   // required string training_dataset_name = 2;
   if (has_training_dataset_name()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
       this->training_dataset_name().data(), this->training_dataset_name().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE);
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "doppia_protobuf.DetectorModel.training_dataset_name");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         2, this->training_dataset_name(), target);
@@ -3617,28 +4919,28 @@ void DetectorModel::SerializeWithCachedSizes(
   if (has_model_window_size()) {
     target = ::google::protobuf::internal::WireFormatLite::
       WriteMessageNoVirtualToArray(
-        10, this->model_window_size(), target);
+        10, *this->model_window_size_, target);
   }
 
   // optional .doppia_protobuf.Box object_window = 11;
   if (has_object_window()) {
     target = ::google::protobuf::internal::WireFormatLite::
       WriteMessageNoVirtualToArray(
-        11, this->object_window(), target);
+        11, *this->object_window_, target);
   }
 
   // optional .doppia_protobuf.LinearSvmModel linear_svm_model = 100;
   if (has_linear_svm_model()) {
     target = ::google::protobuf::internal::WireFormatLite::
       WriteMessageNoVirtualToArray(
-        100, this->linear_svm_model(), target);
+        100, *this->linear_svm_model_, target);
   }
 
   // optional .doppia_protobuf.SoftCascadeOverIntegralChannelsModel soft_cascade_model = 102;
   if (has_soft_cascade_model()) {
     target = ::google::protobuf::internal::WireFormatLite::
       WriteMessageNoVirtualToArray(
-        102, this->soft_cascade_model(), target);
+        102, *this->soft_cascade_model_, target);
   }
 
   // optional float scale = 200 [default = 1];
@@ -3659,37 +4961,63 @@ void DetectorModel::SerializeWithCachedSizes(
 
   // optional string semantic_category = 300 [default = "/m/017r8p"];
   if (has_semantic_category()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
       this->semantic_category().data(), this->semantic_category().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE);
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "doppia_protobuf.DetectorModel.semantic_category");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         300, this->semantic_category(), target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:doppia_protobuf.DetectorModel)
   return target;
 }
 
+int DetectorModel::RequiredFieldsByteSizeFallback() const {
+  int total_size = 0;
+
+  if (has_training_dataset_name()) {
+    // required string training_dataset_name = 2;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->training_dataset_name());
+  }
+
+  if (has_detector_type()) {
+    // required .doppia_protobuf.DetectorModel.DetectorTypes detector_type = 3;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->detector_type());
+  }
+
+  return total_size;
+}
 int DetectorModel::ByteSize() const {
   int total_size = 0;
 
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+  if (((_has_bits_[0] & 0x00000022) ^ 0x00000022) == 0) {  // All required fields are present.
+    // required string training_dataset_name = 2;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->training_dataset_name());
+
+    // required .doppia_protobuf.DetectorModel.DetectorTypes detector_type = 3;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->detector_type());
+
+  } else {
+    total_size += RequiredFieldsByteSizeFallback();
+  }
+  if (_has_bits_[0 / 32] & 221u) {
     // optional string detector_name = 1;
     if (has_detector_name()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->detector_name());
-    }
-
-    // required string training_dataset_name = 2;
-    if (has_training_dataset_name()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::StringSize(
-          this->training_dataset_name());
     }
 
     // optional string semantic_category = 300 [default = "/m/017r8p"];
@@ -3703,38 +5031,32 @@ int DetectorModel::ByteSize() const {
     if (has_model_window_size()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->model_window_size());
+          *this->model_window_size_);
     }
 
     // optional .doppia_protobuf.Box object_window = 11;
     if (has_object_window()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->object_window());
-    }
-
-    // required .doppia_protobuf.DetectorModel.DetectorTypes detector_type = 3;
-    if (has_detector_type()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->detector_type());
+          *this->object_window_);
     }
 
     // optional .doppia_protobuf.LinearSvmModel linear_svm_model = 100;
     if (has_linear_svm_model()) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->linear_svm_model());
+          *this->linear_svm_model_);
     }
 
     // optional .doppia_protobuf.SoftCascadeOverIntegralChannelsModel soft_cascade_model = 102;
     if (has_soft_cascade_model()) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->soft_cascade_model());
+          *this->soft_cascade_model_);
     }
 
   }
-  if (_has_bits_[8 / 32] & (0xffu << (8 % 32))) {
+  if (_has_bits_[8 / 32] & 1792u) {
     // optional float scale = 200 [default = 1];
     if (has_scale()) {
       total_size += 2 + 4;
@@ -3752,7 +5074,7 @@ int DetectorModel::ByteSize() const {
     }
 
   }
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         unknown_fields());
@@ -3764,10 +5086,10 @@ int DetectorModel::ByteSize() const {
 }
 
 void DetectorModel::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  const DetectorModel* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const DetectorModel*>(
-      &from);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const DetectorModel* source = 
+      ::google::protobuf::internal::DynamicCastToGenerated<const DetectorModel>(
+          &from);
   if (source == NULL) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3776,16 +5098,19 @@ void DetectorModel::MergeFrom(const ::google::protobuf::Message& from) {
 }
 
 void DetectorModel::MergeFrom(const DetectorModel& from) {
-  GOOGLE_CHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     if (from.has_detector_name()) {
-      set_detector_name(from.detector_name());
+      set_has_detector_name();
+      detector_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.detector_name_);
     }
     if (from.has_training_dataset_name()) {
-      set_training_dataset_name(from.training_dataset_name());
+      set_has_training_dataset_name();
+      training_dataset_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.training_dataset_name_);
     }
     if (from.has_semantic_category()) {
-      set_semantic_category(from.semantic_category());
+      set_has_semantic_category();
+      semantic_category_.AssignWithDefault(_default_semantic_category_, from.semantic_category_);
     }
     if (from.has_model_window_size()) {
       mutable_model_window_size()->::doppia_protobuf::Point2d::MergeFrom(from.model_window_size());
@@ -3814,7 +5139,9 @@ void DetectorModel::MergeFrom(const DetectorModel& from) {
       set_occlusion_type(from.occlusion_type());
     }
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+  if (from._internal_metadata_.have_unknown_fields()) {
+    mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+  }
 }
 
 void DetectorModel::CopyFrom(const ::google::protobuf::Message& from) {
@@ -3833,37 +5160,39 @@ bool DetectorModel::IsInitialized() const {
   if ((_has_bits_[0] & 0x00000022) != 0x00000022) return false;
 
   if (has_model_window_size()) {
-    if (!this->model_window_size().IsInitialized()) return false;
+    if (!this->model_window_size_->IsInitialized()) return false;
   }
   if (has_object_window()) {
-    if (!this->object_window().IsInitialized()) return false;
+    if (!this->object_window_->IsInitialized()) return false;
   }
   if (has_linear_svm_model()) {
-    if (!this->linear_svm_model().IsInitialized()) return false;
+    if (!this->linear_svm_model_->IsInitialized()) return false;
   }
   if (has_soft_cascade_model()) {
-    if (!this->soft_cascade_model().IsInitialized()) return false;
+    if (!this->soft_cascade_model_->IsInitialized()) return false;
   }
   return true;
 }
 
 void DetectorModel::Swap(DetectorModel* other) {
-  if (other != this) {
-    std::swap(detector_name_, other->detector_name_);
-    std::swap(training_dataset_name_, other->training_dataset_name_);
-    std::swap(semantic_category_, other->semantic_category_);
-    std::swap(model_window_size_, other->model_window_size_);
-    std::swap(object_window_, other->object_window_);
-    std::swap(detector_type_, other->detector_type_);
-    std::swap(linear_svm_model_, other->linear_svm_model_);
-    std::swap(soft_cascade_model_, other->soft_cascade_model_);
-    std::swap(scale_, other->scale_);
-    std::swap(occlusion_level_, other->occlusion_level_);
-    std::swap(occlusion_type_, other->occlusion_type_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void DetectorModel::InternalSwap(DetectorModel* other) {
+  detector_name_.Swap(&other->detector_name_);
+  training_dataset_name_.Swap(&other->training_dataset_name_);
+  semantic_category_.Swap(&other->semantic_category_);
+  std::swap(model_window_size_, other->model_window_size_);
+  std::swap(object_window_, other->object_window_);
+  std::swap(detector_type_, other->detector_type_);
+  std::swap(linear_svm_model_, other->linear_svm_model_);
+  std::swap(soft_cascade_model_, other->soft_cascade_model_);
+  std::swap(scale_, other->scale_);
+  std::swap(occlusion_level_, other->occlusion_level_);
+  std::swap(occlusion_type_, other->occlusion_type_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata DetectorModel::GetMetadata() const {
@@ -3874,47 +5203,481 @@ void DetectorModel::Swap(DetectorModel* other) {
   return metadata;
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// DetectorModel
+
+// optional string detector_name = 1;
+bool DetectorModel::has_detector_name() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+void DetectorModel::set_has_detector_name() {
+  _has_bits_[0] |= 0x00000001u;
+}
+void DetectorModel::clear_has_detector_name() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+void DetectorModel::clear_detector_name() {
+  detector_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  clear_has_detector_name();
+}
+ const ::std::string& DetectorModel::detector_name() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.DetectorModel.detector_name)
+  return detector_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ void DetectorModel::set_detector_name(const ::std::string& value) {
+  set_has_detector_name();
+  detector_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:doppia_protobuf.DetectorModel.detector_name)
+}
+ void DetectorModel::set_detector_name(const char* value) {
+  set_has_detector_name();
+  detector_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:doppia_protobuf.DetectorModel.detector_name)
+}
+ void DetectorModel::set_detector_name(const char* value, size_t size) {
+  set_has_detector_name();
+  detector_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:doppia_protobuf.DetectorModel.detector_name)
+}
+ ::std::string* DetectorModel::mutable_detector_name() {
+  set_has_detector_name();
+  // @@protoc_insertion_point(field_mutable:doppia_protobuf.DetectorModel.detector_name)
+  return detector_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ ::std::string* DetectorModel::release_detector_name() {
+  clear_has_detector_name();
+  return detector_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ void DetectorModel::set_allocated_detector_name(::std::string* detector_name) {
+  if (detector_name != NULL) {
+    set_has_detector_name();
+  } else {
+    clear_has_detector_name();
+  }
+  detector_name_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), detector_name);
+  // @@protoc_insertion_point(field_set_allocated:doppia_protobuf.DetectorModel.detector_name)
+}
+
+// required string training_dataset_name = 2;
+bool DetectorModel::has_training_dataset_name() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+void DetectorModel::set_has_training_dataset_name() {
+  _has_bits_[0] |= 0x00000002u;
+}
+void DetectorModel::clear_has_training_dataset_name() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+void DetectorModel::clear_training_dataset_name() {
+  training_dataset_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  clear_has_training_dataset_name();
+}
+ const ::std::string& DetectorModel::training_dataset_name() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.DetectorModel.training_dataset_name)
+  return training_dataset_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ void DetectorModel::set_training_dataset_name(const ::std::string& value) {
+  set_has_training_dataset_name();
+  training_dataset_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:doppia_protobuf.DetectorModel.training_dataset_name)
+}
+ void DetectorModel::set_training_dataset_name(const char* value) {
+  set_has_training_dataset_name();
+  training_dataset_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:doppia_protobuf.DetectorModel.training_dataset_name)
+}
+ void DetectorModel::set_training_dataset_name(const char* value, size_t size) {
+  set_has_training_dataset_name();
+  training_dataset_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:doppia_protobuf.DetectorModel.training_dataset_name)
+}
+ ::std::string* DetectorModel::mutable_training_dataset_name() {
+  set_has_training_dataset_name();
+  // @@protoc_insertion_point(field_mutable:doppia_protobuf.DetectorModel.training_dataset_name)
+  return training_dataset_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ ::std::string* DetectorModel::release_training_dataset_name() {
+  clear_has_training_dataset_name();
+  return training_dataset_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ void DetectorModel::set_allocated_training_dataset_name(::std::string* training_dataset_name) {
+  if (training_dataset_name != NULL) {
+    set_has_training_dataset_name();
+  } else {
+    clear_has_training_dataset_name();
+  }
+  training_dataset_name_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), training_dataset_name);
+  // @@protoc_insertion_point(field_set_allocated:doppia_protobuf.DetectorModel.training_dataset_name)
+}
+
+// optional string semantic_category = 300 [default = "/m/017r8p"];
+bool DetectorModel::has_semantic_category() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+void DetectorModel::set_has_semantic_category() {
+  _has_bits_[0] |= 0x00000004u;
+}
+void DetectorModel::clear_has_semantic_category() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+void DetectorModel::clear_semantic_category() {
+  semantic_category_.ClearToDefaultNoArena(_default_semantic_category_);
+  clear_has_semantic_category();
+}
+ const ::std::string& DetectorModel::semantic_category() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.DetectorModel.semantic_category)
+  return semantic_category_.GetNoArena(_default_semantic_category_);
+}
+ void DetectorModel::set_semantic_category(const ::std::string& value) {
+  set_has_semantic_category();
+  semantic_category_.SetNoArena(_default_semantic_category_, value);
+  // @@protoc_insertion_point(field_set:doppia_protobuf.DetectorModel.semantic_category)
+}
+ void DetectorModel::set_semantic_category(const char* value) {
+  set_has_semantic_category();
+  semantic_category_.SetNoArena(_default_semantic_category_, ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:doppia_protobuf.DetectorModel.semantic_category)
+}
+ void DetectorModel::set_semantic_category(const char* value, size_t size) {
+  set_has_semantic_category();
+  semantic_category_.SetNoArena(_default_semantic_category_,
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:doppia_protobuf.DetectorModel.semantic_category)
+}
+ ::std::string* DetectorModel::mutable_semantic_category() {
+  set_has_semantic_category();
+  // @@protoc_insertion_point(field_mutable:doppia_protobuf.DetectorModel.semantic_category)
+  return semantic_category_.MutableNoArena(_default_semantic_category_);
+}
+ ::std::string* DetectorModel::release_semantic_category() {
+  clear_has_semantic_category();
+  return semantic_category_.ReleaseNoArena(_default_semantic_category_);
+}
+ void DetectorModel::set_allocated_semantic_category(::std::string* semantic_category) {
+  if (semantic_category != NULL) {
+    set_has_semantic_category();
+  } else {
+    clear_has_semantic_category();
+  }
+  semantic_category_.SetAllocatedNoArena(_default_semantic_category_, semantic_category);
+  // @@protoc_insertion_point(field_set_allocated:doppia_protobuf.DetectorModel.semantic_category)
+}
+
+// optional .doppia_protobuf.Point2d model_window_size = 10;
+bool DetectorModel::has_model_window_size() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+void DetectorModel::set_has_model_window_size() {
+  _has_bits_[0] |= 0x00000008u;
+}
+void DetectorModel::clear_has_model_window_size() {
+  _has_bits_[0] &= ~0x00000008u;
+}
+void DetectorModel::clear_model_window_size() {
+  if (model_window_size_ != NULL) model_window_size_->::doppia_protobuf::Point2d::Clear();
+  clear_has_model_window_size();
+}
+const ::doppia_protobuf::Point2d& DetectorModel::model_window_size() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.DetectorModel.model_window_size)
+  return model_window_size_ != NULL ? *model_window_size_ : *default_instance_->model_window_size_;
+}
+::doppia_protobuf::Point2d* DetectorModel::mutable_model_window_size() {
+  set_has_model_window_size();
+  if (model_window_size_ == NULL) {
+    model_window_size_ = new ::doppia_protobuf::Point2d;
+  }
+  // @@protoc_insertion_point(field_mutable:doppia_protobuf.DetectorModel.model_window_size)
+  return model_window_size_;
+}
+::doppia_protobuf::Point2d* DetectorModel::release_model_window_size() {
+  clear_has_model_window_size();
+  ::doppia_protobuf::Point2d* temp = model_window_size_;
+  model_window_size_ = NULL;
+  return temp;
+}
+void DetectorModel::set_allocated_model_window_size(::doppia_protobuf::Point2d* model_window_size) {
+  delete model_window_size_;
+  model_window_size_ = model_window_size;
+  if (model_window_size) {
+    set_has_model_window_size();
+  } else {
+    clear_has_model_window_size();
+  }
+  // @@protoc_insertion_point(field_set_allocated:doppia_protobuf.DetectorModel.model_window_size)
+}
+
+// optional .doppia_protobuf.Box object_window = 11;
+bool DetectorModel::has_object_window() const {
+  return (_has_bits_[0] & 0x00000010u) != 0;
+}
+void DetectorModel::set_has_object_window() {
+  _has_bits_[0] |= 0x00000010u;
+}
+void DetectorModel::clear_has_object_window() {
+  _has_bits_[0] &= ~0x00000010u;
+}
+void DetectorModel::clear_object_window() {
+  if (object_window_ != NULL) object_window_->::doppia_protobuf::Box::Clear();
+  clear_has_object_window();
+}
+const ::doppia_protobuf::Box& DetectorModel::object_window() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.DetectorModel.object_window)
+  return object_window_ != NULL ? *object_window_ : *default_instance_->object_window_;
+}
+::doppia_protobuf::Box* DetectorModel::mutable_object_window() {
+  set_has_object_window();
+  if (object_window_ == NULL) {
+    object_window_ = new ::doppia_protobuf::Box;
+  }
+  // @@protoc_insertion_point(field_mutable:doppia_protobuf.DetectorModel.object_window)
+  return object_window_;
+}
+::doppia_protobuf::Box* DetectorModel::release_object_window() {
+  clear_has_object_window();
+  ::doppia_protobuf::Box* temp = object_window_;
+  object_window_ = NULL;
+  return temp;
+}
+void DetectorModel::set_allocated_object_window(::doppia_protobuf::Box* object_window) {
+  delete object_window_;
+  object_window_ = object_window;
+  if (object_window) {
+    set_has_object_window();
+  } else {
+    clear_has_object_window();
+  }
+  // @@protoc_insertion_point(field_set_allocated:doppia_protobuf.DetectorModel.object_window)
+}
+
+// required .doppia_protobuf.DetectorModel.DetectorTypes detector_type = 3;
+bool DetectorModel::has_detector_type() const {
+  return (_has_bits_[0] & 0x00000020u) != 0;
+}
+void DetectorModel::set_has_detector_type() {
+  _has_bits_[0] |= 0x00000020u;
+}
+void DetectorModel::clear_has_detector_type() {
+  _has_bits_[0] &= ~0x00000020u;
+}
+void DetectorModel::clear_detector_type() {
+  detector_type_ = 0;
+  clear_has_detector_type();
+}
+ ::doppia_protobuf::DetectorModel_DetectorTypes DetectorModel::detector_type() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.DetectorModel.detector_type)
+  return static_cast< ::doppia_protobuf::DetectorModel_DetectorTypes >(detector_type_);
+}
+ void DetectorModel::set_detector_type(::doppia_protobuf::DetectorModel_DetectorTypes value) {
+  assert(::doppia_protobuf::DetectorModel_DetectorTypes_IsValid(value));
+  set_has_detector_type();
+  detector_type_ = value;
+  // @@protoc_insertion_point(field_set:doppia_protobuf.DetectorModel.detector_type)
+}
+
+// optional .doppia_protobuf.LinearSvmModel linear_svm_model = 100;
+bool DetectorModel::has_linear_svm_model() const {
+  return (_has_bits_[0] & 0x00000040u) != 0;
+}
+void DetectorModel::set_has_linear_svm_model() {
+  _has_bits_[0] |= 0x00000040u;
+}
+void DetectorModel::clear_has_linear_svm_model() {
+  _has_bits_[0] &= ~0x00000040u;
+}
+void DetectorModel::clear_linear_svm_model() {
+  if (linear_svm_model_ != NULL) linear_svm_model_->::doppia_protobuf::LinearSvmModel::Clear();
+  clear_has_linear_svm_model();
+}
+const ::doppia_protobuf::LinearSvmModel& DetectorModel::linear_svm_model() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.DetectorModel.linear_svm_model)
+  return linear_svm_model_ != NULL ? *linear_svm_model_ : *default_instance_->linear_svm_model_;
+}
+::doppia_protobuf::LinearSvmModel* DetectorModel::mutable_linear_svm_model() {
+  set_has_linear_svm_model();
+  if (linear_svm_model_ == NULL) {
+    linear_svm_model_ = new ::doppia_protobuf::LinearSvmModel;
+  }
+  // @@protoc_insertion_point(field_mutable:doppia_protobuf.DetectorModel.linear_svm_model)
+  return linear_svm_model_;
+}
+::doppia_protobuf::LinearSvmModel* DetectorModel::release_linear_svm_model() {
+  clear_has_linear_svm_model();
+  ::doppia_protobuf::LinearSvmModel* temp = linear_svm_model_;
+  linear_svm_model_ = NULL;
+  return temp;
+}
+void DetectorModel::set_allocated_linear_svm_model(::doppia_protobuf::LinearSvmModel* linear_svm_model) {
+  delete linear_svm_model_;
+  linear_svm_model_ = linear_svm_model;
+  if (linear_svm_model) {
+    set_has_linear_svm_model();
+  } else {
+    clear_has_linear_svm_model();
+  }
+  // @@protoc_insertion_point(field_set_allocated:doppia_protobuf.DetectorModel.linear_svm_model)
+}
+
+// optional .doppia_protobuf.SoftCascadeOverIntegralChannelsModel soft_cascade_model = 102;
+bool DetectorModel::has_soft_cascade_model() const {
+  return (_has_bits_[0] & 0x00000080u) != 0;
+}
+void DetectorModel::set_has_soft_cascade_model() {
+  _has_bits_[0] |= 0x00000080u;
+}
+void DetectorModel::clear_has_soft_cascade_model() {
+  _has_bits_[0] &= ~0x00000080u;
+}
+void DetectorModel::clear_soft_cascade_model() {
+  if (soft_cascade_model_ != NULL) soft_cascade_model_->::doppia_protobuf::SoftCascadeOverIntegralChannelsModel::Clear();
+  clear_has_soft_cascade_model();
+}
+const ::doppia_protobuf::SoftCascadeOverIntegralChannelsModel& DetectorModel::soft_cascade_model() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.DetectorModel.soft_cascade_model)
+  return soft_cascade_model_ != NULL ? *soft_cascade_model_ : *default_instance_->soft_cascade_model_;
+}
+::doppia_protobuf::SoftCascadeOverIntegralChannelsModel* DetectorModel::mutable_soft_cascade_model() {
+  set_has_soft_cascade_model();
+  if (soft_cascade_model_ == NULL) {
+    soft_cascade_model_ = new ::doppia_protobuf::SoftCascadeOverIntegralChannelsModel;
+  }
+  // @@protoc_insertion_point(field_mutable:doppia_protobuf.DetectorModel.soft_cascade_model)
+  return soft_cascade_model_;
+}
+::doppia_protobuf::SoftCascadeOverIntegralChannelsModel* DetectorModel::release_soft_cascade_model() {
+  clear_has_soft_cascade_model();
+  ::doppia_protobuf::SoftCascadeOverIntegralChannelsModel* temp = soft_cascade_model_;
+  soft_cascade_model_ = NULL;
+  return temp;
+}
+void DetectorModel::set_allocated_soft_cascade_model(::doppia_protobuf::SoftCascadeOverIntegralChannelsModel* soft_cascade_model) {
+  delete soft_cascade_model_;
+  soft_cascade_model_ = soft_cascade_model;
+  if (soft_cascade_model) {
+    set_has_soft_cascade_model();
+  } else {
+    clear_has_soft_cascade_model();
+  }
+  // @@protoc_insertion_point(field_set_allocated:doppia_protobuf.DetectorModel.soft_cascade_model)
+}
+
+// optional float scale = 200 [default = 1];
+bool DetectorModel::has_scale() const {
+  return (_has_bits_[0] & 0x00000100u) != 0;
+}
+void DetectorModel::set_has_scale() {
+  _has_bits_[0] |= 0x00000100u;
+}
+void DetectorModel::clear_has_scale() {
+  _has_bits_[0] &= ~0x00000100u;
+}
+void DetectorModel::clear_scale() {
+  scale_ = 1;
+  clear_has_scale();
+}
+ float DetectorModel::scale() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.DetectorModel.scale)
+  return scale_;
+}
+ void DetectorModel::set_scale(float value) {
+  set_has_scale();
+  scale_ = value;
+  // @@protoc_insertion_point(field_set:doppia_protobuf.DetectorModel.scale)
+}
+
+// optional float occlusion_level = 210 [default = 0];
+bool DetectorModel::has_occlusion_level() const {
+  return (_has_bits_[0] & 0x00000200u) != 0;
+}
+void DetectorModel::set_has_occlusion_level() {
+  _has_bits_[0] |= 0x00000200u;
+}
+void DetectorModel::clear_has_occlusion_level() {
+  _has_bits_[0] &= ~0x00000200u;
+}
+void DetectorModel::clear_occlusion_level() {
+  occlusion_level_ = 0;
+  clear_has_occlusion_level();
+}
+ float DetectorModel::occlusion_level() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.DetectorModel.occlusion_level)
+  return occlusion_level_;
+}
+ void DetectorModel::set_occlusion_level(float value) {
+  set_has_occlusion_level();
+  occlusion_level_ = value;
+  // @@protoc_insertion_point(field_set:doppia_protobuf.DetectorModel.occlusion_level)
+}
+
+// optional .doppia_protobuf.DetectorModel.OcclusionTypes occlusion_type = 211 [default = BottomOcclusion];
+bool DetectorModel::has_occlusion_type() const {
+  return (_has_bits_[0] & 0x00000400u) != 0;
+}
+void DetectorModel::set_has_occlusion_type() {
+  _has_bits_[0] |= 0x00000400u;
+}
+void DetectorModel::clear_has_occlusion_type() {
+  _has_bits_[0] &= ~0x00000400u;
+}
+void DetectorModel::clear_occlusion_type() {
+  occlusion_type_ = 20;
+  clear_has_occlusion_type();
+}
+ ::doppia_protobuf::DetectorModel_OcclusionTypes DetectorModel::occlusion_type() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.DetectorModel.occlusion_type)
+  return static_cast< ::doppia_protobuf::DetectorModel_OcclusionTypes >(occlusion_type_);
+}
+ void DetectorModel::set_occlusion_type(::doppia_protobuf::DetectorModel_OcclusionTypes value) {
+  assert(::doppia_protobuf::DetectorModel_OcclusionTypes_IsValid(value));
+  set_has_occlusion_type();
+  occlusion_type_ = value;
+  // @@protoc_insertion_point(field_set:doppia_protobuf.DetectorModel.occlusion_type)
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int MultiScalesDetectorModel::kDetectorNameFieldNumber;
 const int MultiScalesDetectorModel::kTrainingDatasetNameFieldNumber;
 const int MultiScalesDetectorModel::kDetectorsFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 MultiScalesDetectorModel::MultiScalesDetectorModel()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
   SharedCtor();
+  // @@protoc_insertion_point(constructor:doppia_protobuf.MultiScalesDetectorModel)
 }
 
 void MultiScalesDetectorModel::InitAsDefaultInstance() {
 }
 
 MultiScalesDetectorModel::MultiScalesDetectorModel(const MultiScalesDetectorModel& from)
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(),
+    _internal_metadata_(NULL) {
   SharedCtor();
   MergeFrom(from);
+  // @@protoc_insertion_point(copy_constructor:doppia_protobuf.MultiScalesDetectorModel)
 }
 
 void MultiScalesDetectorModel::SharedCtor() {
+  ::google::protobuf::internal::GetEmptyString();
   _cached_size_ = 0;
-  detector_name_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
-  training_dataset_name_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  detector_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  training_dataset_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
 MultiScalesDetectorModel::~MultiScalesDetectorModel() {
+  // @@protoc_insertion_point(destructor:doppia_protobuf.MultiScalesDetectorModel)
   SharedDtor();
 }
 
 void MultiScalesDetectorModel::SharedDtor() {
-  if (detector_name_ != &::google::protobuf::internal::kEmptyString) {
-    delete detector_name_;
-  }
-  if (training_dataset_name_ != &::google::protobuf::internal::kEmptyString) {
-    delete training_dataset_name_;
-  }
+  detector_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  training_dataset_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (this != default_instance_) {
   }
 }
@@ -3936,45 +5699,51 @@ const MultiScalesDetectorModel& MultiScalesDetectorModel::default_instance() {
 
 MultiScalesDetectorModel* MultiScalesDetectorModel::default_instance_ = NULL;
 
-MultiScalesDetectorModel* MultiScalesDetectorModel::New() const {
-  return new MultiScalesDetectorModel;
+MultiScalesDetectorModel* MultiScalesDetectorModel::New(::google::protobuf::Arena* arena) const {
+  MultiScalesDetectorModel* n = new MultiScalesDetectorModel;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void MultiScalesDetectorModel::Clear() {
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+  if (_has_bits_[0 / 32] & 3u) {
     if (has_detector_name()) {
-      if (detector_name_ != &::google::protobuf::internal::kEmptyString) {
-        detector_name_->clear();
-      }
+      detector_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
     }
     if (has_training_dataset_name()) {
-      if (training_dataset_name_ != &::google::protobuf::internal::kEmptyString) {
-        training_dataset_name_->clear();
-      }
+      training_dataset_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
     }
   }
   detectors_.Clear();
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  if (_internal_metadata_.have_unknown_fields()) {
+    mutable_unknown_fields()->Clear();
+  }
 }
 
 bool MultiScalesDetectorModel::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:doppia_protobuf.MultiScalesDetectorModel)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string detector_name = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_detector_name()));
-          ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
             this->detector_name().data(), this->detector_name().length(),
-            ::google::protobuf::internal::WireFormat::PARSE);
+            ::google::protobuf::internal::WireFormat::PARSE,
+            "doppia_protobuf.MultiScalesDetectorModel.detector_name");
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(18)) goto parse_training_dataset_name;
         break;
@@ -3982,16 +5751,16 @@ bool MultiScalesDetectorModel::MergePartialFromCodedStream(
 
       // required string training_dataset_name = 2;
       case 2: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+        if (tag == 18) {
          parse_training_dataset_name:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_training_dataset_name()));
-          ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
             this->training_dataset_name().data(), this->training_dataset_name().length(),
-            ::google::protobuf::internal::WireFormat::PARSE);
+            ::google::protobuf::internal::WireFormat::PARSE,
+            "doppia_protobuf.MultiScalesDetectorModel.training_dataset_name");
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(26)) goto parse_detectors;
         break;
@@ -3999,24 +5768,27 @@ bool MultiScalesDetectorModel::MergePartialFromCodedStream(
 
       // repeated .doppia_protobuf.DetectorModel detectors = 3;
       case 3: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+        if (tag == 26) {
          parse_detectors:
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
+          DO_(input->IncrementRecursionDepth());
+         parse_loop_detectors:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_detectors()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(26)) goto parse_detectors;
-        if (input->ExpectAtEnd()) return true;
+        if (input->ExpectTag(26)) goto parse_loop_detectors;
+        input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -4024,49 +5796,60 @@ bool MultiScalesDetectorModel::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:doppia_protobuf.MultiScalesDetectorModel)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:doppia_protobuf.MultiScalesDetectorModel)
+  return false;
 #undef DO_
 }
 
 void MultiScalesDetectorModel::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:doppia_protobuf.MultiScalesDetectorModel)
   // optional string detector_name = 1;
   if (has_detector_name()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
       this->detector_name().data(), this->detector_name().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE);
-    ::google::protobuf::internal::WireFormatLite::WriteString(
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "doppia_protobuf.MultiScalesDetectorModel.detector_name");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       1, this->detector_name(), output);
   }
 
   // required string training_dataset_name = 2;
   if (has_training_dataset_name()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
       this->training_dataset_name().data(), this->training_dataset_name().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE);
-    ::google::protobuf::internal::WireFormatLite::WriteString(
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "doppia_protobuf.MultiScalesDetectorModel.training_dataset_name");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       2, this->training_dataset_name(), output);
   }
 
   // repeated .doppia_protobuf.DetectorModel detectors = 3;
-  for (int i = 0; i < this->detectors_size(); i++) {
+  for (unsigned int i = 0, n = this->detectors_size(); i < n; i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       3, this->detectors(i), output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:doppia_protobuf.MultiScalesDetectorModel)
 }
 
 ::google::protobuf::uint8* MultiScalesDetectorModel::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:doppia_protobuf.MultiScalesDetectorModel)
   // optional string detector_name = 1;
   if (has_detector_name()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
       this->detector_name().data(), this->detector_name().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE);
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "doppia_protobuf.MultiScalesDetectorModel.detector_name");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         1, this->detector_name(), target);
@@ -4074,47 +5857,46 @@ void MultiScalesDetectorModel::SerializeWithCachedSizes(
 
   // required string training_dataset_name = 2;
   if (has_training_dataset_name()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
       this->training_dataset_name().data(), this->training_dataset_name().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE);
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "doppia_protobuf.MultiScalesDetectorModel.training_dataset_name");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         2, this->training_dataset_name(), target);
   }
 
   // repeated .doppia_protobuf.DetectorModel detectors = 3;
-  for (int i = 0; i < this->detectors_size(); i++) {
+  for (unsigned int i = 0, n = this->detectors_size(); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       WriteMessageNoVirtualToArray(
         3, this->detectors(i), target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:doppia_protobuf.MultiScalesDetectorModel)
   return target;
 }
 
 int MultiScalesDetectorModel::ByteSize() const {
   int total_size = 0;
 
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // optional string detector_name = 1;
-    if (has_detector_name()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::StringSize(
-          this->detector_name());
-    }
-
-    // required string training_dataset_name = 2;
-    if (has_training_dataset_name()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::StringSize(
-          this->training_dataset_name());
-    }
-
+  // required string training_dataset_name = 2;
+  if (has_training_dataset_name()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->training_dataset_name());
   }
+  // optional string detector_name = 1;
+  if (has_detector_name()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->detector_name());
+  }
+
   // repeated .doppia_protobuf.DetectorModel detectors = 3;
   total_size += 1 * this->detectors_size();
   for (int i = 0; i < this->detectors_size(); i++) {
@@ -4123,7 +5905,7 @@ int MultiScalesDetectorModel::ByteSize() const {
         this->detectors(i));
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         unknown_fields());
@@ -4135,10 +5917,10 @@ int MultiScalesDetectorModel::ByteSize() const {
 }
 
 void MultiScalesDetectorModel::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  const MultiScalesDetectorModel* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const MultiScalesDetectorModel*>(
-      &from);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const MultiScalesDetectorModel* source = 
+      ::google::protobuf::internal::DynamicCastToGenerated<const MultiScalesDetectorModel>(
+          &from);
   if (source == NULL) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -4147,17 +5929,21 @@ void MultiScalesDetectorModel::MergeFrom(const ::google::protobuf::Message& from
 }
 
 void MultiScalesDetectorModel::MergeFrom(const MultiScalesDetectorModel& from) {
-  GOOGLE_CHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   detectors_.MergeFrom(from.detectors_);
   if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     if (from.has_detector_name()) {
-      set_detector_name(from.detector_name());
+      set_has_detector_name();
+      detector_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.detector_name_);
     }
     if (from.has_training_dataset_name()) {
-      set_training_dataset_name(from.training_dataset_name());
+      set_has_training_dataset_name();
+      training_dataset_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.training_dataset_name_);
     }
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+  if (from._internal_metadata_.have_unknown_fields()) {
+    mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+  }
 }
 
 void MultiScalesDetectorModel::CopyFrom(const ::google::protobuf::Message& from) {
@@ -4175,21 +5961,21 @@ void MultiScalesDetectorModel::CopyFrom(const MultiScalesDetectorModel& from) {
 bool MultiScalesDetectorModel::IsInitialized() const {
   if ((_has_bits_[0] & 0x00000002) != 0x00000002) return false;
 
-  for (int i = 0; i < detectors_size(); i++) {
-    if (!this->detectors(i).IsInitialized()) return false;
-  }
+  if (!::google::protobuf::internal::AllAreInitialized(this->detectors())) return false;
   return true;
 }
 
 void MultiScalesDetectorModel::Swap(MultiScalesDetectorModel* other) {
-  if (other != this) {
-    std::swap(detector_name_, other->detector_name_);
-    std::swap(training_dataset_name_, other->training_dataset_name_);
-    detectors_.Swap(&other->detectors_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void MultiScalesDetectorModel::InternalSwap(MultiScalesDetectorModel* other) {
+  detector_name_.Swap(&other->detector_name_);
+  training_dataset_name_.Swap(&other->training_dataset_name_);
+  detectors_.UnsafeArenaSwap(&other->detectors_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata MultiScalesDetectorModel::GetMetadata() const {
@@ -4200,47 +5986,188 @@ void MultiScalesDetectorModel::Swap(MultiScalesDetectorModel* other) {
   return metadata;
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// MultiScalesDetectorModel
+
+// optional string detector_name = 1;
+bool MultiScalesDetectorModel::has_detector_name() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+void MultiScalesDetectorModel::set_has_detector_name() {
+  _has_bits_[0] |= 0x00000001u;
+}
+void MultiScalesDetectorModel::clear_has_detector_name() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+void MultiScalesDetectorModel::clear_detector_name() {
+  detector_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  clear_has_detector_name();
+}
+ const ::std::string& MultiScalesDetectorModel::detector_name() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.MultiScalesDetectorModel.detector_name)
+  return detector_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ void MultiScalesDetectorModel::set_detector_name(const ::std::string& value) {
+  set_has_detector_name();
+  detector_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:doppia_protobuf.MultiScalesDetectorModel.detector_name)
+}
+ void MultiScalesDetectorModel::set_detector_name(const char* value) {
+  set_has_detector_name();
+  detector_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:doppia_protobuf.MultiScalesDetectorModel.detector_name)
+}
+ void MultiScalesDetectorModel::set_detector_name(const char* value, size_t size) {
+  set_has_detector_name();
+  detector_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:doppia_protobuf.MultiScalesDetectorModel.detector_name)
+}
+ ::std::string* MultiScalesDetectorModel::mutable_detector_name() {
+  set_has_detector_name();
+  // @@protoc_insertion_point(field_mutable:doppia_protobuf.MultiScalesDetectorModel.detector_name)
+  return detector_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ ::std::string* MultiScalesDetectorModel::release_detector_name() {
+  clear_has_detector_name();
+  return detector_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ void MultiScalesDetectorModel::set_allocated_detector_name(::std::string* detector_name) {
+  if (detector_name != NULL) {
+    set_has_detector_name();
+  } else {
+    clear_has_detector_name();
+  }
+  detector_name_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), detector_name);
+  // @@protoc_insertion_point(field_set_allocated:doppia_protobuf.MultiScalesDetectorModel.detector_name)
+}
+
+// required string training_dataset_name = 2;
+bool MultiScalesDetectorModel::has_training_dataset_name() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+void MultiScalesDetectorModel::set_has_training_dataset_name() {
+  _has_bits_[0] |= 0x00000002u;
+}
+void MultiScalesDetectorModel::clear_has_training_dataset_name() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+void MultiScalesDetectorModel::clear_training_dataset_name() {
+  training_dataset_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  clear_has_training_dataset_name();
+}
+ const ::std::string& MultiScalesDetectorModel::training_dataset_name() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.MultiScalesDetectorModel.training_dataset_name)
+  return training_dataset_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ void MultiScalesDetectorModel::set_training_dataset_name(const ::std::string& value) {
+  set_has_training_dataset_name();
+  training_dataset_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:doppia_protobuf.MultiScalesDetectorModel.training_dataset_name)
+}
+ void MultiScalesDetectorModel::set_training_dataset_name(const char* value) {
+  set_has_training_dataset_name();
+  training_dataset_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:doppia_protobuf.MultiScalesDetectorModel.training_dataset_name)
+}
+ void MultiScalesDetectorModel::set_training_dataset_name(const char* value, size_t size) {
+  set_has_training_dataset_name();
+  training_dataset_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:doppia_protobuf.MultiScalesDetectorModel.training_dataset_name)
+}
+ ::std::string* MultiScalesDetectorModel::mutable_training_dataset_name() {
+  set_has_training_dataset_name();
+  // @@protoc_insertion_point(field_mutable:doppia_protobuf.MultiScalesDetectorModel.training_dataset_name)
+  return training_dataset_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ ::std::string* MultiScalesDetectorModel::release_training_dataset_name() {
+  clear_has_training_dataset_name();
+  return training_dataset_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ void MultiScalesDetectorModel::set_allocated_training_dataset_name(::std::string* training_dataset_name) {
+  if (training_dataset_name != NULL) {
+    set_has_training_dataset_name();
+  } else {
+    clear_has_training_dataset_name();
+  }
+  training_dataset_name_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), training_dataset_name);
+  // @@protoc_insertion_point(field_set_allocated:doppia_protobuf.MultiScalesDetectorModel.training_dataset_name)
+}
+
+// repeated .doppia_protobuf.DetectorModel detectors = 3;
+int MultiScalesDetectorModel::detectors_size() const {
+  return detectors_.size();
+}
+void MultiScalesDetectorModel::clear_detectors() {
+  detectors_.Clear();
+}
+const ::doppia_protobuf::DetectorModel& MultiScalesDetectorModel::detectors(int index) const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.MultiScalesDetectorModel.detectors)
+  return detectors_.Get(index);
+}
+::doppia_protobuf::DetectorModel* MultiScalesDetectorModel::mutable_detectors(int index) {
+  // @@protoc_insertion_point(field_mutable:doppia_protobuf.MultiScalesDetectorModel.detectors)
+  return detectors_.Mutable(index);
+}
+::doppia_protobuf::DetectorModel* MultiScalesDetectorModel::add_detectors() {
+  // @@protoc_insertion_point(field_add:doppia_protobuf.MultiScalesDetectorModel.detectors)
+  return detectors_.Add();
+}
+::google::protobuf::RepeatedPtrField< ::doppia_protobuf::DetectorModel >*
+MultiScalesDetectorModel::mutable_detectors() {
+  // @@protoc_insertion_point(field_mutable_list:doppia_protobuf.MultiScalesDetectorModel.detectors)
+  return &detectors_;
+}
+const ::google::protobuf::RepeatedPtrField< ::doppia_protobuf::DetectorModel >&
+MultiScalesDetectorModel::detectors() const {
+  // @@protoc_insertion_point(field_list:doppia_protobuf.MultiScalesDetectorModel.detectors)
+  return detectors_;
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int DetectorModelsBundle::kBundleNameFieldNumber;
 const int DetectorModelsBundle::kTrainingDatasetNameFieldNumber;
 const int DetectorModelsBundle::kDetectorsFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 DetectorModelsBundle::DetectorModelsBundle()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
   SharedCtor();
+  // @@protoc_insertion_point(constructor:doppia_protobuf.DetectorModelsBundle)
 }
 
 void DetectorModelsBundle::InitAsDefaultInstance() {
 }
 
 DetectorModelsBundle::DetectorModelsBundle(const DetectorModelsBundle& from)
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(),
+    _internal_metadata_(NULL) {
   SharedCtor();
   MergeFrom(from);
+  // @@protoc_insertion_point(copy_constructor:doppia_protobuf.DetectorModelsBundle)
 }
 
 void DetectorModelsBundle::SharedCtor() {
+  ::google::protobuf::internal::GetEmptyString();
   _cached_size_ = 0;
-  bundle_name_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
-  training_dataset_name_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  bundle_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  training_dataset_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
 DetectorModelsBundle::~DetectorModelsBundle() {
+  // @@protoc_insertion_point(destructor:doppia_protobuf.DetectorModelsBundle)
   SharedDtor();
 }
 
 void DetectorModelsBundle::SharedDtor() {
-  if (bundle_name_ != &::google::protobuf::internal::kEmptyString) {
-    delete bundle_name_;
-  }
-  if (training_dataset_name_ != &::google::protobuf::internal::kEmptyString) {
-    delete training_dataset_name_;
-  }
+  bundle_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  training_dataset_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (this != default_instance_) {
   }
 }
@@ -4262,45 +6189,51 @@ const DetectorModelsBundle& DetectorModelsBundle::default_instance() {
 
 DetectorModelsBundle* DetectorModelsBundle::default_instance_ = NULL;
 
-DetectorModelsBundle* DetectorModelsBundle::New() const {
-  return new DetectorModelsBundle;
+DetectorModelsBundle* DetectorModelsBundle::New(::google::protobuf::Arena* arena) const {
+  DetectorModelsBundle* n = new DetectorModelsBundle;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void DetectorModelsBundle::Clear() {
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+  if (_has_bits_[0 / 32] & 3u) {
     if (has_bundle_name()) {
-      if (bundle_name_ != &::google::protobuf::internal::kEmptyString) {
-        bundle_name_->clear();
-      }
+      bundle_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
     }
     if (has_training_dataset_name()) {
-      if (training_dataset_name_ != &::google::protobuf::internal::kEmptyString) {
-        training_dataset_name_->clear();
-      }
+      training_dataset_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
     }
   }
   detectors_.Clear();
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  if (_internal_metadata_.have_unknown_fields()) {
+    mutable_unknown_fields()->Clear();
+  }
 }
 
 bool DetectorModelsBundle::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:doppia_protobuf.DetectorModelsBundle)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string bundle_name = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_bundle_name()));
-          ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
             this->bundle_name().data(), this->bundle_name().length(),
-            ::google::protobuf::internal::WireFormat::PARSE);
+            ::google::protobuf::internal::WireFormat::PARSE,
+            "doppia_protobuf.DetectorModelsBundle.bundle_name");
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(18)) goto parse_training_dataset_name;
         break;
@@ -4308,16 +6241,16 @@ bool DetectorModelsBundle::MergePartialFromCodedStream(
 
       // required string training_dataset_name = 2;
       case 2: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+        if (tag == 18) {
          parse_training_dataset_name:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_training_dataset_name()));
-          ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
             this->training_dataset_name().data(), this->training_dataset_name().length(),
-            ::google::protobuf::internal::WireFormat::PARSE);
+            ::google::protobuf::internal::WireFormat::PARSE,
+            "doppia_protobuf.DetectorModelsBundle.training_dataset_name");
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(26)) goto parse_detectors;
         break;
@@ -4325,24 +6258,27 @@ bool DetectorModelsBundle::MergePartialFromCodedStream(
 
       // repeated .doppia_protobuf.DetectorModel detectors = 3;
       case 3: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+        if (tag == 26) {
          parse_detectors:
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
+          DO_(input->IncrementRecursionDepth());
+         parse_loop_detectors:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_detectors()));
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectTag(26)) goto parse_detectors;
-        if (input->ExpectAtEnd()) return true;
+        if (input->ExpectTag(26)) goto parse_loop_detectors;
+        input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -4350,49 +6286,60 @@ bool DetectorModelsBundle::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:doppia_protobuf.DetectorModelsBundle)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:doppia_protobuf.DetectorModelsBundle)
+  return false;
 #undef DO_
 }
 
 void DetectorModelsBundle::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:doppia_protobuf.DetectorModelsBundle)
   // optional string bundle_name = 1;
   if (has_bundle_name()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
       this->bundle_name().data(), this->bundle_name().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE);
-    ::google::protobuf::internal::WireFormatLite::WriteString(
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "doppia_protobuf.DetectorModelsBundle.bundle_name");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       1, this->bundle_name(), output);
   }
 
   // required string training_dataset_name = 2;
   if (has_training_dataset_name()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
       this->training_dataset_name().data(), this->training_dataset_name().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE);
-    ::google::protobuf::internal::WireFormatLite::WriteString(
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "doppia_protobuf.DetectorModelsBundle.training_dataset_name");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       2, this->training_dataset_name(), output);
   }
 
   // repeated .doppia_protobuf.DetectorModel detectors = 3;
-  for (int i = 0; i < this->detectors_size(); i++) {
+  for (unsigned int i = 0, n = this->detectors_size(); i < n; i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       3, this->detectors(i), output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:doppia_protobuf.DetectorModelsBundle)
 }
 
 ::google::protobuf::uint8* DetectorModelsBundle::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:doppia_protobuf.DetectorModelsBundle)
   // optional string bundle_name = 1;
   if (has_bundle_name()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
       this->bundle_name().data(), this->bundle_name().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE);
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "doppia_protobuf.DetectorModelsBundle.bundle_name");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         1, this->bundle_name(), target);
@@ -4400,47 +6347,46 @@ void DetectorModelsBundle::SerializeWithCachedSizes(
 
   // required string training_dataset_name = 2;
   if (has_training_dataset_name()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
       this->training_dataset_name().data(), this->training_dataset_name().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE);
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "doppia_protobuf.DetectorModelsBundle.training_dataset_name");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         2, this->training_dataset_name(), target);
   }
 
   // repeated .doppia_protobuf.DetectorModel detectors = 3;
-  for (int i = 0; i < this->detectors_size(); i++) {
+  for (unsigned int i = 0, n = this->detectors_size(); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       WriteMessageNoVirtualToArray(
         3, this->detectors(i), target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:doppia_protobuf.DetectorModelsBundle)
   return target;
 }
 
 int DetectorModelsBundle::ByteSize() const {
   int total_size = 0;
 
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // optional string bundle_name = 1;
-    if (has_bundle_name()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::StringSize(
-          this->bundle_name());
-    }
-
-    // required string training_dataset_name = 2;
-    if (has_training_dataset_name()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::StringSize(
-          this->training_dataset_name());
-    }
-
+  // required string training_dataset_name = 2;
+  if (has_training_dataset_name()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->training_dataset_name());
   }
+  // optional string bundle_name = 1;
+  if (has_bundle_name()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->bundle_name());
+  }
+
   // repeated .doppia_protobuf.DetectorModel detectors = 3;
   total_size += 1 * this->detectors_size();
   for (int i = 0; i < this->detectors_size(); i++) {
@@ -4449,7 +6395,7 @@ int DetectorModelsBundle::ByteSize() const {
         this->detectors(i));
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         unknown_fields());
@@ -4461,10 +6407,10 @@ int DetectorModelsBundle::ByteSize() const {
 }
 
 void DetectorModelsBundle::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  const DetectorModelsBundle* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const DetectorModelsBundle*>(
-      &from);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const DetectorModelsBundle* source = 
+      ::google::protobuf::internal::DynamicCastToGenerated<const DetectorModelsBundle>(
+          &from);
   if (source == NULL) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -4473,17 +6419,21 @@ void DetectorModelsBundle::MergeFrom(const ::google::protobuf::Message& from) {
 }
 
 void DetectorModelsBundle::MergeFrom(const DetectorModelsBundle& from) {
-  GOOGLE_CHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   detectors_.MergeFrom(from.detectors_);
   if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     if (from.has_bundle_name()) {
-      set_bundle_name(from.bundle_name());
+      set_has_bundle_name();
+      bundle_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.bundle_name_);
     }
     if (from.has_training_dataset_name()) {
-      set_training_dataset_name(from.training_dataset_name());
+      set_has_training_dataset_name();
+      training_dataset_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.training_dataset_name_);
     }
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+  if (from._internal_metadata_.have_unknown_fields()) {
+    mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+  }
 }
 
 void DetectorModelsBundle::CopyFrom(const ::google::protobuf::Message& from) {
@@ -4501,21 +6451,21 @@ void DetectorModelsBundle::CopyFrom(const DetectorModelsBundle& from) {
 bool DetectorModelsBundle::IsInitialized() const {
   if ((_has_bits_[0] & 0x00000002) != 0x00000002) return false;
 
-  for (int i = 0; i < detectors_size(); i++) {
-    if (!this->detectors(i).IsInitialized()) return false;
-  }
+  if (!::google::protobuf::internal::AllAreInitialized(this->detectors())) return false;
   return true;
 }
 
 void DetectorModelsBundle::Swap(DetectorModelsBundle* other) {
-  if (other != this) {
-    std::swap(bundle_name_, other->bundle_name_);
-    std::swap(training_dataset_name_, other->training_dataset_name_);
-    detectors_.Swap(&other->detectors_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void DetectorModelsBundle::InternalSwap(DetectorModelsBundle* other) {
+  bundle_name_.Swap(&other->bundle_name_);
+  training_dataset_name_.Swap(&other->training_dataset_name_);
+  detectors_.UnsafeArenaSwap(&other->detectors_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata DetectorModelsBundle::GetMetadata() const {
@@ -4526,6 +6476,146 @@ void DetectorModelsBundle::Swap(DetectorModelsBundle* other) {
   return metadata;
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// DetectorModelsBundle
+
+// optional string bundle_name = 1;
+bool DetectorModelsBundle::has_bundle_name() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+void DetectorModelsBundle::set_has_bundle_name() {
+  _has_bits_[0] |= 0x00000001u;
+}
+void DetectorModelsBundle::clear_has_bundle_name() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+void DetectorModelsBundle::clear_bundle_name() {
+  bundle_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  clear_has_bundle_name();
+}
+ const ::std::string& DetectorModelsBundle::bundle_name() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.DetectorModelsBundle.bundle_name)
+  return bundle_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ void DetectorModelsBundle::set_bundle_name(const ::std::string& value) {
+  set_has_bundle_name();
+  bundle_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:doppia_protobuf.DetectorModelsBundle.bundle_name)
+}
+ void DetectorModelsBundle::set_bundle_name(const char* value) {
+  set_has_bundle_name();
+  bundle_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:doppia_protobuf.DetectorModelsBundle.bundle_name)
+}
+ void DetectorModelsBundle::set_bundle_name(const char* value, size_t size) {
+  set_has_bundle_name();
+  bundle_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:doppia_protobuf.DetectorModelsBundle.bundle_name)
+}
+ ::std::string* DetectorModelsBundle::mutable_bundle_name() {
+  set_has_bundle_name();
+  // @@protoc_insertion_point(field_mutable:doppia_protobuf.DetectorModelsBundle.bundle_name)
+  return bundle_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ ::std::string* DetectorModelsBundle::release_bundle_name() {
+  clear_has_bundle_name();
+  return bundle_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ void DetectorModelsBundle::set_allocated_bundle_name(::std::string* bundle_name) {
+  if (bundle_name != NULL) {
+    set_has_bundle_name();
+  } else {
+    clear_has_bundle_name();
+  }
+  bundle_name_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), bundle_name);
+  // @@protoc_insertion_point(field_set_allocated:doppia_protobuf.DetectorModelsBundle.bundle_name)
+}
+
+// required string training_dataset_name = 2;
+bool DetectorModelsBundle::has_training_dataset_name() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+void DetectorModelsBundle::set_has_training_dataset_name() {
+  _has_bits_[0] |= 0x00000002u;
+}
+void DetectorModelsBundle::clear_has_training_dataset_name() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+void DetectorModelsBundle::clear_training_dataset_name() {
+  training_dataset_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  clear_has_training_dataset_name();
+}
+ const ::std::string& DetectorModelsBundle::training_dataset_name() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.DetectorModelsBundle.training_dataset_name)
+  return training_dataset_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ void DetectorModelsBundle::set_training_dataset_name(const ::std::string& value) {
+  set_has_training_dataset_name();
+  training_dataset_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:doppia_protobuf.DetectorModelsBundle.training_dataset_name)
+}
+ void DetectorModelsBundle::set_training_dataset_name(const char* value) {
+  set_has_training_dataset_name();
+  training_dataset_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:doppia_protobuf.DetectorModelsBundle.training_dataset_name)
+}
+ void DetectorModelsBundle::set_training_dataset_name(const char* value, size_t size) {
+  set_has_training_dataset_name();
+  training_dataset_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:doppia_protobuf.DetectorModelsBundle.training_dataset_name)
+}
+ ::std::string* DetectorModelsBundle::mutable_training_dataset_name() {
+  set_has_training_dataset_name();
+  // @@protoc_insertion_point(field_mutable:doppia_protobuf.DetectorModelsBundle.training_dataset_name)
+  return training_dataset_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ ::std::string* DetectorModelsBundle::release_training_dataset_name() {
+  clear_has_training_dataset_name();
+  return training_dataset_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ void DetectorModelsBundle::set_allocated_training_dataset_name(::std::string* training_dataset_name) {
+  if (training_dataset_name != NULL) {
+    set_has_training_dataset_name();
+  } else {
+    clear_has_training_dataset_name();
+  }
+  training_dataset_name_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), training_dataset_name);
+  // @@protoc_insertion_point(field_set_allocated:doppia_protobuf.DetectorModelsBundle.training_dataset_name)
+}
+
+// repeated .doppia_protobuf.DetectorModel detectors = 3;
+int DetectorModelsBundle::detectors_size() const {
+  return detectors_.size();
+}
+void DetectorModelsBundle::clear_detectors() {
+  detectors_.Clear();
+}
+const ::doppia_protobuf::DetectorModel& DetectorModelsBundle::detectors(int index) const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.DetectorModelsBundle.detectors)
+  return detectors_.Get(index);
+}
+::doppia_protobuf::DetectorModel* DetectorModelsBundle::mutable_detectors(int index) {
+  // @@protoc_insertion_point(field_mutable:doppia_protobuf.DetectorModelsBundle.detectors)
+  return detectors_.Mutable(index);
+}
+::doppia_protobuf::DetectorModel* DetectorModelsBundle::add_detectors() {
+  // @@protoc_insertion_point(field_add:doppia_protobuf.DetectorModelsBundle.detectors)
+  return detectors_.Add();
+}
+::google::protobuf::RepeatedPtrField< ::doppia_protobuf::DetectorModel >*
+DetectorModelsBundle::mutable_detectors() {
+  // @@protoc_insertion_point(field_mutable_list:doppia_protobuf.DetectorModelsBundle.detectors)
+  return &detectors_;
+}
+const ::google::protobuf::RepeatedPtrField< ::doppia_protobuf::DetectorModel >&
+DetectorModelsBundle::detectors() const {
+  // @@protoc_insertion_point(field_list:doppia_protobuf.DetectorModelsBundle.detectors)
+  return detectors_;
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
 
