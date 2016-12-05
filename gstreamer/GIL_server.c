@@ -35,7 +35,7 @@ int main()
         zmq_recv (responder, view(image).begin().x(), 640*480*3, 0);
         printf ("Server Received frame!\n");
         rgb8c_view_t input_view= view(image);
-        png_write_view("boost_gil_server.png", input_view);
+        //png_write_view("boost_gil_server.png", input_view);
         printf("image size= %lu dimensions= %lu num_channels= %ld\n", view(image).size(), view(image).num_dimensions, num_channels<rgb8_pixel_t>::value);
         
         zmq_send (responder, view(image).begin().x(), 640*480*3, 0);

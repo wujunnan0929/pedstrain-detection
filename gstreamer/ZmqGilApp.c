@@ -61,14 +61,14 @@ GstFlowReturn new_sample(GstAppSink *appsink, gpointer data)
   cvtColor(yuvFrame, rgbFrame, CV_YUV2BGR_IYUV);
   
   // TODO: synchronize this....
-  if(frameQueue.size() < 10)
+  if(frameQueue.size() == 0)
       frameQueue.push_back(rgbFrame);
 
   gst_buffer_unmap(buffer, &map);
 
 
   // show caps on first frame
-  if (framecount == 1) {
+  if (framecount%10 == 0) {
     g_print ("%s\n", gst_caps_to_string(caps));
   }
 
@@ -146,13 +146,18 @@ int main (int argc, char *argv[])
   gsize size;
   static int imagecount = 0;
   gchar imagename[19]= "";
+
+  //zmq initial
   void *context = zmq_ctx_new ();
   void *client = zmq_socket (context, ZMQ_REQ);
   zmq_connect (client, "tcp://10.113.64.54:5556");
+  //zmq_connect (client, "tcp://localhost:5555");
   
   /*void *server = zmq_socket(context, ZMQ_SUB);
   zmq_connect(server,"tcp://172.17.0.10:5556");
   zmq_setsockopt(server, ZMQ_SUBSCRIBE, NULL,0);*/
+
+  //gstreamer initial
   gst_init (&argc, &argv);
 
   gchar *descr = g_strdup(
@@ -189,12 +194,12 @@ int main (int argc, char *argv[])
     g_main_iteration(false);
 
       // TODO: synchronize...
-    if (frameQueue.size() > 0) {
+    if(frameQueue.size() > 0) {
       // this lags pretty badly even when grabbing frames from webcam
       Mat frame1 = frameQueue.front();
       Mat frame;
       
-      resize(frame1, frame, Size(320, 240), 0,  0,  CV_INTER_LINEAR); 
+      resize(frame1, frame, Size(640, 480), 0,  0,  CV_INTER_LINEAR); 
       
       //imwrite("1600_1200.png",frame1);
       //imwrite("640_480.png",frame);
@@ -202,27 +207,29 @@ int main (int argc, char *argv[])
       size = frame.rows * frame.cols * frame.elemSize();
       printf("row = %d, cols = %d \n",frame.rows, frame.cols);    
       imshow("client", frame);
+      
       sprintf(imagename,"client_%08d.png",imagecount);
-      imwrite(imagename,frame);
+      //imwrite(imagename,frame);
       printf("frame width= %d height= %d", frame.size().width, frame.size().height);
       
       rgb8_image_t image;
       image.recreate(frame.size().width, frame.size().height);
       MatToGil(frame, image);
       rgb8c_view_t input_view= view(image);
-      png_write_view("boost_gil.png", input_view);
+      //png_write_view("boost_gil.png", input_view);
       printf("image size= %lu dimensions= %lu num_channels= %lu\n", view(image).size(), view(image).num_dimensions, num_channels<rgb8_pixel_t>::value);
       
       zmq_send(client, view(image).begin().x(), view(image).size()*num_channels<rgb8_pixel_t>::value, 0);
       g_print("client send frame!\n");
 
       zmq_recv(client, view(image).begin().x(), size, 0);
-      GilToMat(image, frame),
+      GilToMat(image, frame);
       //cvtColor(frame, frame_r, COLOR_RGB2BGR, 0);
       g_print("client received frame!\n\n");
       imshow("server", frame);
-      sprintf(imagename,"server_%08d.png",imagecount);
-      imwrite(imagename,frame);
+      //sprintf(imagename,"server_%08d.png",imagecount);
+      //imwrite(imagename,frame);
+      
       
       frameQueue.clear();
       imagecount++;
