@@ -240,6 +240,7 @@ endif(USE_GPU)
 # Create the executable
 #set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x") # required for unrestricted unions
 #set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -p") # add gprof information
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -g -p")
 
 add_library(cpp_stuff_library  ${SrcCpp} ${HelpersCpp})
 
@@ -254,6 +255,7 @@ target_link_libraries(objects_detection
    SDL X11 Xext #Xrandr
    gomp
    zmq
+   profiler
    ${libpng_LIBRARIES} jpeg
 #  ${OpenEXR_LIBRARIES}
    ${opencv_LIBRARIES}

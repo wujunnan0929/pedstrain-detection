@@ -257,11 +257,19 @@ void ObjectsDetectionApplication::setup_problem(const program_options::variables
 		frame_height = get_option_value <int>(options, "zmq_server.frame_height");
 		context = zmq_ctx_new();
 		int rc;
-		//subscriber = zmq_socket(context,ZMQ_SUB);
-		//rc = zmq_connect(subscriber, sub_addr.c_str());
-		//zmq_setsockopt(subscriber, ZMQ_SUBSCRIBE, NULL, 0);
-	
-		//publisher = zmq_socket(context, ZMQ_PUB);
+		subscriber = zmq_socket(context,ZMQ_SUB);
+		rc = zmq_connect(subscriber, sub_addr.c_str());
+		assert(rc == 0);
+		zmq_setsockopt(subscriber, ZMQ_SUBSCRIBE, NULL, 0);
+                
+			
+		publisher = zmq_socket(context, ZMQ_PUB);
+		rc = zmq_bind(publisher, pub_addr.c_str());
+		assert(rc == 0);
+		printf("\n\npub_addr = %s\n\n", pub_addr.c_str());
+		
+
+		/*
 		publisher = subscriber = zmq_socket(context, ZMQ_REP);
 		rc = zmq_bind(publisher, pub_addr.c_str());
 		if(rc != 0)
@@ -269,6 +277,7 @@ void ObjectsDetectionApplication::setup_problem(const program_options::variables
 			printf("zmq_bind() rc=%d error!\n", rc);
 			throw std::runtime_error("zmq_bind error!");
 		}
+		*/
 	}
 	else if(should_process_folder)
 	{
@@ -397,7 +406,11 @@ void ObjectsDetectionApplication::main_loop()
     const int num_iterations_for_timing = 10, num_iterations_for_processing_timing = 5;
     //const int num_iterations_for_timing = 500, num_iterations_for_processing_timing = 250;
     double cumulated_processing_time = 0, cumulated_objects_detector_compute_time = 0;
+    double cumulated_zmq_recv_time = 0, cumulated_record_detections_time = 0, cumulated_while_time =0;
     double start_wall_time = omp_get_wtime();
+    double start_while_wall_time = 0;
+    double cumulated_part1_time = 0, cumulated_part2_time =0;   
+
 
     AddBorderFunctor add_border(additional_border);
     bool video_input_is_available = false;
@@ -450,7 +463,7 @@ void ObjectsDetectionApplication::main_loop()
     bool end_of_game = false;
     while(video_input_is_available and (not end_of_game))
     {
-
+	start_while_wall_time = omp_get_wtime();
         // update video input --
 		AbstractVideoInput::input_image_view_t input_view;
 		AbstractVideoInput::input_image_t tmp_image;
@@ -459,11 +472,16 @@ void ObjectsDetectionApplication::main_loop()
 			printf("begin recv\n");
 			//boost::gil image buffer version
 			tmp_image.recreate(frame_width, frame_height);
-			zmq_recv(publisher, boost::gil::view(tmp_image).begin().x(), frame_width * frame_height * 3, 0);
+			printf("before zmq_recv\n");
+			const double start_zmq_recv_wall_time = omp_get_wtime();
+			zmq_recv(subscriber, boost::gil::view(tmp_image).begin().x(), frame_width * frame_height * 3, 0);
+			cumulated_zmq_recv_time += omp_get_wtime() - start_zmq_recv_wall_time;
+			printf("after zmq_recv\n");
 			current_view = boost::gil::view(tmp_image);
 			input_view = boost::gil::view(tmp_image);
-			boost::gil::png_write_view("/home/Downloads/input_view.png", input_view);           
+			//boost::gil::png_write_view("input_view.png", input_view);           
 			printf("received\n");
+			cumulated_part2_time += omp_get_wtime() - start_while_wall_time;	
 		}
         else if(should_process_folder)
         {
@@ -476,6 +494,8 @@ void ObjectsDetectionApplication::main_loop()
             //input_right_view(video_input_p->get_right_image());
         }
         input_view = add_border(input_view);
+	
+	cumulated_part1_time += omp_get_wtime() - start_while_wall_time;
         // we start measuring the time before uploading the data to the GPU
         const double start_processing_wall_time = omp_get_wtime();
 
@@ -542,7 +562,9 @@ void ObjectsDetectionApplication::main_loop()
         cumulated_processing_time += omp_get_wtime() - start_processing_wall_time;
         if(should_save_detections)
         {
+            const double start_record_detections_wall_time = omp_get_wtime();
             record_detections();
+            cumulated_record_detections_time = omp_get_wtime() - start_record_detections_wall_time;
         }
 
         // update user interface --
@@ -550,7 +572,7 @@ void ObjectsDetectionApplication::main_loop()
 
         num_iterations += 1;
         stixels_period_counter += 1;
-
+        cumulated_while_time += omp_get_wtime() - start_while_wall_time;
         if(should_print_speed and ((num_iterations % num_iterations_for_timing) == 0))
         {
             printf("Average iteration speed  %.4lf [Hz] (in the last %i iterations)\n",
@@ -569,6 +591,24 @@ void ObjectsDetectionApplication::main_loop()
         {
             printf("Average objects detection compute only speed per iteration %.2lf [Hz] (in the last %i iterations)\n",
                    num_iterations / cumulated_objects_detector_compute_time , num_iterations );
+        }
+
+        if(run_as_server and should_print_speed and ((num_iterations % num_iterations_for_processing_timing) == 0))
+        {
+            printf("Average WHILE speed per iteration %.4lf [Hz], time %.4lf (in the last %i iterations)\n",
+                   num_iterations / cumulated_while_time , cumulated_while_time/num_iterations, num_iterations );
+
+            printf("Average part1 speed per iteration %.4lf [Hz], time %.4lf (in the last %i iterations)\n",
+                   num_iterations / cumulated_part1_time , cumulated_part1_time/num_iterations, num_iterations );
+
+            printf("Average part2 speed per iteration %.4lf [Hz], time %.4lf (in the last %i iterations)\n",
+                   num_iterations / cumulated_part2_time , cumulated_part2_time/num_iterations, num_iterations );
+
+	    printf("Average zmq_recv speed per iteration %.2lf [Hz], time %.4lf (in the last %i iterations)\n",
+                   num_iterations / cumulated_zmq_recv_time , cumulated_zmq_recv_time/num_iterations, num_iterations );
+            if(should_save_detections)
+                printf("Average record_detections speed per iteration %.2lf [Hz] (in the last %i iterations)\n",
+                       num_iterations / cumulated_record_detections_time , num_iterations );		
         }
 
         // retrieve next rectified input stereo pair
