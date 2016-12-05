@@ -253,6 +253,7 @@ target_link_libraries(objects_detection
    protobuf pthread
    SDL X11 Xext #Xrandr
    gomp
+   zmq
    ${libpng_LIBRARIES} jpeg
 #  ${OpenEXR_LIBRARIES}
    ${opencv_LIBRARIES}

@@ -41,16 +41,16 @@ void protobuf_AssignDesc_plane3d_2eproto() {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Plane3d, normal_z_),
   };
   Plane3d_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Plane3d_descriptor_,
       Plane3d::default_instance_,
       Plane3d_offsets_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Plane3d, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Plane3d, _unknown_fields_),
       -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(Plane3d));
+      -1,
+      sizeof(Plane3d),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Plane3d, _internal_metadata_),
+      -1);
 }
 
 namespace {
@@ -64,7 +64,7 @@ inline void protobuf_AssignDescriptorsOnce() {
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    Plane3d_descriptor_, &Plane3d::default_instance());
+      Plane3d_descriptor_, &Plane3d::default_instance());
 }
 
 }  // namespace
@@ -98,27 +98,40 @@ struct StaticDescriptorInitializer_plane3d_2eproto {
   }
 } static_descriptor_initializer_plane3d_2eproto_;
 
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD;
+static void MergeFromFail(int line) {
+  GOOGLE_CHECK(false) << __FILE__ << ":" << line;
+}
+
+}  // namespace
+
+
 // ===================================================================
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Plane3d::kOffsetFieldNumber;
 const int Plane3d::kNormalXFieldNumber;
 const int Plane3d::kNormalYFieldNumber;
 const int Plane3d::kNormalZFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 Plane3d::Plane3d()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
   SharedCtor();
+  // @@protoc_insertion_point(constructor:doppia_protobuf.Plane3d)
 }
 
 void Plane3d::InitAsDefaultInstance() {
 }
 
 Plane3d::Plane3d(const Plane3d& from)
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(),
+    _internal_metadata_(NULL) {
   SharedCtor();
   MergeFrom(from);
+  // @@protoc_insertion_point(copy_constructor:doppia_protobuf.Plane3d)
 }
 
 void Plane3d::SharedCtor() {
@@ -131,6 +144,7 @@ void Plane3d::SharedCtor() {
 }
 
 Plane3d::~Plane3d() {
+  // @@protoc_insertion_point(destructor:doppia_protobuf.Plane3d)
   SharedDtor();
 }
 
@@ -156,37 +170,53 @@ const Plane3d& Plane3d::default_instance() {
 
 Plane3d* Plane3d::default_instance_ = NULL;
 
-Plane3d* Plane3d::New() const {
-  return new Plane3d;
+Plane3d* Plane3d::New(::google::protobuf::Arena* arena) const {
+  Plane3d* n = new Plane3d;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void Plane3d::Clear() {
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    offset_ = 0;
-    normal_x_ = 0;
-    normal_y_ = 0;
-    normal_z_ = 0;
-  }
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<Plane3d*>(16)->f)
+
+#define ZR_(first, last) do {\
+  ::memset(&first, 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(offset_, normal_z_);
+
+#undef ZR_HELPER_
+#undef ZR_
+
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  if (_internal_metadata_.have_unknown_fields()) {
+    mutable_unknown_fields()->Clear();
+  }
 }
 
 bool Plane3d::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+#define DO_(EXPRESSION) if (!(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  while ((tag = input->ReadTag()) != 0) {
+  // @@protoc_insertion_point(parse_start:doppia_protobuf.Plane3d)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // required float offset = 1;
       case 1: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED32) {
+        if (tag == 13) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &offset_)));
           set_has_offset();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(21)) goto parse_normal_x;
         break;
@@ -194,15 +224,14 @@ bool Plane3d::MergePartialFromCodedStream(
 
       // required float normal_x = 2;
       case 2: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED32) {
+        if (tag == 21) {
          parse_normal_x:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &normal_x_)));
           set_has_normal_x();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(29)) goto parse_normal_y;
         break;
@@ -210,15 +239,14 @@ bool Plane3d::MergePartialFromCodedStream(
 
       // required float normal_y = 3;
       case 3: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED32) {
+        if (tag == 29) {
          parse_normal_y:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &normal_y_)));
           set_has_normal_y();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
         if (input->ExpectTag(37)) goto parse_normal_z;
         break;
@@ -226,25 +254,25 @@ bool Plane3d::MergePartialFromCodedStream(
 
       // required float normal_z = 4;
       case 4: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED32) {
+        if (tag == 37) {
          parse_normal_z:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &normal_z_)));
           set_has_normal_z();
         } else {
-          goto handle_uninterpreted;
+          goto handle_unusual;
         }
-        if (input->ExpectAtEnd()) return true;
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
       default: {
-      handle_uninterpreted:
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          return true;
+          goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -252,12 +280,18 @@ bool Plane3d::MergePartialFromCodedStream(
       }
     }
   }
+success:
+  // @@protoc_insertion_point(parse_success:doppia_protobuf.Plane3d)
   return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:doppia_protobuf.Plane3d)
+  return false;
 #undef DO_
 }
 
 void Plane3d::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:doppia_protobuf.Plane3d)
   // required float offset = 1;
   if (has_offset()) {
     ::google::protobuf::internal::WireFormatLite::WriteFloat(1, this->offset(), output);
@@ -278,14 +312,16 @@ void Plane3d::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteFloat(4, this->normal_z(), output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
+  // @@protoc_insertion_point(serialize_end:doppia_protobuf.Plane3d)
 }
 
 ::google::protobuf::uint8* Plane3d::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:doppia_protobuf.Plane3d)
   // required float offset = 1;
   if (has_offset()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(1, this->offset(), target);
@@ -306,39 +342,59 @@ void Plane3d::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(4, this->normal_z(), target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
+  // @@protoc_insertion_point(serialize_to_array_end:doppia_protobuf.Plane3d)
   return target;
 }
 
+int Plane3d::RequiredFieldsByteSizeFallback() const {
+  int total_size = 0;
+
+  if (has_offset()) {
+    // required float offset = 1;
+    total_size += 1 + 4;
+  }
+
+  if (has_normal_x()) {
+    // required float normal_x = 2;
+    total_size += 1 + 4;
+  }
+
+  if (has_normal_y()) {
+    // required float normal_y = 3;
+    total_size += 1 + 4;
+  }
+
+  if (has_normal_z()) {
+    // required float normal_z = 4;
+    total_size += 1 + 4;
+  }
+
+  return total_size;
+}
 int Plane3d::ByteSize() const {
   int total_size = 0;
 
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+  if (((_has_bits_[0] & 0x0000000f) ^ 0x0000000f) == 0) {  // All required fields are present.
     // required float offset = 1;
-    if (has_offset()) {
-      total_size += 1 + 4;
-    }
+    total_size += 1 + 4;
 
     // required float normal_x = 2;
-    if (has_normal_x()) {
-      total_size += 1 + 4;
-    }
+    total_size += 1 + 4;
 
     // required float normal_y = 3;
-    if (has_normal_y()) {
-      total_size += 1 + 4;
-    }
+    total_size += 1 + 4;
 
     // required float normal_z = 4;
-    if (has_normal_z()) {
-      total_size += 1 + 4;
-    }
+    total_size += 1 + 4;
 
+  } else {
+    total_size += RequiredFieldsByteSizeFallback();
   }
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         unknown_fields());
@@ -350,10 +406,10 @@ int Plane3d::ByteSize() const {
 }
 
 void Plane3d::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  const Plane3d* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const Plane3d*>(
-      &from);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Plane3d* source = 
+      ::google::protobuf::internal::DynamicCastToGenerated<const Plane3d>(
+          &from);
   if (source == NULL) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -362,7 +418,7 @@ void Plane3d::MergeFrom(const ::google::protobuf::Message& from) {
 }
 
 void Plane3d::MergeFrom(const Plane3d& from) {
-  GOOGLE_CHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     if (from.has_offset()) {
       set_offset(from.offset());
@@ -377,7 +433,9 @@ void Plane3d::MergeFrom(const Plane3d& from) {
       set_normal_z(from.normal_z());
     }
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+  if (from._internal_metadata_.have_unknown_fields()) {
+    mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+  }
 }
 
 void Plane3d::CopyFrom(const ::google::protobuf::Message& from) {
@@ -399,15 +457,17 @@ bool Plane3d::IsInitialized() const {
 }
 
 void Plane3d::Swap(Plane3d* other) {
-  if (other != this) {
-    std::swap(offset_, other->offset_);
-    std::swap(normal_x_, other->normal_x_);
-    std::swap(normal_y_, other->normal_y_);
-    std::swap(normal_z_, other->normal_z_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void Plane3d::InternalSwap(Plane3d* other) {
+  std::swap(offset_, other->offset_);
+  std::swap(normal_x_, other->normal_x_);
+  std::swap(normal_y_, other->normal_y_);
+  std::swap(normal_z_, other->normal_z_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Plane3d::GetMetadata() const {
@@ -418,6 +478,106 @@ void Plane3d::Swap(Plane3d* other) {
   return metadata;
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// Plane3d
+
+// required float offset = 1;
+bool Plane3d::has_offset() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+void Plane3d::set_has_offset() {
+  _has_bits_[0] |= 0x00000001u;
+}
+void Plane3d::clear_has_offset() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+void Plane3d::clear_offset() {
+  offset_ = 0;
+  clear_has_offset();
+}
+ float Plane3d::offset() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.Plane3d.offset)
+  return offset_;
+}
+ void Plane3d::set_offset(float value) {
+  set_has_offset();
+  offset_ = value;
+  // @@protoc_insertion_point(field_set:doppia_protobuf.Plane3d.offset)
+}
+
+// required float normal_x = 2;
+bool Plane3d::has_normal_x() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+void Plane3d::set_has_normal_x() {
+  _has_bits_[0] |= 0x00000002u;
+}
+void Plane3d::clear_has_normal_x() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+void Plane3d::clear_normal_x() {
+  normal_x_ = 0;
+  clear_has_normal_x();
+}
+ float Plane3d::normal_x() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.Plane3d.normal_x)
+  return normal_x_;
+}
+ void Plane3d::set_normal_x(float value) {
+  set_has_normal_x();
+  normal_x_ = value;
+  // @@protoc_insertion_point(field_set:doppia_protobuf.Plane3d.normal_x)
+}
+
+// required float normal_y = 3;
+bool Plane3d::has_normal_y() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+void Plane3d::set_has_normal_y() {
+  _has_bits_[0] |= 0x00000004u;
+}
+void Plane3d::clear_has_normal_y() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+void Plane3d::clear_normal_y() {
+  normal_y_ = 0;
+  clear_has_normal_y();
+}
+ float Plane3d::normal_y() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.Plane3d.normal_y)
+  return normal_y_;
+}
+ void Plane3d::set_normal_y(float value) {
+  set_has_normal_y();
+  normal_y_ = value;
+  // @@protoc_insertion_point(field_set:doppia_protobuf.Plane3d.normal_y)
+}
+
+// required float normal_z = 4;
+bool Plane3d::has_normal_z() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+void Plane3d::set_has_normal_z() {
+  _has_bits_[0] |= 0x00000008u;
+}
+void Plane3d::clear_has_normal_z() {
+  _has_bits_[0] &= ~0x00000008u;
+}
+void Plane3d::clear_normal_z() {
+  normal_z_ = 0;
+  clear_has_normal_z();
+}
+ float Plane3d::normal_z() const {
+  // @@protoc_insertion_point(field_get:doppia_protobuf.Plane3d.normal_z)
+  return normal_z_;
+}
+ void Plane3d::set_normal_z(float value) {
+  set_has_normal_z();
+  normal_z_ = value;
+  // @@protoc_insertion_point(field_set:doppia_protobuf.Plane3d.normal_z)
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
 

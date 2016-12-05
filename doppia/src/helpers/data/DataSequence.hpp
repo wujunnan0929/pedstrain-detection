@@ -188,7 +188,7 @@ void DataSequence<DataType>::read_header()
 
     DataSequenceHeader header;
 
-    boost::uint64_t size;
+    google::protobuf::uint64 size;
     bool success = input_coded_stream_p->ReadLittleEndian64(&size);
 
     const bool use_zero_copy_stream = false;
@@ -292,7 +292,7 @@ void DataSequence<DataType>::operator>>(DataType &data)
 template<typename DataType>
 void DataSequence<DataType>::read(DataType &data)
 {
-    boost::uint64_t size;
+    google::protobuf::uint64 size;
     const bool read_size_success = input_coded_stream_p->ReadLittleEndian64(&size);
 
     bool read_data_success = false;
