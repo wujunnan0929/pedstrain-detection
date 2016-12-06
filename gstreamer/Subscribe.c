@@ -1,5 +1,3 @@
-#include <gst/gst.h>
-#include <gst/app/gstappsink.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <zmq.h>
@@ -43,41 +41,41 @@ int main (void)
     //zmq_connect(subscriber,"tcp://10.113.64.38:5556");
     zmq_setsockopt(subscriber, ZMQ_SUBSCRIBE, NULL,0);
   
-    Mat frame(Size(320,240), CV_8UC3);
-    gsize size;
-    int width = 320;
-    int height = 240;
+    int size;
+    int width = 640;
+    int height = 480;
     size = width*height*3;
     int imagecount = 0;
-    gchar imagename[19]= "";
+    char imagename[19]= "";
+    Mat frame(Size(width, height), CV_8UC3);
 
     clock_t start, finish;
     double time, cumulated_time;
     cumulated_time = 0;
 
     rgb8_image_t image;
-    image.recreate(320, 240);
+    image.recreate(width, height);
     namedWindow("Receiver", 1);
-    while(1)
+    while(imagecount < 460)
     {
         start = clock();
         zmq_recv(subscriber, view(image).begin().x(), width*height*3, 0);
         GilToMat(image, frame);
 
-        g_print("client received frame_%08d!\n", imagecount);
+        printf("client received frame_%08d!\n", imagecount);
         imshow("Receiver", frame);
 
         sprintf(imagename,"server_%08d.png", imagecount);
-        imwrite(imagename,frame);
+        //imwrite(imagename,frame);
         finish = clock();
         time = (double)(finish - start)/CLOCKS_PER_SEC;
         printf("used %fs.\n", time);
         cumulated_time += time;
+        ++imagecount;
         if((imagecount%10) == 0)
-        printf("Sum %d fames used average time is %lf\n", imagecount, cumulated_time/imagecount);
+        printf("Sum %d fames used average time is %.4lf. %.4lf[HZ]\n", imagecount, cumulated_time/imagecount, imagecount/cumulated_time);
         printf("-------------------------------------------------------------\n");
         waitKey(1);
-        ++imagecount;
     }
 
     zmq_close (subscriber);

@@ -54,38 +54,39 @@ int main()
     //void *client = zmq_socket (context, ZMQ_REQ);
     //zmq_connect (client, "tcp://10.113.64.54:5556");
     //zmq_connect (client, "tcp://localhost:5555");
-      void *publisher = zmq_socket (context, ZMQ_PUB);
-      zmq_bind (publisher, "tcp://*:5555");
-
-	VideoCapture cap(0); // open the default camera
+    void *publisher = zmq_socket (context, ZMQ_PUB);
+    zmq_bind (publisher, "tcp://*:5555");
+    /*
+    VideoCapture cap(0); // open the default camera
     if(!cap.isOpened())  // check if we succeeded
         return -1;
-
+    */
     Mat frame1;    
     Mat frame;
     gsize size;
     int imagecount = 0;
-  	gchar imagename[19]= "";
+    gchar imagename[19]= "";
     clock_t start, finish;
     double time, cumulated_time;
     cumulated_time = 0;
     namedWindow("Sender", 1);
-    while(1)
+    frame = imread("buffer.png", CV_LOAD_IMAGE_COLOR);
+    while(imagecount <460)
     {
         start = clock();
-        cap >> frame1; // get a new frame from camera
+        //cap >> frame1; // get a new frame from camera
 
-        resize(frame1, frame, Size(320, 240), CV_INTER_LINEAR);
+        //resize(frame1, frame, Size(640, 480), CV_INTER_LINEAR);
         size = frame.rows * frame.cols * frame.elemSize();
 
       	printf("frame width= %d height= %d\n", frame.size().width, frame.size().height);
 		    imshow("Sender", frame);
 		    sprintf(imagename,"client_%08d.png",imagecount);
-      	imwrite(imagename,frame);
+      	//imwrite(imagename,frame);
       	waitKey(1);
 
       	rgb8_image_t image;
-      	image.recreate(frame.size().width, frame.size().height);
+      	//image.recreate(frame.size().width, frame.size().height);
       	MatToGil(frame, image);
       	rgb8c_view_t input_view= view(image);
       	//png_write_view("boost_gil.png", input_view);
@@ -98,8 +99,9 @@ int main()
         time = (double)(finish - start)/CLOCKS_PER_SEC;
         printf("used %fs.\n", time);
         cumulated_time += time;
-        if((imagecount%10) == 0)
-        printf("Sum %d fames used average time is %lf\n", imagecount, cumulated_time/imagecount);  
+	++imagecount;
+        if((imagecount%20) == 0)
+        printf("Sum %d fames used average time is %.4lf. %.4lf[HZ].\n", imagecount, cumulated_time/imagecount, imagecount/cumulated_time);  
         printf("-------------------------------------------------------------\n");
         /*
       	zmq_recv(client, view(image).begin().x(), size, 0);
@@ -113,9 +115,11 @@ int main()
         
       	waitKey(1);
         */
-        ++imagecount;
     }
+    printf("press any key to end.\n");
+    char ch;
+    scanf("%c",&ch);
     zmq_close (publisher);
     zmq_ctx_destroy (context);
-	return 0;
+    return 0;
 }
